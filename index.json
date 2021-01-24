@@ -1,0 +1,27 @@
+{
+    "lutris-6.0-rc1": {
+        "Category": "runners",
+        "Sub-category": "wine",
+        "Channel": "rc"
+    },
+    "lutris-5.21.2": {
+        "Category": "runners",
+        "Sub-category": "wine",
+        "Channel": "stable"
+    },
+    "lutris-5.21": {
+        "Category": "runners",
+        "Sub-category": "wine",
+        "Channel": "stable"
+    },
+    "proton-ge-6.0-1": {
+        "Category": "runners",
+        "Sub-category": "proton",
+        "Channel": "rc"
+    },
+    "proton-ge-5.21-1": {
+        "Category": "runners",
+        "Sub-category": "proton",
+        "Channel": "stable"
+    },
+}
