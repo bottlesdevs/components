@@ -1,11 +1,11 @@
 {
-  "Name": "1.7.2",
+  "Name": "dxvk-1.7.2",
   "Provider": "doitsujin",
   "Channel": "stable",
   "File": [{
     "file_name": "dxvk-1.7.2.tar.gz",
     "url": "https://github.com/doitsujin/dxvk/releases/download/v1.7.2/dxvk-1.7.2.tar.gz",
     "file_checksum": "42d92cc21c96ffeccad705388bee09bd",
-    "rename": "1.7.2.tar.gz",
+    "rename": "dxvk-1.7.2.tar.gz",
   }]
 }
