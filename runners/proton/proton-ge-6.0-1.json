@@ -1,0 +1,11 @@
+{
+	"Name": "proton-ge-6.0-1",
+	"Provider": "lutris",
+	"Channel": "rc",
+	"File": [{
+		"file_name": "Proton-6.0-GE-1.tar.gz",
+		"url": "https://github.com/GloriousEggroll/proton-ge-custom/releases/download/6.0-GE-1/Proton-6.0-GE-1.tar.gz",
+		"file_checksum": "63f3f2b9e0d11736ab40a14b4646e5fd",
+		"rename": "proton-ge-6.0-1.tar.gz",
+	}]
+}
