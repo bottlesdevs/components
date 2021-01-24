@@ -1,0 +1,7 @@
+{
+	"Name": "wine-lutris-6.0-rc1",
+	"Provider": "lutris",
+  "file_name": "wine-lutris-6.0-rc1-x86_64.tar.xz",
+  "url": "https://github.com/lutris/wine/releases/download/lutris-6.0-rc1/wine-lutris-6.0-rc1-x86_64.tar.xz",
+  "file_checksum": "ce5654d56d0235326735f735dbbeca2a"
+}
