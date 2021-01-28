@@ -4,7 +4,7 @@
 	"Channel": "unstable",
 	"File": [{
 		"file_name": "chardonnay-6.0-unstable-x86_64.tar.gz",
-		"url": "https://github.com/bottlesdevs/wine/releases/download/6.0/chardonnay-6.0-unstable-x86_64.tar.gz",
+		"url": "https://github.com/bottlesdevs/wine/releases/download/6.0-unstable/chardonnay-6.0-unstable-x86_64.tar.gz",
 		"file_checksum": "f913c728f7466f9d1ae8f8fb31357800",
 		"rename": "chardonnay-6.0-unstable-x86_64.tar.gz"
 	}]
