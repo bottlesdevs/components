@@ -1,4 +1,14 @@
 {
+    "chardonnay-6.0-unstable": {
+        "Category": "runners",
+        "Sub-category": "wine",
+        "Channel": "unstable"
+    },
+    "chardonnay-6.0": {
+        "Category": "runners",
+        "Sub-category": "wine",
+        "Channel": "stable"
+    },
     "lutris-6.0-rc1": {
         "Category": "runners",
         "Sub-category": "wine",
