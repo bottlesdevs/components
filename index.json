@@ -9,10 +9,10 @@
         "Sub-category": "wine",
         "Channel": "stable"
     },
-    "lutris-6.0-rc1": {
+    "lutris-6.0": {
         "Category": "runners",
         "Sub-category": "wine",
-        "Channel": "rc"
+        "Channel": "stable"
     },
     "lutris-5.21.2": {
         "Category": "runners",
