@@ -2,6 +2,7 @@
 	"Name": "proton-ge-6.0-1",
 	"Provider": "gloriouseggroll",
 	"Channel": "rc",
+	"DirName": "proton-ge-6.0-1",
 	"File": [{
 		"file_name": "Proton-6.0-GE-1.tar.gz",
 		"url": "https://github.com/GloriousEggroll/proton-ge-custom/releases/download/6.0-GE-1/Proton-6.0-GE-1.tar.gz",
