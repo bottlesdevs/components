@@ -2,6 +2,7 @@
 	"Name": "lutris-6.0",
 	"Provider": "lutris",
 	"Channel": "stable",
+	"DirName": "lutris-6.0-x86_64",
 	"File": [{
 		"file_name": "wwine-lutris-6.0-x86_64.tar.xz",
 		"url": "https://github.com/lutris/wine/releases/download/lutris-6.0/wine-lutris-6.0-x86_64.tar.xz",
