@@ -2,7 +2,6 @@
 	"Name": "chardonnay-6.0",
 	"Provider": "bottles",
 	"Channel": "stable",
-	"DirName": "chardonnay-6.0-x86_64",
 	"File": [{
 		"file_name": "chardonnay-6.0-x86_64.tar.gz",
 		"url": "https://github.com/bottlesdevs/wine/releases/download/6.0/chardonnay-6.0-x86_64.tar.gz",
