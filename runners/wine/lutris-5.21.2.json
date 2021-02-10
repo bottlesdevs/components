@@ -6,6 +6,6 @@
 		"file_name": "wine-lutris-5.21-2-x86_64.tar.xz",
 		"url": "https://github.com/lutris/wine/releases/download/lutris-5.21-2/wine-lutris-5.21-2-x86_64.tar.xz",
 		"file_checksum": "ce5654d56d0235326735f735dbbeca2a",
-		"rename": "lutris-5.21.2-x86_64.tar.xz",
+		"rename": "lutris-5.21.2-x86_64.tar.xz"
 	}]
 }
