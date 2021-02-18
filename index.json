@@ -1,4 +1,9 @@
 {
+    "chardonnay-6.2-unstable": {
+        "Category": "runners",
+        "Sub-category": "wine",
+        "Channel": "unstable"
+    },
     "chardonnay-6.0-unstable": {
         "Category": "runners",
         "Sub-category": "wine",
