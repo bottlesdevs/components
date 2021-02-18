@@ -29,6 +29,11 @@
         "Sub-category": "wine",
         "Channel": "stable"
     },
+    "proton-ge-6.1-2": {
+        "Category": "runners",
+        "Sub-category": "proton",
+        "Channel": "rc"
+    },
     "proton-ge-6.0-1": {
         "Category": "runners",
         "Sub-category": "proton",
