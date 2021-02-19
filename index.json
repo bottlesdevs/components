@@ -44,6 +44,10 @@
         "Sub-category": "proton",
         "Channel": "stable"
     },
+    "dxvk-1.8": {
+        "Category": "dxvk",
+        "Channel": "stable"
+    },
     "dxvk-1.7.3": {
         "Category": "dxvk",
         "Channel": "stable"
