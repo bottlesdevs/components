@@ -4,11 +4,6 @@
         "Sub-category": "wine",
         "Channel": "unstable"
     },
-    "chardonnay-6.0-unstable": {
-        "Category": "runners",
-        "Sub-category": "wine",
-        "Channel": "unstable"
-    },
     "chardonnay-6.0": {
         "Category": "runners",
         "Sub-category": "wine",
@@ -37,7 +32,7 @@
     "proton-ge-6.0-1": {
         "Category": "runners",
         "Sub-category": "proton",
-        "Channel": "rc"
+        "Channel": "stable"
     },
     "proton-ge-5.21-1": {
         "Category": "runners",
