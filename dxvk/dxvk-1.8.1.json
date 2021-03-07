@@ -4,7 +4,7 @@
   "Channel": "stable",
   "File": [{
     "file_name": "dxvk-1.8.1.tar.gz",
-    "url": "https://github.com/doitsujin/dxvk/releases/download/v1.8/dxvk-1.8.1.tar.gz",
+    "url": "https://github.com/doitsujin/dxvk/releases/download/v1.8.1/dxvk-1.8.1.tar.gz",
     "file_checksum": "3f2c50f248b5505c6cf071ca48fc5378",
     "rename": "dxvk-1.8.1.tar.gz"
   }]
