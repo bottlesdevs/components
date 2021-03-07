@@ -1,0 +1,13 @@
+{
+  "Name": "chardonnay-6.3-unstable",
+  "Provider": "bottles",
+  "Channel": "unstable",
+  "File": [
+    {
+      "file_name": "chardonnay-6.3-unstable-x86_64.tar.gz",
+      "url": "https://github.com/bottlesdevs/wine/releases/download/6.3-unstable/chardonnay-6.3-unstable-x86_64.tar.gz",
+      "file_checksum": "fbf527a1f8e8cc7d34f9018484e4d9c0",
+      "rename": "chardonnay-6.3-unstable-x86_64.tar.gz"
+    }
+  ]
+}
