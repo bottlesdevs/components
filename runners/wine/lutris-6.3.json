@@ -1,0 +1,11 @@
+{
+	"Name": "lutris-6.3",
+	"Provider": "lutris",
+	"Channel": "rc",
+	"File": [{
+		"file_name": "wine-lutris-6.3.zip",
+		"url": "https://github.com/lutris/wine/archive/refs/heads/lutris-6.3.zip",
+		"file_checksum": "644b01242fb1f159baaeacaad1016cf6",
+		"rename": "lutris-6.3.zip"
+	}]
+}
