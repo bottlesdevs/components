@@ -5,7 +5,7 @@
   "File": [
     {
       "file_name": "chardonnay-6.4-x86_64.tar.gz",
-      "url": "https://github.com/bottlesdevs/wine/releases/download/6.4-unstable/chardonnay-6.4-x86_64.tar.gz",
+      "url": "https://github.com/bottlesdevs/wine/releases/download/6.4/chardonnay-6.4-x86_64.tar.gz",
       "file_checksum": "f6a304b289f230fc24c9244adc62c3fb",
       "rename": "chardonnay-6.4-x86_64.tar.gz"
     }
