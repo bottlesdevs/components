@@ -1,0 +1,11 @@
+{
+	"Name": "Proton-6.3-1",
+	"Provider": "Valve Software",
+	"Channel": "rc",
+	"File": [{
+		"file_name": "Proton-proton-6.3-1.tar.gz",
+		"url": "https://github.com/ValveSoftware/Proton/archive/refs/tags/proton-6.3-1.tar.gz",
+		"file_checksum": "0dfe3a3ed9453afb396b8ad6ba66c58b",
+		"rename": "Proton-6.3-1.tar.gz"
+	}]
+}
