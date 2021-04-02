@@ -1,11 +1,11 @@
 {
-	"Name": "Proton-6.3-20210401 (Experimental)",
+	"Name": "Proton-experimental-6.3-20210401",
 	"Provider": "Valve Software",
 	"Channel": "unstable",
 	"File": [{
-		"file_name": "experimental-6.3-20210401.tar.gz",
+		"file_name": "Proton-experimental-6.3-20210401.tar.gz",
 		"url": "https://github.com/ValveSoftware/Proton/archive/refs/tags/experimental-6.3-20210401.tar.gz",
 		"file_checksum": "1903fb4b700025918caf20dc47174f30",
-		"rename": "Proton-6.3-20210401(Experimental).tar.gz"
+		"rename": "Proton-experimental-6.3-20210401.tar.gz"
 	}]
 }
