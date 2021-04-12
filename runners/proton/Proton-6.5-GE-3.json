@@ -1,0 +1,11 @@
+{
+	"Name": "Proton-6.5-GE-3",
+	"Provider": "Lctrs",
+	"Channel": "stable",
+	"File": [{
+		"file_name": "proton-ge-custom-src.tar.xz",
+		"url": "https://github.com/Lctrs/proton-ge-custom-tarball-maker/releases/download/6.5-GE-3-1/proton-ge-custom-src.tar.xz",
+		"file_checksum": "6bb7ae80dc9103a7570f76f5fec8e620",
+		"rename": "Proton-6.5-GE-3.tar.xz"
+	}]
+}
