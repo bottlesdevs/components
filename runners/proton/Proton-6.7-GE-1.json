@@ -1,0 +1,11 @@
+{
+	"Name": "Proton-6.7-GE-1",
+	"Provider": "Lctrs",
+	"Channel": "stable",
+	"File": [{
+		"file_name": "proton-ge-custom-src.tar.xz",
+		"url": "https://github.com/Lctrs/proton-ge-custom-tarball-maker/releases/download/6.7-GE-1-1/proton-ge-custom-src.tar.xz",
+		"file_checksum": "e170dea29cb73db791b3bfbeba3a5e1f",
+		"rename": "Proton-6.7-GE-1.tar.xz"
+	}]
+}
