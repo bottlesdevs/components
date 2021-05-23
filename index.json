@@ -54,6 +54,11 @@
         "Sub-category": "wine",
         "Channel": "stable"
     },
+    "Proton-6.9-GE-1": {
+        "Category": "runners",
+        "Sub-category": "proton",
+        "Channel": "stable"
+    },
     "Proton-6.8-GE-2": {
         "Category": "runners",
         "Sub-category": "proton",
