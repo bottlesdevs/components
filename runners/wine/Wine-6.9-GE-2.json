@@ -1,0 +1,13 @@
+{
+  "Name": "Wine-6.9-GE-2",
+  "Provider": "gloriouseggroll",
+  "Channel": "unstable",
+  "File": [
+    {
+      "file_name": "wine-lutris-ge-6.9-x86_64.tar.xz",
+      "url": "https://github.com/GloriousEggroll/wine-ge-custom/releases/download/6.9-GE-2-alpha/wine-lutris-ge-6.9-x86_64.tar.xz",
+      "file_checksum": "4d05a4e28f434074ed1c70f58c54f9c2",
+      "rename": "Wine-6.9-GE-2.tar.gz"
+    }
+  ]
+}
