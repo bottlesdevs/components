@@ -1,6 +1,6 @@
 {
-  "Name": "Wine-6.9-GE-2 Alpha Released",
-  "Provider": "bottles",
+  "Name": "Wine-6.9-GE-2 Alpha",
+  "Provider": "gloriouseggroll",
   "Channel": "unstable",
   "File": [
     {
