@@ -9,6 +9,11 @@
         "Sub-category": "wine",
         "Channel": "unstable"
     },
+    "Wine-6.9-GE-2-Alpha": {
+        "Category": "runners",
+        "Sub-category": "wine",
+        "Channel": "unstable"
+     },
     "chardonnay-6.5-unstable": {
         "Category": "runners",
         "Sub-category": "wine",
