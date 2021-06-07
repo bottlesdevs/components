@@ -34,6 +34,11 @@
         "Sub-category": "wine",
         "Channel": "unstable"
     },
+    "lutris-6.10": {
+        "Category": "runners",
+        "Sub-category": "wine",
+        "Channel": "stable"
+    },
     "lutris-6.4": {
         "Category": "runners",
         "Sub-category": "wine",
@@ -57,6 +62,11 @@
     "lutris-5.21": {
         "Category": "runners",
         "Sub-category": "wine",
+        "Channel": "stable"
+    },
+    "Proton-6.10-GE-1": {
+        "Category": "runners",
+        "Sub-category": "proton",
         "Channel": "stable"
     },
     "Proton-6.9-GE-2": {
