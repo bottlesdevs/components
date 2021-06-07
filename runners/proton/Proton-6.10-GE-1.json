@@ -1,0 +1,11 @@
+{
+	"Name": "Proton-6.10-GE-1",
+	"Provider": "gloriouseggroll",
+	"Channel": "stable",
+	"File": [{
+		"file_name": "Proton-6.10-GE-1.tar.gz",
+		"url": "https://github.com/GloriousEggroll/proton-ge-custom/releases/download/6.10-GE-1/Proton-6.10-GE-1.tar.gz",
+		"file_checksum": "3c24a11851d8eb5ee99623678e1f8f1d",
+		"rename": "Proton-6.10-GE-1.tar.gz"
+	}]
+}
