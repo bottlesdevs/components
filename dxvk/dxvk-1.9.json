@@ -1,0 +1,11 @@
+{
+  "Name": "dxvk-1.9",
+  "Provider": "doitsujin",
+  "Channel": "stable",
+  "File": [{
+    "file_name": "dxvk-1.9.tar.gz",
+    "url": "https://github.com/doitsujin/dxvk/releases/download/v1.9/dxvk-1.9.tar.gz",
+    "file_checksum": "1c627ffc2ad5892a8beca32d06520545",
+    "rename": "dxvk-1.9.tar.gz"
+  }]
+}
