@@ -5,7 +5,7 @@
 	"File": [{
 		"file_name": "wine-lutris-6.10-4-x86_64.tar.xz",
 		"url": "https://github.com/lutris/wine/releases/download/lutris-6.10-4/wine-lutris-6.10-4-x86_64.tar.xz",
-		"file_checksum": "c68a53204fffbee543d064165963eb8c",
+		"file_checksum": "6101afe424fda5ee62703c57b0180df6",
 		"rename": "wine-lutris-6.10-4-x86_64.tar.xz"
 	}]
 }
