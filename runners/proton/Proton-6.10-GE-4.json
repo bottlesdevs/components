@@ -1,0 +1,11 @@
+{
+	"Name": "Proton-6.10-GE-4",
+	"Provider": "gloriouseggroll",
+	"Channel": "stable",
+	"File": [{
+		"file_name": "Proton-6.10-GE-4.tar.gz",
+		"url": "https://github.com/lutris/wine/releases/download/lutris-6.10-4/wine-lutris-6.10-4-x86_64.tar.xz",
+		"file_checksum": "6101afe424fda5ee62703c57b0180df6",
+		"rename": "Proton-6.10-GE-4.tar.gz"
+	}]
+}
