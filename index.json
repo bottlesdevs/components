@@ -39,12 +39,12 @@
         "Sub-category": "wine",
         "Channel": "unstable"
     },
-    "lutris-6.10-5": {
+    "lutris-6.10-6": {
         "Category": "runners",
         "Sub-category": "wine",
         "Channel": "stable"
     },
-    "lutris-6.10-5-fshack": {
+    "lutris-6.10-6-fshack": {
         "Category": "runners",
         "Sub-category": "wine",
         "Channel": "stable"
