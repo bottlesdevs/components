@@ -1,0 +1,11 @@
+{
+  "Name": "gamemode-1.6.1",
+  "Provider": "FeralInteractive",
+  "Channel": "stable",
+  "File": [{
+    "file_name": "gamemode-1.6.1.tar.xz",
+    "url": "https://github.com/FeralInteractive/gamemode/releases/download/1.6.1/gamemode-1.6.1.tar.xz",
+    "file_checksum": "3f8332fa69360ce1776d61bf9d3170e7",
+    "rename": "gamemode-1.6.1.tar.xz"
+  }]
+}
