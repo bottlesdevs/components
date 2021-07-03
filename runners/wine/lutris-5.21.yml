@@ -1,0 +1,8 @@
+Name: lutris-5.21
+Provider: lutris
+Channel: stable
+File:
+- file_name: wine-lutris-5.21-x86_64.tar.xz
+  url: https://github.com/lutris/wine/releases/download/lutris-5.21/wine-lutris-5.21-x86_64.tar.xz
+  file_checksum: 4c55f66b82858485d676464c91dd31b7
+  rename: lutris-5.21-x86_64.tar.xz
