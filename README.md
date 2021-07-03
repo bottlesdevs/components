@@ -12,21 +12,17 @@ To propose new components, it is necessary to open a [Pull Request](https://gith
 
 ### Manifest layout
 Each poster must follow the following layout:
-```json
-{
-  "Name": "chardonnay-6.11",
-  "Provider": "bottles",
-  "Channel": "stable",
-  "File": [
-    {
-      "file_name": "chardonnay-6.11-x86_64.tar.gz",
-      "url": "https://github.com/bottlesdevs/wine/releases/download/6.11/chardonnay-6.11-x86_64.tar.gz",
-      "file_checksum": "da48f5bd2953a0ce8b5972008df8fafc",
-      "rename": "chardonnay-6.11-x86_64.tar.gz"
-    }
-  ]
-}
+```yaml
+Name: chardonnay-6.11
+Provider: bottles
+Channel: stable
+File:
+- file_name: chardonnay-6.11-x86_64.tar.gz
+  url: https://github.com/bottlesdevs/wine/releases/download/6.11/chardonnay-6.11-x86_64.tar.gz
+  file_checksum: da48f5bd2953a0ce8b5972008df8fafc
+  rename: chardonnay-6.11-x86_64.tar.gz
 ```
+old json manifests can be converted using this [online tool](https://www.json2yaml.com).
 
 where:
 - **Name** is a name without spaces, including version, of the component (must reflect the name of the manifest file)
