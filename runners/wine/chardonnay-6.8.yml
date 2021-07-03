@@ -1,0 +1,8 @@
+Name: chardonnay-6.8
+Provider: bottles
+Channel: stable
+File:
+- file_name: chardonnay-6.8-x86_64.tar.gz
+  url: https://github.com/bottlesdevs/wine/releases/download/6.8/chardonnay-6.8-x86_64.tar.gz
+  file_checksum: bde28ddaf8e0620c6eccd79cdb69e149
+  rename: chardonnay-6.8-x86_64.tar.gz
