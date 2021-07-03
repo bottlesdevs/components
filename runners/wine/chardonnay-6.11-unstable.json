@@ -1,13 +1,13 @@
 {
-  "Name": "chardonnay-6.11-unstable",
+  "Name": "chardonnay-6.12-unstable",
   "Provider": "bottles",
   "Channel": "unstable",
   "File": [
     {
-      "file_name": "chardonnay-6.11-unstable-x86_64.tar.gz",
-      "url": "https://github.com/bottlesdevs/wine/releases/download/6.11-unstable/chardonnay-6.11-unstable-x86_64.tar.gz",
-      "file_checksum": "6ed516326df872da3d546224eca7f2c5",
-      "rename": "chardonnay-6.11-unstable-x86_64.tar.gz"
+      "file_name": "chardonnay-6.12-unstable-x86_64.tar.gz",
+      "url": "https://github.com/bottlesdevs/wine/releases/download/6.12-unstable/chardonnay-6.12-unstable-x86_64.tar.gz",
+      "file_checksum": "dd4d1d444c5fc9e2f2baae42ef60083c",
+      "rename": "chardonnay-6.12-unstable-x86_64.tar.gz"
     }
   ]
 }
