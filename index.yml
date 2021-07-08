@@ -1,11 +1,3 @@
-chardonnay-6.12-unstable:
-  Category: runners
-  Sub-category: wine
-  Channel: unstable
-chardonnay-6.12:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
 chardonnay-6.11:
   Category: runners
   Sub-category: wine
