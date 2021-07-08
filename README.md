@@ -10,19 +10,19 @@ With a centralized repository we can provide some data such as the checksum, whi
 To propose new components, it is necessary to open a [Pull Request](https://github.com/bottlesdevs/components/pulls) with the manifest of the component we want to add, here are some examples of manifest:
 - [dxvk-1.9](https://github.com/bottlesdevs/components/blob/main/dxvk/dxvk-1.9.yml)
 - [Proton-5.21-GE-1](https://github.com/bottlesdevs/components/blob/main/runners/proton/Proton-5.21-GE-1.yml)
-- [chardonnay-6.11](https://github.com/bottlesdevs/components/blob/main/runners/wine/chardonnay-6.11.yml)
+- [vaniglia-6.12](https://github.com/bottlesdevs/components/blob/main/runners/wine/vaniglia-6.12.yml)
 
 ### Manifest layout
 Each poster must follow the following layout:
 ```yaml
-Name: chardonnay-6.11
+Name: vaniglia-6.12
 Provider: bottles
 Channel: stable
 File:
-- file_name: chardonnay-6.11-x86_64.tar.gz
-  url: https://github.com/bottlesdevs/wine/releases/download/6.11/chardonnay-6.11-x86_64.tar.gz
+- file_name: vaniglia-6.12-x86_64.tar.gz
+  url: https://github.com/bottlesdevs/wine/releases/download/6.11/vaniglia-6.12-x86_64.tar.gz
   file_checksum: da48f5bd2953a0ce8b5972008df8fafc
-  rename: chardonnay-6.11-x86_64.tar.gz
+  rename: vaniglia-6.12-x86_64.tar.gz
 ```
 old json manifests can be converted using this [online tool](https://www.json2yaml.com).
 
@@ -42,6 +42,6 @@ The sources of the components must be public and searchable and must not infring
 
 ## Currently offered runners
 We offer several runners in Bottles:
-- `chardonnay` (our runner, available by default in Bottles v3)
+- `vaniglia` (our runner, available by default in Bottles v3)
 - `lutris`
 - `proton-ge`
