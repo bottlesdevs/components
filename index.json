@@ -68,6 +68,11 @@
         "Category": "runners",
         "Sub-category": "wine",
         "Channel": "stable"
+   },
+    "Proton-6.12-GE-1": {
+        "Category": "runners",
+        "Sub-category": "proton",
+        "Channel": "stable"
     },
     "Proton-6.10-GE-1": {
         "Category": "runners",
@@ -131,6 +136,10 @@
     },
     "dxvk-1.7.1": {
         "Category": "dxvk",
+        "Channel": "stable"
+    },
+    "gamemode-1.6.1": {
+        "Category": "_trash",
         "Channel": "stable"
     }
 }
