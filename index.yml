@@ -22,7 +22,7 @@ chardonnay-6.0:
   Category: runners
   Sub-category: wine
   Channel: stable
-lutris-ge-6.9:
+lutris-ge-6.12:
   Category: runners
   Sub-category: wine
   Channel: unstable
