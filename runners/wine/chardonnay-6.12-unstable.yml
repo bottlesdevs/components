@@ -1,8 +1,0 @@
-Name: chardonnay-6.12-unstable
-Provider: bottles
-Channel: unstable
-File:
-- file_name: chardonnay-6.12-unstable-x86_64.tar.gz
-  url: https://github.com/bottlesdevs/wine/releases/download/6.12-unstable/chardonnay-6.12-unstable-x86_64.tar.gz
-  file_checksum: 2eef599290eebe5b9d622418fbb5d48d
-  rename: chardonnay-6.12-unstable-x86_64.tar.gz
