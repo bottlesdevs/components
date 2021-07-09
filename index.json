@@ -137,9 +137,5 @@
     "dxvk-1.7.1": {
         "Category": "dxvk",
         "Channel": "stable"
-    },
-    "gamemode-1.6.1": {
-        "Category": "_trash",
-        "Channel": "stable"
     }
 }
