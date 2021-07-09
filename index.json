@@ -113,7 +113,7 @@
         "Category": "runners",
         "Sub-category": "proton",
         "Channel": "stable"
-      },
+    },
     "dxvk-1.9": {
         "Category": "dxvk",
         "Channel": "stable"
