@@ -4,5 +4,5 @@ Channel: stable
 File:
 - file_name: Proton-6.12-GE-1.tar.gz
   url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/6.12-GE-1/Proton-6.12-GE-1.tar.gz
-  file_checksum: 08224e8363a5ec6158606c2edc7c56dc
+  file_checksum: d91f7383ae025e824ce7c1e8374b00db
   rename: Proton-6.12-GE-1.tar.gz

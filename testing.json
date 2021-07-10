@@ -1,9 +1,4 @@
 {
-    "lutris-ge-6.9": {
-        "Category": "runners",
-        "Sub-category": "wine",
-        "Channel": "unstable"
-    },
     "gamemode-1.6.1": {
         "Category": "gamemode",
         "Channel": "unstable"
