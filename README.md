@@ -41,7 +41,7 @@ The sources of the components must be public and searchable and must not infring
 
 ### Testing repository
 There is also a testing repository to test components before publishing them to the main repository.
-To do so you need to add the new component to the `testing.yml` file (opening a Pull request) and run bottles with the environment variable `TESTING_REPOS = 1` to test.
+To do so you need to add the new component to the `testing.yml` file (opening a Pull request) and run bottles with the environment variable `TESTING_REPOS=1` to use the testing repository.
 
 ## Currently offered runners
 We offer several runners in Bottles:
