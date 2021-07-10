@@ -1,7 +1,7 @@
 {
   "Name": "dxvk-nvapi-0.3-c7bc8f8",
   "Provider": "lutris",
-  "Channel": "stable",
+  "Channel": "unstable",
   "File": [{
     "file_name": "xvk-nvapi-v0.3-c7bc8f8.tar.xz",
     "url": "https://github.com/lutris/dxvk-nvapi/releases/download/v0.3-c7bc8f8/dxvk-nvapi-v0.3-c7bc8f8.tar.xz",
