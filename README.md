@@ -9,6 +9,7 @@ With a centralized repository we can provide some data such as the checksum, whi
 ## How to contribute
 To propose new components, it is necessary to open a [Pull Request](https://github.com/bottlesdevs/components/pulls) with the manifest of the component we want to add, here are some examples of manifest:
 - [dxvk-1.9](https://github.com/bottlesdevs/components/blob/main/dxvk/dxvk-1.9.yml)
+- [vkd3d-v2.4](https://github.com/bottlesdevs/components/blob/main/vkd3d/vkd3d-v2.4.yml)
 - [Proton-5.21-GE-1](https://github.com/bottlesdevs/components/blob/main/runners/proton/Proton-5.21-GE-1.yml)
 - [vaniglia-6.12](https://github.com/bottlesdevs/components/blob/main/runners/wine/vaniglia-6.12.yml)
 
