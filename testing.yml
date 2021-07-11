@@ -1,6 +1,9 @@
 gamemode-1.6.1:
   Category: gamemode
   Channel: unstable
+vkd3d-v2.4:
+  Category: vkd3d
+  Channel: stable
 dxvk-nvapi-0.3-c7bc8f8:
   Category: dxvk
   Channel: unstable
