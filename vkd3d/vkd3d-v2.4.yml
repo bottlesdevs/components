@@ -1,0 +1,8 @@
+Name: vkd3d-v2.4
+Provider: lutris
+Channel: stable
+File:
+- file_name: vkd3d-v2.4.tar.xz
+  url: https://github.com/lutris/vkd3d/releases/download/v2.4/vkd3d-v2.4.tar.xz
+  file_checksum: f5825328fde90a2dd8f3b1efc1227fdf
+  rename: vkd3d-v2.4.tar.xz
