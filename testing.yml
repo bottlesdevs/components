@@ -1,3 +1,7 @@
+vaniglia-6.12-unstable:
+  Category: runners
+  Sub-category: wine
+  Channel: unstable
 gamemode-1.6.1:
   Category: gamemode
   Channel: unstable
