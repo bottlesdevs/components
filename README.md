@@ -39,6 +39,8 @@ where:
   - **file_checksum** is the MD5 checksum of the archive
   - **rename** this field must be the same as the name of the component (plus the extension), it is needed if the archive has a name but acquires another when it is extracted
 
+We provide an [automatic tools](https://github.com/bottlesdevs/tools/blob/main/MaintainersHelpers/component-generator.py) for generating the manifest. This should be intended as a beta software, please double check the manfiest before open a pull request.
+
 ### Guidelines
 The sources of the components must be public and searchable and must not infringe any copyright. Also, each archive must contain the compiled version and not the source code.
 
