@@ -4,5 +4,5 @@ Channel: unstable
 File:
 - file_name: vaniglia-6.12-unstable-x86_64.tar.gz
   url: https://github.com/bottlesdevs/wine/releases/download/6.12-unstable/vaniglia-6.12-unstable-x86_64.tar.gz
-  file_checksum: b90a33dc4a3e0198f3ead2608c2354d1
+  file_checksum: 1889946788548e476007fcabec02492d
   rename: vaniglia-6.12-unstable-x86_64.tar.gz
