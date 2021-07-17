@@ -1,8 +1,4 @@
 {
-    "dxvk-nvapi-0.3-c7bc8f8": {
-        "Category": "dxvk",
-        "Channel": "unstable"
-    },
     "gamemode-1.6.1": {
         "Category": "gamemode",
         "Channel": "unstable"
