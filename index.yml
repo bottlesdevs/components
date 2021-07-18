@@ -96,6 +96,10 @@ chardonnay-6.0:
   Sub-category: wine
   Channel: stable
   
+vkd3d-v2.4:
+  Category: vkd3d
+  Channel: stable
+  
 dxvk-1.9:
   Category: dxvk
   Channel: stable
