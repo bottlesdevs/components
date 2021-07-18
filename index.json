@@ -4,52 +4,18 @@
         "Sub-category": "wine",
         "Channel": "unstable"
     },
-    "Proton-6.12-GE-1": {
-        "Category": "runners",
-        "Sub-category": "proton",
-        "Channel": "stable"
-    },
-    "lutris-ge-6.12": {
-        "Category": "runners",
-        "Sub-category": "wine",
-        "Channel": "unstable"
-    },
     "vaniglia-6.11": {
         "Category": "runners",
         "Sub-category": "wine",
         "Channel": "stable"
     },
-    "chardonnay-6.10": {
-        "Category": "runners",
-        "Sub-category": "wine",
-        "Channel": "stable"
-    },
-    "Proton-6.10-GE-1": {
-        "Category": "runners",
-        "Sub-category": "proton",
-        "Channel": "stable"
-    },
+    
     "lutris-6.10-7": {
         "Category": "runners",
         "Sub-category": "wine",
         "Channel": "stable"
     },
     "lutris-6.10-7-fshack": {
-        "Category": "runners",
-        "Sub-category": "wine",
-        "Channel": "stable"
-    },
-    "chardonnay-6.8": {
-        "Category": "runners",
-        "Sub-category": "wine",
-        "Channel": "stable"
-    },
-    "chardonnay-6.4": {
-        "Category": "runners",
-        "Sub-category": "wine",
-        "Channel": "stable"
-    },
-    "chardonnay-6.0": {
         "Category": "runners",
         "Sub-category": "wine",
         "Channel": "stable"
@@ -78,7 +44,24 @@
         "Category": "runners",
         "Sub-category": "wine",
         "Channel": "stable"
-   },
+    },
+    
+    "lutris-ge-6.12": {
+        "Category": "runners",
+        "Sub-category": "wine",
+        "Channel": "unstable"
+    },
+    
+    "Proton-6.12-GE-1": {
+        "Category": "runners",
+        "Sub-category": "proton",
+        "Channel": "stable"
+    },
+    "Proton-6.10-GE-1": {
+        "Category": "runners",
+        "Sub-category": "proton",
+        "Channel": "stable"
+    },
     "Proton-6.9-GE-2": {
         "Category": "runners",
         "Sub-category": "proton",
@@ -114,13 +97,31 @@
         "Sub-category": "proton",
         "Channel": "stable"
     },
+    
+    "chardonnay-6.10": {
+        "Category": "runners",
+        "Sub-category": "wine",
+        "Channel": "stable"
+    },
+    "chardonnay-6.8": {
+        "Category": "runners",
+        "Sub-category": "wine",
+        "Channel": "stable"
+    },
+    "chardonnay-6.4": {
+        "Category": "runners",
+        "Sub-category": "wine",
+        "Channel": "stable"
+    },
+    "chardonnay-6.0": {
+        "Category": "runners",
+        "Sub-category": "wine",
+        "Channel": "stable"
+    },
+    
     "dxvk-1.9": {
         "Category": "dxvk",
         "Channel": "stable"
-    },
-    "dxvk-nvapi-0.3-c7bc8f8": {
-        "Category": "dxvk",
-        "Channel": "unstable"
     },
     "dxvk-1.8.1": {
         "Category": "dxvk",
@@ -141,5 +142,9 @@
     "dxvk-1.7.1": {
         "Category": "dxvk",
         "Channel": "stable"
+    },
+    "dxvk-nvapi-0.3-c7bc8f8": {
+        "Category": "dxvk",
+        "Channel": "unstable"
     }
 }
