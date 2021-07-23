@@ -1,10 +1,6 @@
 # Components
 Repository for Bottles components
 
-> ⚠️ On **July 3, 2021**, Bottles switched to yaml format for all config and manifest files. The old json format will be abandoned by Bottles on **July 14, 2021**, making the repositories inaccessible to versions of Bottles prior to `2021.7.3-treviso`.
-
-> **Update July 15, 2021** The deadline for .json repositories has been moved to **July 28, 2021** (second and last release day of the month) to give the maintainers time to distribute the latest release (2021.7.14).
-
 ## Why a centralized repository?
 With a centralized repository we can provide some data such as the checksum, which is useful for validate downloads.
 
