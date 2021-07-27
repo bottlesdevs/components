@@ -1,0 +1,8 @@
+Name: dxvk-1.9.1
+Provider: doitsujin
+Channel: stable
+File:
+- file_name: dxvk-1.9.1.tar.gz
+  url: https://github.com/doitsujin/dxvk/releases/download/v1.9.1/dxvk-1.9.1.tar.gz
+  file_checksum: 09058abcd44d72a7555fac0a2254351a
+  rename: dxvk-1.9.1.tar.gz
