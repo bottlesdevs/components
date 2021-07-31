@@ -1,7 +1,7 @@
 ---
-vaniglia-6.11-test:
+Proton_tkg_6.11.r4:
   Category: runners
-  Sub-category: wine
+  Sub-category: proton
   Channel: stable
   
 vkd3d-v2.4:
