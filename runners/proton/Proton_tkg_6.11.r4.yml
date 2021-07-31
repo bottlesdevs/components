@@ -1,0 +1,8 @@
+Name: Proton_tkg_6.11.r4
+Provider: Frogging-Family
+Channel: stable
+File:
+- file_name: proton_tkg_6.11.r4.g0dd44a25.release.tar.gz
+  url: https://github.com/Frogging-Family/wine-tkg-git/releases/download/6.11.r4.g0dd44a25/proton_tkg_6.11.r4.g0dd44a25.release.tar.gz
+  file_checksum: 32a562a772a9b56ff03287978a153227
+  rename: Proton_tkg_6.11.r4.tar.gz
