@@ -1,0 +1,8 @@
+Name: lutris-ge-6.14-GE-1
+Provider: gloriouseggroll
+Channel: stable
+File:
+- file_name: wine-lutris-ge-6.14-GE-1-x86_64.tar.xz
+  url: https://github.com/GloriousEggroll/wine-ge-custom/releases/download/6.14-GE-1/wine-lutris-ge-6.14-x86_64.tar.xz
+  file_checksum: d974625aec698c4c8bdeba85f8c3e61c
+  rename: lutris-ge-6.14-GE-1.tar.xz
