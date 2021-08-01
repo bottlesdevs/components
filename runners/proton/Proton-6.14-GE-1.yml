@@ -1,0 +1,8 @@
+Name: Proton-6.14-GE-1
+Provider: gloriouseggroll
+Channel: stable
+File:
+- file_name: Proton-6.14-GE-1.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/6.14-GE-1/Proton-6.14-GE-1.tar.gz
+  file_checksum: 7dcf01c96b56839c6426784002b66d20
+  rename: Proton-6.14-GE-1.tar.gz
