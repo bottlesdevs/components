@@ -5,5 +5,5 @@ Channel: stable
 File:
 - file_name: wine-lutris-6.13-3-x86_64.tar.xz
   url: https://github.com/lutris/wine/releases/download/lutris-6.13-3/wine-lutris-6.13-3-x86_64.tar.xz
-  file_checksum: 6d29199ce4465b38273a4ee8060951be
+  file_checksum: 057af1b887ddca57c99a4ba7f897073f
   rename: wine-lutris-6.13-3-x86_64.tar.xz
