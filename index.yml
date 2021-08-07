@@ -12,6 +12,14 @@ vaniglia-6.11:
   Sub-category: wine
   Channel: stable
   
+lutris-6.14-2:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.14-2-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 lutris-6.13-3:
   Category: runners
   Sub-category: wine
