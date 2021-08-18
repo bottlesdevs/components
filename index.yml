@@ -3,6 +3,10 @@ vaniglia-6.15-unstable:
   Category: runners
   Sub-category: wine
   Channel: unstable
+vaniglia-6.15:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 vaniglia-6.14:
   Category: runners
   Sub-category: wine
