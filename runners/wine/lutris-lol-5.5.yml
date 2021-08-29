@@ -1,8 +1,0 @@
-Name: lutris-lol-5.5
-Provider: lutris
-Channel: stable
-File:
-- file_name: wine-lutris-lol-5.5-x86_64.tar.xz
-  url: https://lutris.nyc3.cdn.digitaloceanspaces.com/runners/wine/wine-lutris-lol-5.5-x86_64.tar.xz
-  file_checksum: b145e9968376e2e52a73c3edb61d86fc
-  rename: lutris-lol-5.5-x86_64.tar.xz
