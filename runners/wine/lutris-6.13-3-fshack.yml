@@ -6,3 +6,8 @@ File:
   url: https://github.com/lutris/wine/releases/download/lutris-6.13-3/wine-lutris-fshack-6.13-3-x86_64.tar.xz
   file_checksum: 3fae38c2ab21af9c994ed4e07f756bb9
   rename: wine-lutris-6.13-3-fshack-x86_64.tar.xz
+
+Post:
+- action: rename
+  source: lutris-fshack-6.14-2
+  dest: lutris-6.14-2-fshack
