@@ -78,6 +78,10 @@ lutris-ge-6.16-2-LoL:
   Sub-category: wine
   Channel: stable
   
+lutris-ge-6.18-1:
+  Category: runners
+  Sub-category: wine
+  Channel: unstable
 lutris-ge-6.16-1:
   Category: runners
   Sub-category: wine
@@ -90,7 +94,6 @@ lutris-ge-6.12:
   Category: runners
   Sub-category: wine
   Channel: unstable
-
 
 Proton-6.18-GE-2:
   Category: runners
