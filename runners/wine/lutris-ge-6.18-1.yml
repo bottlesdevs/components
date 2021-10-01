@@ -1,0 +1,8 @@
+Name: lutris-ge-6.18-1
+Provider: lutris
+Channel: stable
+File:
+- file_name: wine-lutris-ge-6.18-1-x86_64.tar.xz
+  url: https://github.com/GloriousEggroll/wine-ge-custom/releases/download/6.18-GE-1/wine-lutris-ge-6.18-1-x86_64.tar.xz
+  file_checksum: 25ad78835a459514bb608360576df0ed
+  rename: lutris-ge-6.18-1.tar.xz
