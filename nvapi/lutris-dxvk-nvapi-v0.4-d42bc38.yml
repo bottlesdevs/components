@@ -1,0 +1,8 @@
+Name: lutris-dxvk-nvapi-v0.4-d42bc38
+Provider: lutris
+Channel: stable
+File:
+- file_name: dxvk-nvapi-v0.4-d42bc38.tar.xz
+  url: https://github.com/lutris/dxvk-nvapi/releases/download/v0.4-d42bc38/dxvk-nvapi-v0.4-d42bc38.tar.xz
+  file_checksum: 239b48d19a2dc684bcbb040f13a91732
+  rename: lutris-dxvk-nvapi-v0.4-d42bc38.tar.xz
