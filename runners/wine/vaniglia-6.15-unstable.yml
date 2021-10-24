@@ -1,8 +1,0 @@
-Name: vaniglia-6.15-unstable
-Provider: bottles
-Channel: unstable
-File:
-- file_name: vaniglia-6.15-unstable-x86_64.tar.gz
-  url: https://github.com/bottlesdevs/wine/releases/download/6.15-unstable/vaniglia-6.15-unstable-x86_64.tar.gz
-  file_checksum: 5cd03c02818fd325e5d00803d8ac8f7b
-  rename: vaniglia-6.15-unstable-x86_64.tar.gz
