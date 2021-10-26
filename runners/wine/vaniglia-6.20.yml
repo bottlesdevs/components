@@ -1,0 +1,8 @@
+Name: vaniglia-6.20
+Provider: bottles
+Channel: stable
+File:
+- file_name: vaniglia-6.20-x86_64.tar.gz
+  url: https://github.com/bottlesdevs/wine/releases/download/6.20/vaniglia-6.20-x86_64.tar.gz
+  file_checksum: 2b0159a23498af7b6f2fd34167c6ba13
+  rename: vaniglia-6.20-x86_64.tar.gz
