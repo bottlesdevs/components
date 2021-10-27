@@ -85,11 +85,15 @@ lutris-5.21:
   Sub-category: wine
   Channel: stable
 
-lutris-ge-6.16-2-LoL:
+lutris-ge-6.16-3-LoL:
   Category: runners
   Sub-category: wine
   Channel: stable
   
+lutris-ge-6.20-1:
+  Category: runners
+  Sub-category: wine
+  Channel: unstable
 lutris-ge-6.19-1:
   Category: runners
   Sub-category: wine
