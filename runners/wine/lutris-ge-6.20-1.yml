@@ -1,0 +1,8 @@
+Name: lutris-ge-6.20-1
+Provider: gloriouseggroll
+Channel: stable
+File:
+- file_name: wine-lutris-ge-6.20-1-x86_64.tar.xz
+  url: https://github.com/GloriousEggroll/wine-ge-custom/releases/download/6.20-GE-1/wine-lutris-ge-6.20-1-x86_64.tar.xz
+  file_checksum: c08c2f6b4ef1555d242cd5845385db89
+  rename: lutris-ge-6.20-1.tar.xz
