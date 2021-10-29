@@ -1,0 +1,8 @@
+Name: proton_tkg_6.17.r0
+Provider: Frogging-Family
+Channel: stable
+File:
+- file_name: proton_tkg_6.17.r0.g5f19a815.release.tar.gz
+  url: https://github.com/Frogging-Family/wine-tkg-git/releases/download/6.17.r0.g5f19a815/proton_tkg_6.17.r0.g5f19a815.release.tar.gz
+  file_checksum: d5c2c357c5970573c726daab8179308f
+  rename: proton_tkg_6.17.r0.tar.gz
