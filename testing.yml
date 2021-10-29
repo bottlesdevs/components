@@ -4,6 +4,11 @@ Proton_tkg_6.17.r0:
   Sub-category: proton
   Channel: stable
   
+Proton_tkg_6.11.r4
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  
 vkd3d-v2.4:
   Category: vkd3d
   Channel: stable
