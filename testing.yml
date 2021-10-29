@@ -1,7 +1,7 @@
 ---
-lutris-lol-5.5:
+proton_tkg_6.17.r0:
   Category: runners
-  Sub-category: wine
+  Sub-category: proton
   Channel: stable
   
 vkd3d-v2.4:
