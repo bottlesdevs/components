@@ -1,0 +1,8 @@
+Name: wine-wayland-6.19-1
+Provider: varmd
+Channel: stable
+File:
+- file_name: wine-wayland-6.19-1-x86_64.pkg.tar.zst
+  url: https://github.com/varmd/wine-wayland/releases/download/v6.19.2/wine-wayland-6.19-1-x86_64.pkg.tar.zst
+  file_checksum: cff86dde2926a6f9f99f89c1453d6e0e
+  rename: wine-wayland-6.19-1-x86_64.pkg.tar.zst
