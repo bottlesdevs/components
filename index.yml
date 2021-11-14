@@ -121,7 +121,7 @@ lutris-ge-6.18-1:
 lutris-ge-6.16-1:
   Category: runners
   Sub-category: wine
-  Channel: unstable
+  Channel: stable
 lutris-ge-6.15-1:
   Category: runners
   Sub-category: wine
