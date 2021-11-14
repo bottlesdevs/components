@@ -3,6 +3,6 @@ Provider: lutris
 Channel: stable
 File:
 - file_name: wine-lutris-ge-6.16-1-x86_64.tar.xz
-  url: https://github.com/GloriousEggroll/wine-ge-custom/releases/download/6.16-GE-1/wine-lutris-ge-6.16-1-x86_64.tar.xz
+  url: https://github.com/GloriousEggroll/wine-ge-custom/releases/download/6.16-GE-1/lutris-ge-6.16-1-x86_64.tar.xz
   file_checksum: 34f70b85e5b8e246573d5afd9a969bf4
-  rename: lutris-ge-6.16-1.tar.xz
+  rename: lutris-ge-6.16-1-x86_64.tar.xz
