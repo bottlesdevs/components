@@ -5,4 +5,4 @@ File:
 - file_name: Proton-6.21-GE-1.tar.gz
   url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/6.21-GE-1/Proton-6.21-GE-1.tar.gz
   file_checksum: 3812b7f17282743cc69e1e8ae57db7fd
-  rename: Proton-6.20-GE-1.tar.gz
+  rename: Proton-6.21-GE-1.tar.gz
