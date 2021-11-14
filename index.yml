@@ -102,6 +102,10 @@ lutris-ge-6.16-3-LoL:
   Sub-category: wine
   Channel: stable
   
+lutris-ge-6.21-1:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 lutris-ge-6.20-1:
   Category: runners
   Sub-category: wine
