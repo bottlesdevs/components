@@ -1,0 +1,8 @@
+Name: lutris-6.21-3
+Provider: lutris
+Channel: stable
+File:
+- file_name: wine-lutris-6.21-3-x86_64.tar.xz
+  url: https://github.com/lutris/wine/releases/download/lutris-6.21-3/wine-lutris-6.21-3-x86_64.tar.xz
+  file_checksum: 443efdc94ee14c4f23ba813ab17f9bca
+  rename: wine-lutris-6.21-3-x86_64.tar.xz
