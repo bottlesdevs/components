@@ -36,6 +36,11 @@ vaniglia-6.11:
   Sub-category: wine
   Channel: stable
   
+wine-wayland-6.19-1:
+  Category: runners
+  Sub-category: wine
+  Channel: unstable
+  
 lutris-6.21-5:
   Category: runners
   Sub-category: wine
