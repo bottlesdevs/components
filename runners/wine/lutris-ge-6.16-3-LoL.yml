@@ -1,8 +1,0 @@
-Name: lutris-ge-6.16-3-LoL
-Provider: lutris
-Channel: stable
-File:
-- file_name: lutris-ge-6.16-3-LoL-x86_64.tar.xz
-  url: https://github.com/GloriousEggroll/wine-ge-custom/releases/download/6.16-GE-3-LoL/wine-lutris-ge-6.16-3-lol-x86_64.tar.xz
-  file_checksum: c0ae899c9c12fc6ff26f9fcb66d294fb
-  rename: lutris-ge-6.16-3-LoL.tar.xz
