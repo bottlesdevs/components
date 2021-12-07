@@ -1,9 +1,4 @@
----
-Proton_tkg_6.17.r0:
-  Category: runners
-  Sub-category: proton
-  Channel: stable
-  
+---  
 wine-wayland-6.19-1:
   Category: runners
   Sub-category: wine
