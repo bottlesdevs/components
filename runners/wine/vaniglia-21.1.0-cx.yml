@@ -2,7 +2,7 @@ Name: vaniglia-21.1.0-cx
 Provider: bottles
 Channel: unstable
 File:
-- file_name: wine-lutris-fshack-6.21-6-x86_64.tar.xz
+- file_name: vaniglia-21.1.0-cx-x86_64.tar.gz
   url: https://github.com/bottlesdevs/wine/releases/download/21.1.0-cx/vaniglia-21.1.0-cx-x86_64.tar.gz
   file_checksum: 00e0f13795773e2732895a5c2428887c
   rename: vaniglia-21.1.0-cx-x86_64.tar.gz
