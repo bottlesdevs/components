@@ -9,5 +9,5 @@ File:
 
 Post:
 - action: rename
-  source: vaniglia-6.0-cx-x86_64
+  source: vaniglia-6.0-cx
   dest: vaniglia-21.1.0-cx
