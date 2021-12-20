@@ -11,6 +11,7 @@ Proton-7.0rc2-GE-1-1:
   Category: runners
   Sub-category: wine
   Channel: unstable
+  
 vaniglia-6.23:
   Category: runners
   Sub-category: wine
@@ -139,6 +140,11 @@ lutris-ge-6.15-1:
   Sub-category: wine
   Channel: unstable
 lutris-ge-6.12:
+  Category: runners
+  Sub-category: wine
+  Channel: unstable
+
+vaniglia-21.1.0-cx:
   Category: runners
   Sub-category: wine
   Channel: unstable
