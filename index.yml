@@ -273,6 +273,9 @@ dxvk-1.7.1:
   Category: dxvk
   Channel: stable
   
+dxvk-nvapi-v0.5.1:
+  Category: nvapi
+  Channel: stable
 dxvk-nvapi-v0.4:
   Category: nvapi
   Channel: stable
