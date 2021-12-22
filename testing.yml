@@ -4,7 +4,7 @@ wine-wayland-6.19-1:
   Sub-category: wine
   Channel: stable
   
-vkd3d-v2.4:
+vkd3d-v2.5:
   Category: vkd3d
   Channel: stable
   
