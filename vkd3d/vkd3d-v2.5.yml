@@ -1,0 +1,8 @@
+Name: vkd3d-v2.5
+Provider: bottles
+Channel: stable
+File:
+- file_name: vkd3d-proton-2.5.tar.gz
+  url: https://github.com/bottlesdevs/vkd3d-proton/releases/download/vkd3d-proton-2.5/vkd3d-proton-2.5.tar.gz
+  file_checksum: 8debb838378fa8505f8045d44ca02f21
+  rename: vkd3d-proton-2.5.tar.gz
