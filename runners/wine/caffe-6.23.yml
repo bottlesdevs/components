@@ -1,0 +1,8 @@
+Name: caffe-6.23
+Provider: bottles
+Channel: stable
+File:
+- file_name: caffe-6.23-x86_64.tar.xz
+  url: https://github.com/bottlesdevs/wine/releases/download/caffe-6.23/caffe-6.23-x86_64.tar.xz
+  file_checksum: d9b67885afbfe2a003946f6ff98c7752
+  rename: caffe-6.23-x86_64.tar.xz
