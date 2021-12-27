@@ -1,5 +1,5 @@
 ---  
-wine-wayland-6.19-1:
+caffe-6.23:
   Category: runners
   Sub-category: wine
   Channel: stable
