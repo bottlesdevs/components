@@ -1,8 +1,0 @@
-Name: Proton-7.0rc2-GE-1-1
-Provider: gloriouseggroll
-Channel: unstable
-File:
-- file_name: Proton-7.0rc2-GE-1.tar.gz
-  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/7.0rc2-GE-1/Proton-7.0rc2-GE-1.tar.gz
-  file_checksum: 51ca9d8fd749aa090d42d0ab3ba9e3a3
-  rename: Proton-7.0rc2-GE-1.tar.gz

@@ -1,0 +1,8 @@
+Name: Proton-7.0rc3-GE-1-1
+Provider: gloriouseggroll
+Channel: unstable
+File:
+- file_name: Proton-7.0rc3-GE-1.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/7.0rc3-GE-1/Proton-7.0rc3-GE-1.tar.gz
+  file_checksum: 6a34326bc24dfa8b3417e52142552157
+  rename: Proton-7.0rc3-GE-1.tar.gz
