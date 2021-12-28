@@ -1,8 +1,0 @@
-Name: lutris-ge-7.0rc2-1
-Provider: gloriouseggroll
-Channel: unstable
-File:
-- file_name: wine-lutris-ge-7.0rc2-1-x86_64.tar.xz
-  url: https://github.com/GloriousEggroll/wine-ge-custom/releases/download/7.0rc2-GE-1/wine-lutris-ge-7.0rc2-1-x86_64.tar.xz
-  file_checksum: 51ca9d8fd749aa090d42d0ab3ba9e3a3
-  rename: lutris-ge-7.0rc2-1.tar.xz
