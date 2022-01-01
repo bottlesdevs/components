@@ -4,5 +4,5 @@ Channel: unstable
 File:
 - file_name: Proton-7.0rc2-GE-1.tar.gz
   url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/7.0rc2-GE-1/Proton-7.0rc2-GE-1.tar.gz
-  file_checksum: 51ca9d8fd749aa090d42d0ab3ba9e3a3
+  file_checksum: b502cc06a1f30b535529418fd158f7bf
   rename: Proton-7.0rc2-GE-1.tar.gz
