@@ -9,7 +9,7 @@ lutris-ge-7.0rc2-1:
   Channel: unstable
 Proton-7.0rc2-GE-1-1:
   Category: runners
-  Sub-category: wine
+  Sub-category: proton
   Channel: unstable
 
 caffe-6.23:
