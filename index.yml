@@ -12,10 +12,6 @@ Proton-7.0rc2-GE-1-1:
   Sub-category: proton
   Channel: unstable
 
-2.0:
-  Category: runtimes
-  Channel: stable
-
 caffe-6.23:
   Category: runners
   Sub-category: wine
