@@ -223,6 +223,9 @@ vkd3d-v2.4:
   Category: vkd3d
   Channel: stable
   
+dxvk-1.9.3:
+  Category: dxvk
+  Channel: stable
 dxvk-1.9.2:
   Category: dxvk
   Channel: stable
