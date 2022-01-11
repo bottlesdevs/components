@@ -1,4 +1,4 @@
----
+---  
 vaniglia-7.0-rc2-unstable:
   Category: runners
   Sub-category: wine
@@ -11,6 +11,10 @@ Proton-7.0rc2-GE-1-1:
   Category: runners
   Sub-category: proton
   Channel: unstable
+
+2.0:
+  Category: runtimes
+  Channel: stable
 
 caffe-6.23:
   Category: runners
