@@ -1,0 +1,8 @@
+Name: Proton-7.0rc6-GE-1
+Provider: gloriouseggroll
+Channel: unstable
+File:
+- file_name: Proton-7.0rc6-GE-1.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/7.0rc6-GE-1/Proton-7.0rc6-GE-1.tar.gz
+  file_checksum: 930ce66d3f120f31b6d39613e5b851eb
+  rename: Proton-7.0rc6-GE-1.tar.gz
