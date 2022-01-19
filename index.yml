@@ -1,8 +1,4 @@
 ---  
-vaniglia-7.0-rc2-unstable:
-  Category: runners
-  Sub-category: wine
-  Channel: unstable
 lutris-ge-7.0rc2-1:
   Category: runners
   Sub-category: wine
@@ -11,6 +7,10 @@ Proton-7.0rc2-GE-1-1:
   Category: runners
   Sub-category: proton
   Channel: unstable
+caffe-7.0:
+  Category: runners
+  Sub-category: wine
+  Channel: unstable # require futex2 support (kernel 5.16)
 
 caffe-6.23:
   Category: runners
