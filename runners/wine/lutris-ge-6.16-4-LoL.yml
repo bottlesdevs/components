@@ -1,8 +1,0 @@
-Name: lutris-ge-6.16-4-LoL
-Provider: lutris
-Channel: stable
-File:
-- file_name: lutris-ge-6.16-4-LoL-x86_64.tar.xz
-  url: https://github.com/lutris/wine/releases/download/lutris-ge-lol-6.16-4/wine-lutris-ge-lol-6.16-4-x86_64.tar.xz
-  file_checksum: 1d5e42f32734719451f54ac248a2a3b7
-  rename: lutris-ge-6.16-4-LoL.tar.xz
