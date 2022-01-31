@@ -1,9 +1,4 @@
 ---  
-lutris-ge-7.1-1:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
-
 caffe-7.0:
   Category: runners
   Sub-category: wine
@@ -34,6 +29,10 @@ vaniglia-6.18:
   Sub-category: wine
   Channel: stable
   
+lutris-ge-7.1-1:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 lutris-6.21-6:
   Category: runners
   Sub-category: wine
@@ -143,6 +142,10 @@ Proton-6.20-GE-1:
   Sub-category: proton
   Channel: stable
 Proton-6.19-GE-2:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+Proton-4.11-GE-1:
   Category: runners
   Sub-category: proton
   Channel: stable
