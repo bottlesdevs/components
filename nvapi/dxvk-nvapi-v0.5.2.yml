@@ -1,0 +1,8 @@
+Name: dxvk-nvapi-v0.5.2
+Provider: doitsujin
+Channel: stable
+File:
+- file_name: dxvk-nvapi-v0.5.2.tar.gz
+  url: https://github.com/jp7677/dxvk-nvapi/releases/download/v0.5.1/dxvk-nvapi-v0.5.2.tar.gz
+  file_checksum: ce4664d41da97ceeceee15c6e73b5b3f
+  rename: dxvk-nvapi-v0.5.2.tar.gz
