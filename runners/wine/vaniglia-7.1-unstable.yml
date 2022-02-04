@@ -1,8 +1,0 @@
-Name: vaniglia-7.1-unstable
-Provider: bottles
-Channel: unstable
-File:
-- file_name: vaniglia-7.1-unstable-x86_64.tar.gz
-  url: https://github.com/bottlesdevs/wine/releases/download/7.1-unstable/vaniglia-7.1-unstable-x86_64.tar.gz
-  file_checksum: 2199b28574549fe0c66eb53c7e3b4c64
-  rename: vaniglia-7.1-unstable-x86_64.tar.gz
