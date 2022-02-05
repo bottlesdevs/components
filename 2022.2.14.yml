@@ -1,0 +1,188 @@
+---  
+runtime-0.2:
+  Category: runtimes
+  Channel: stable
+  
+caffe-7.0:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+caffe-6.23:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  
+vaniglia-6.23:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+vaniglia-6.21:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+vaniglia-6.20:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+vaniglia-6.19:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+vaniglia-6.18:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  
+lutris-ge-7.1-1:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.21-6:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.21-6-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.14-4:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.14-4-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.13-3:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.13-3-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.13-2:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.13-2-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.10-7:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.10-7-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.4:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.1-3:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.0:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-5.21-2:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-5.21:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+
+lutris-ge-7.0-GE-1-LoL:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  
+lutris-ge-6.21-1:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-ge-6.20-1:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-ge-6.19-1:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-ge-6.18-1:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-ge-6.16-1:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-ge-6.15-1:
+  Category: runners
+  Sub-category: wine
+  Channel: unstable
+lutris-ge-6.12:
+  Category: runners
+  Sub-category: wine
+  Channel: unstable
+
+vaniglia-21.1.0-cx:
+  Category: runners
+  Sub-category: wine
+  Channel: unstable
+
+Proton-6.21-GE-2:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+Proton-6.20-GE-1:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+Proton-6.19-GE-2:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+Proton-4.11-GE-1:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  
+vkd3d-proton-2.5:
+  Category: vkd3d
+  Channel: stable
+  
+dxvk-1.9.4:
+  Category: dxvk
+  Channel: stable
+dxvk-1.9.3:
+  Category: dxvk
+  Channel: stable
+dxvk-1.9.2:
+  Category: dxvk
+  Channel: stable
+dxvk-1.9.1:
+  Category: dxvk
+  Channel: stable
+dxvk-1.8.1:
+  Category: dxvk
+  Channel: stable
+dxvk-1.7.3:
+  Category: dxvk
+  Channel: stable
+  
+dxvk-nvapi-v0.5.2:
+  Category: nvapi
+  Channel: stable
+dxvk-nvapi-v0.5.1:
+  Category: nvapi
+  Channel: stable
+dxvk-nvapi-v0.4:
+  Category: nvapi
+  Channel: stable
