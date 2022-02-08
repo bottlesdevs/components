@@ -1,0 +1,8 @@
+Name: dxvk-async-1.9.4
+Provider: Sporif
+Channel: stable
+File:
+- file_name: dxvk-async-1.9.4.tar.gz
+  url: https://github.com/Sporif/dxvk-async/releases/download/1.9.4/dxvk-async-1.9.4.tar.gz
+  file_checksum: 5dd1ef1d704eb40e273f0e109360fccd
+  rename: dxvk-async-1.9.4.tar.gz
