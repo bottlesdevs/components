@@ -13,27 +13,6 @@ caffe-6.23:
   Sub-category: wine
   Channel: stable
   
-vaniglia-6.23:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
-vaniglia-6.21:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
-vaniglia-6.20:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
-vaniglia-6.19:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
-vaniglia-6.18:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
-  
 lutris-6.21-6:
   Category: runners
   Sub-category: wine
@@ -131,6 +110,27 @@ lutris-ge-6.12:
   Category: runners
   Sub-category: wine
   Channel: unstable
+  
+vaniglia-6.23:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+vaniglia-6.21:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+vaniglia-6.20:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+vaniglia-6.19:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+vaniglia-6.18:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 
 vaniglia-21.1.0-cx:
   Category: runners
