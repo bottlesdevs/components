@@ -4,5 +4,5 @@ Channel: stable
 File:
 - file_name: runtime.tar.gz
   url: https://github.com/bottlesdevs/runtime/releases/download/0.3/runtime.tar.gz
-  file_checksum: e39a73ba6b54fd00d467dc45bd963d84
+  file_checksum: 278658be5df6fd09f50b28bf0dbdd94ae39a73ba6b54fd00d467dc45bd963d84
   rename: runtime.tar.gz
