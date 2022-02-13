@@ -1,0 +1,8 @@
+Name: caffe-7.2
+Provider: bottles
+Channel: stable
+File:
+- file_name: caffe-7.2-x86_64.tar.xz
+  url: https://github.com/bottlesdevs/wine/releases/download/caffe-7.2/caffe-7.2-x86_64.tar.xz
+  file_checksum: 659ee0ee3dbe5274825734ad19692e12
+  rename: caffe-7.2-x86_64.tar.xz
