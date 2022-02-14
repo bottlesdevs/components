@@ -13,6 +13,14 @@ caffe-6.23:
   Sub-category: wine
   Channel: stable
   
+  lutris-7.1:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-7.1-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 lutris-6.21-6:
   Category: runners
   Sub-category: wine
