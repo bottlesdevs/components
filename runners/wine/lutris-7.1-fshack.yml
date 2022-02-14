@@ -1,0 +1,13 @@
+Name: lutris-7.1-fshack
+Provider: lutris
+Channel: stable
+File:
+- file_name: wine-lutris-fshack-7.1-x86_64.tar.xz
+  url: https://github.com/lutris/wine/releases/download/lutris-7.1/wine-lutris-fshack-7.1-x86_64.tar.xz
+  file_checksum: 71dc05b664a4b4bd076bab7d5d37a3cf
+  rename: wine-lutris-7.1-fshack-x86_64.tar.xz
+
+Post:
+- action: rename
+  source: lutris-fshack-7.1
+  dest: lutris-7.1-fshack
