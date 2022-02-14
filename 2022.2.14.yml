@@ -37,6 +37,10 @@ vaniglia-6.18:
   Sub-category: wine
   Channel: stable
   
+lutris-ge-7.2-2:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 lutris-ge-7.1-1:
   Category: runners
   Sub-category: wine
@@ -178,6 +182,10 @@ dxvk-1.8.1:
   Category: dxvk
   Channel: stable
 dxvk-1.7.3:
+  Category: dxvk
+  Channel: stable
+
+dxvk-async-1.9.4:
   Category: dxvk
   Channel: stable
   
