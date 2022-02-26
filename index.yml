@@ -8,7 +8,7 @@ caffe-7.2:
   Category: runners
   Sub-category: wine
   Channel: stable
-  caffe-7.0:
+caffe-7.0:
   Category: runners
   Sub-category: wine
   Channel: stable
