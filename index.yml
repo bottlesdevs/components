@@ -4,6 +4,10 @@ vaniglia-7.1-unstable:
   Sub-category: wine
   Channel: unstable
   
+caffe-7.3:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 caffe-7.2:
   Category: runners
   Sub-category: wine
