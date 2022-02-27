@@ -3,10 +3,6 @@ runtime-0.3:
   Category: runtimes
   Channel: stable
   
-caffe-7.3:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
 caffe-7.2:
   Category: runners
   Sub-category: wine
