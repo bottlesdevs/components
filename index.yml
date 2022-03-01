@@ -86,6 +86,10 @@ lutris-5.21:
   Sub-category: wine
   Channel: stable
 
+lutris-ge-proton7-1:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 lutris-ge-7.2-2:
   Category: runners
   Sub-category: wine
