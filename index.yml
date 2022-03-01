@@ -157,6 +157,10 @@ vaniglia-21.1.0-cx:
   Sub-category: wine
   Channel: unstable
 
+GE-Proton7-4:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
 Proton-7.3-GE-1:
   Category: runners
   Sub-category: proton
