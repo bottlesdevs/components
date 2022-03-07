@@ -1,0 +1,8 @@
+Name: dxvk-async-1.10
+Provider: Sporif
+Channel: stable
+File:
+- file_name: dxvk-async-1.10.tar.gz
+  url: https://github.com/Sporif/dxvk-async/releases/download/1.10/dxvk-async-1.10.tar.gz
+  file_checksum: d5e0c29266e22b5357e474550c1f461e
+  rename: dxvk-async-1.10.tar.gz
