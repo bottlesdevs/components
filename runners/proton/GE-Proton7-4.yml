@@ -4,7 +4,7 @@ Channel: stable
 File:
 - file_name: GE-Proton7-4.tar.gz
   url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton7-4/GE-Proton7-4.tar.gz
-  file_checksum: 89da9e684259ed23b83615bb6d30f27b
+  file_checksum: 2dab12266cd865b4f0650ebaea984378
   rename: GE-Proton7-4.tar.gz
 
 
