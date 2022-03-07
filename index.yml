@@ -157,6 +157,10 @@ vaniglia-21.1.0-cx:
   Sub-category: wine
   Channel: unstable
 
+GE-Proton7-8:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
 GE-Proton7-4:
   Category: runners
   Sub-category: proton
@@ -194,6 +198,9 @@ vkd3d-proton-2.5:
   Category: vkd3d
   Channel: stable
   
+dxvk-1.10:
+  Category: dxvk
+  Channel: stable
 dxvk-1.9.4:
   Category: dxvk
   Channel: stable
@@ -213,10 +220,16 @@ dxvk-1.7.3:
   Category: dxvk
   Channel: stable
 
+dxvk-async-1.10:
+  Category: dxvk
+  Channel: stable
 dxvk-async-1.9.4:
   Category: dxvk
   Channel: stable
   
+dxvk-nvapi-v0.5.3:
+  Category: nvapi
+  Channel: stable
 dxvk-nvapi-v0.5.2:
   Category: nvapi
   Channel: stable
