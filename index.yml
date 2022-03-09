@@ -254,3 +254,7 @@ dxvk-nvapi-v0.5.1:
 dxvk-nvapi-v0.4:
   Category: nvapi
   Channel: stable
+  
+latencyflex-v0.1.0:
+  Category: latencyflex
+  Channel: stable
