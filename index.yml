@@ -1,4 +1,8 @@
 ---    
+runtime-0.3:
+  Category: runtimes
+  Channel: stable
+  
 vaniglia-7.1-unstable:
   Category: runners
   Sub-category: wine
