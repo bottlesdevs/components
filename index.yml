@@ -4,7 +4,7 @@ runtime-0.3:
   Channel: stable
   
 winebridge-1.0.0:
-  Category: runtimes
+  Category: winebridge
   Channel: stable
   
 vaniglia-7.1-unstable:
