@@ -46,7 +46,8 @@ To do so you need to add the new component to the `testing.yml` file (opening a 
 
 ## Currently offered runners
 We offer several runners in Bottles:
-- `vaniglia` (our runner, available by default in Bottles v3)
-- `lutris`
-- `lutris-ge`
+- `caffe` (by Bottles, based on tkg)
+- `vaniglia` (by Bottles, based on vanilla builds + staging)
 - `proton-ge`
+- `lutris-ge`
+- `lutris`
