@@ -3,6 +3,10 @@ runtime-0.3:
   Category: runtimes
   Channel: stable
   
+winebridge-1.0.0:
+  Category: runtimes
+  Channel: stable
+  
 vaniglia-7.1-unstable:
   Category: runners
   Sub-category: wine
