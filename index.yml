@@ -1,9 +1,9 @@
 ---    
-runtime-0.3:
+runtime-0.3: # core component
   Category: runtimes
   Channel: stable
   
-winebridge-1.0.0:
+winebridge-1.0.0: # core component
   Category: winebridge
   Channel: stable
   
