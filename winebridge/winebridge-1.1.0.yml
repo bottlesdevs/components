@@ -4,5 +4,5 @@ Channel: stable
 File:
 - file_name: WineBridge-eb78a75.tar.xz
   url: https://github.com/bottlesdevs/winebridge/releases/download/1.1.0/WineBridge-eb78a75.tar.xz
-  file_checksum: 2d672b636b90f6c8546779b3284427e7
+  file_checksum: 85686991cdee75037901ffcaebae3b36
   rename: WineBridge-eb78a75.tar.xz
