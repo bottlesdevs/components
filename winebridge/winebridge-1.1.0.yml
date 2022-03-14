@@ -2,7 +2,7 @@ Name: winebridge-1.1.0
 Provider: bottles
 Channel: stable
 File:
-- file_name: WineBridge-8549979.tar.xz
-  url: https://github.com/bottlesdevs/winebridge/releases/download/1.1.0/WineBridge-8549979.tar.xz
-  file_checksum: 190278e2027f5598a936c3e4dbde3750
-  rename: WineBridge-8549979.tar.xz
+- file_name: WineBridge-eb78a75.tar.xz
+  url: https://github.com/bottlesdevs/winebridge/releases/download/1.1.0/WineBridge-eb78a75.tar.xz
+  file_checksum: 2d672b636b90f6c8546779b3284427e7
+  rename: WineBridge-eb78a75.tar.xz
