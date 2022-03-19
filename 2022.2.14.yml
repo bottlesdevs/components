@@ -36,7 +36,11 @@ vaniglia-6.18:
   Category: runners
   Sub-category: wine
   Channel: stable
-  
+
+lutris-ge-proton7-7:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 lutris-ge-proton7-6:
   Category: runners
   Sub-category: wine
@@ -157,6 +161,10 @@ vaniglia-21.1.0-cx:
   Sub-category: wine
   Channel: unstable
 
+GE-Proton7-10:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
 GE-Proton7-9:
   Category: runners
   Sub-category: proton
