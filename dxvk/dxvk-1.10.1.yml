@@ -1,0 +1,8 @@
+Name: dxvk-1.10.1
+Provider: Sporif
+Channel: stable
+File:
+- file_name: dxvk-1.10.1.tar.gz
+  url: https://github.com/doitsujin/dxvk/releases/download/v1.10.1/dxvk-1.10.1.tar.gz
+  file_checksum: 08c0354ef2d2d22901545dcb153c618c
+  rename: dxvk-1.10.1.tar.gz
