@@ -34,7 +34,7 @@ where:
 - **Channel** should be stable or unstable
 - **File** is where it is stated how to get the component archive
   - **file_name** is the full name of the component archive
-  - **url** is the direct URL to the archive download (ornly tarball are supported)
+  - **url** is the direct URL to the archive download (only tarball are supported)
   - **file_checksum** is the MD5 checksum of the archive
   - **rename** this field should be the same as the name of the component for must cases (plus the extension), it is needed to rename the archive.
 
