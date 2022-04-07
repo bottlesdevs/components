@@ -9,5 +9,5 @@ File:
 
 Post:
 - action: rename
-  source: lutris-fshack-6.14-2
-  dest: lutris-6.14-2-fshack
+  source: lutris-fshack-6.13-3
+  dest: lutris-6.13-3-fshack
