@@ -279,6 +279,9 @@ dxvk-async-1.9.4:
   Category: dxvk
   Channel: stable
   
+dxvk-nvapi-v0.5.4:
+  Category: nvapi
+  Channel: stable
 dxvk-nvapi-v0.5.3:
   Category: nvapi
   Channel: stable
