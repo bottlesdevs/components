@@ -4,5 +4,5 @@ Channel: stable
 File:
 - file_name: caffe-7.6-x86_64.tar.xz
   url: https://github.com/bottlesdevs/wine/releases/download/caffe-7.6/caffe-7.6-x86_64.tar.xz
-  file_checksum: 9050f43bcb320fccba3b1dd9a25b9ac8
+  file_checksum: bcbcc047e908f75af1c8032ae492d487
   rename: caffe-7.6-x86_64.tar.xz
