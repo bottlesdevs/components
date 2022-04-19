@@ -1,0 +1,13 @@
+Name: vaniglia-21.2.0-cx
+Provider: bottles
+Channel: unstable
+File:
+- file_name: vaniglia-21.2.0-cx-x86_64.tar.gz
+  url: https://github.com/bottlesdevs/wine/releases/download/21.2.0-cx/vaniglia-21.2.0-cx-x86_64.tar.gz
+  file_checksum: 8e59c350dcd2275f63b4ca5ffae7486c
+  rename: vaniglia-21.2.0-cx-x86_64.tar.gz
+
+Post:
+- action: rename
+  source: vaniglia-6.0-cx
+  dest: vaniglia-21.2.0-cx
