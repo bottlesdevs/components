@@ -165,6 +165,10 @@ lutris-ge-6.12:
 vaniglia-7.5:
   Category: runners
   Sub-category: wine
+  Channel: unstable
+vaniglia-7.4:
+  Category: runners
+  Sub-category: wine
   Channel: stable
 vaniglia-6.23:
   Category: runners
@@ -187,6 +191,10 @@ vaniglia-6.18:
   Sub-category: wine
   Channel: stable
 
+vaniglia-21.2.0-cx:
+  Category: runners
+  Sub-category: wine
+  Channel: unstable
 vaniglia-21.1.0-cx:
   Category: runners
   Sub-category: wine
