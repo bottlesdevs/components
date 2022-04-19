@@ -1,0 +1,8 @@
+Name: vaniglia-7.4
+Provider: bottles
+Channel: stable
+File:
+- file_name: vaniglia-7.4-x86_64.tar.gz
+  url: https://github.com/bottlesdevs/wine/releases/download/7.4/vaniglia-7.4-x86_64.tar.gz
+  file_checksum: aa519020def8228330b53cdbc000ed7b
+  rename: vaniglia-7.4-x86_64.tar.gz
