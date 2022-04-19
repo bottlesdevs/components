@@ -1,6 +1,6 @@
 Name: caffe-7.6
 Provider: bottles
-Channel: stable
+Channel: unstable
 File:
 - file_name: caffe-7.6-x86_64.tar.xz
   url: https://github.com/bottlesdevs/wine/releases/download/caffe-7.6/caffe-7.6-x86_64.tar.xz
