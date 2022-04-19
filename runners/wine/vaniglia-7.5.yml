@@ -1,6 +1,6 @@
 Name: vaniglia-7.5
 Provider: bottles
-Channel: stable
+Channel: unstable
 File:
 - file_name: vaniglia-7.5-x86_64.tar.gz
   url: https://github.com/bottlesdevs/wine/releases/download/7.5/vaniglia-7.5-x86_64.tar.gz
