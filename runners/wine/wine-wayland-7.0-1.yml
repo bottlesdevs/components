@@ -1,0 +1,9 @@
+Name: wine-wayland-7.0-1
+Provider: varmd
+Channel: unstable
+File:
+- file_name: wine-wayland-7.0-1-x86_64.pkg.tar.zst
+  url: https://github.com/varmd/wine-wayland/releases/download/v7.0.2/wine-wayland-7.0-1-x86_64.pkg.tar.zst
+  file_checksum: 319e82af23e5b1fd849642e040af8e95
+  rename: wine-wayland-7.0-1-x86_64.pkg.tar.zst
+
