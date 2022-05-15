@@ -1,0 +1,8 @@
+Name: caffe-7.8-1
+Provider: bottles
+Channel: stable
+File:
+- file_name: caffe-7.8-1-x86_64.tar.xz
+  url: https://github.com/bottlesdevs/wine/releases/download/caffe-7.8-1/caffe-7.8-1-x86_64.tar.xz
+  file_checksum: bc06370eb3f386eda39fbbef0b5d9c93
+  rename: caffe-7.8-1-x86_64.tar.xz
