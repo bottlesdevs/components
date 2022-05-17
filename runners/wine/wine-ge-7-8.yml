@@ -1,9 +1,14 @@
-Name: lutris-ge-proton7-8
+Name: wine-ge-7-8
 Provider: gloriouseggroll
 Channel: stable
 File:
 - file_name: wine-lutris-GE-Proton7-8-x86_64.tar.xz
   url: https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton7-8/wine-lutris-GE-Proton7-8-x86_64.tar.xz
   file_checksum: 991e244a2bb177dfb4a6a129219b51f2
-  rename: lutris-GE-Proton7-8.tar.xz
+  rename: wine-ge-7-8.tar.xz
+
+Post:
+- action: rename
+  source: lutris-GE-Proton7-8
+  dest: wine-ge-7-8
 

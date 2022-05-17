@@ -1,12 +1,18 @@
 ---    
+# Runtime
+# -----------------------
 runtime-0.3: # core component
   Category: runtimes
   Channel: stable
   
+# WineBridge
+# -----------------------
 winebridge-1.1.0: # core component
   Category: winebridge
   Channel: stable
-  
+
+# Caffe
+# -----------------------
 caffe-7.8-1:
   Category: runners
   Sub-category: wine
@@ -44,6 +50,43 @@ caffe-6.23:
   Sub-category: wine
   Channel: stable
   
+# Wine GE
+# -----------------------
+wine-ge-7-11:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-10:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-9:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-8:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-7:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-6:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-5:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-1:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+
+# Lutris
+# -----------------------
 lutris-7.1:
   Category: runners
   Sub-category: wine
@@ -113,38 +156,8 @@ lutris-5.21:
   Sub-category: wine
   Channel: stable
 
-lutris-ge-proton7-11:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
-lutris-ge-proton7-10:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
-lutris-ge-proton7-9:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
-lutris-ge-proton7-8:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
-lutris-ge-proton7-7:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
-lutris-ge-proton7-6:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
-lutris-ge-proton7-5:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
-lutris-ge-proton7-1:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
+# Lutris GE
+# -----------------------
 lutris-ge-7.2-2:
   Category: runners
   Sub-category: wine
@@ -186,6 +199,8 @@ lutris-ge-6.12:
   Sub-category: wine
   Channel: unstable
   
+# Vaniglia
+# -----------------------
 vaniglia-7.5:
   Category: runners
   Sub-category: wine
@@ -215,6 +230,8 @@ vaniglia-6.18:
   Sub-category: wine
   Channel: stable
 
+# Vaniglia CX
+# -----------------------
 vaniglia-21.2.0-cx:
   Category: runners
   Sub-category: wine
@@ -224,6 +241,8 @@ vaniglia-21.1.0-cx:
   Sub-category: wine
   Channel: unstable
 
+# Proton GE
+# -----------------------
 GE-Proton7-17:
   Category: runners
   Sub-category: proton
@@ -293,6 +312,8 @@ Proton-4.11-GE-1:
   Sub-category: proton
   Channel: stable
   
+# VKD3D
+# -----------------------
 vkd3d-proton-2.6:
   Category: vkd3d
   Channel: stable
@@ -300,6 +321,8 @@ vkd3d-proton-2.5:
   Category: vkd3d
   Channel: stable
   
+# DXVK
+# -----------------------
 dxvk-1.10.1:
   Category: dxvk
   Channel: stable
@@ -325,6 +348,8 @@ dxvk-1.7.3:
   Category: dxvk
   Channel: stable
 
+# DXVK Async
+# -----------------------
 dxvk-async-1.10.1:
   Category: dxvk
   Channel: stable
@@ -335,6 +360,8 @@ dxvk-async-1.9.4:
   Category: dxvk
   Channel: stable
   
+# DXVK Nvapi
+# -----------------------
 dxvk-nvapi-v0.5.4:
   Category: nvapi
   Channel: stable
@@ -351,6 +378,8 @@ dxvk-nvapi-v0.4:
   Category: nvapi
   Channel: stable
   
+# LatencyFleX
+# -----------------------
 latencyflex-v0.1.0:
   Category: latencyflex
   Channel: stable
