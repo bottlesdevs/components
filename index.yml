@@ -312,6 +312,13 @@ Proton-4.11-GE-1:
   Sub-category: proton
   Channel: stable
   
+# W3c
+# -----------------------
+w3c-6.19:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  
 # VKD3D
 # -----------------------
 vkd3d-proton-2.6:
