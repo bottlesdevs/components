@@ -3,6 +3,6 @@ Provider: bottles
 Channel: stable
 File:
 - file_name: caffe-7.9-x86_64.tar.xz
-  url: https://github.com/bottlesdevs/wine/releases/download/caffe-7.9/caffe-7.9-x86_64.tar.xz
+  url: https://github.com/bottlesdevs/wine/releases/download/untagged-83857f97cc34f0afae6c/caffe-7.9-x86_64.tar.xz
   file_checksum: a3461edd6aa5aa08b90d7f425e9014b8
   rename: caffe-7.9-x86_64.tar.xz
