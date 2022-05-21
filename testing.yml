@@ -11,8 +11,3 @@ vkd3d-v2.5:
 dxvk-1.9:
   Category: dxvk
   Channel: stable
-
-wc3-wine-6.19:
-  Category: runners
-  Sub-category: wine
-  Channel: stable

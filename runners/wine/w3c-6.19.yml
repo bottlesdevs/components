@@ -1,4 +1,4 @@
-Name: wc3_wine-6.19-x86_64
+Name: wc3-6.19
 Provider: kostile
 Maintainer: tbd
 Channel: stable
@@ -7,4 +7,8 @@ File:
   url: https://github.com/kostile/wine/releases/download/wine-ge-proton-6.19-wc3-minimap/w3c_wine-6.19-x86_64.tar.xz
   file_checksum: a21a15c1f8b426c32ee91fb310e99ce2
   file_size: 87961944
-  rename: w3c_wine-6.19-x86_64.tar.xz
+  rename: w3c-6.19-x86_64.tar.xz
+Post:
+- action: rename
+  source: w3c_wine-6.19
+  dest: w3c-6.19
