@@ -1,0 +1,8 @@
+Name: caffe-7.10
+Provider: bottles
+Channel: unstable
+File:
+- file_name: caffe-7.10-x86_64.tar.xz
+  url: https://github.com/bottlesdevs/wine/releases/download/caffe-7.10/caffe-7.10-x86_64.tar.xz
+  file_checksum: 6d2e3315b6bc8034ccf5fb16c6684cc5
+  rename: caffe-7.10-x86_64.tar.xz
