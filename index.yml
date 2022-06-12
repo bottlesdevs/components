@@ -16,7 +16,7 @@ winebridge-1.1.0: # core component
 caffe-7.10:
   Category: runners
   Sub-category: wine
-  Channel: unstable
+  Channel: stable
 caffe-7.9:
   Category: runners
   Sub-category: wine
