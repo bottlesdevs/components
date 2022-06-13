@@ -255,6 +255,15 @@ vaniglia-21.1.0-cx:
 
 # Proton GE
 # -----------------------
+GE-Proton7-20:
+  Category: runners
+  Sub-category: proton
+GE-Proton7-19:
+  Category: runners
+  Sub-category: proton
+GE-Proton7-18:
+  Category: runners
+  Sub-category: proton
 GE-Proton7-17:
   Category: runners
   Sub-category: proton
