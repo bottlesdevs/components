@@ -1,7 +1,10 @@
 ---    
 # Runtime
 # -----------------------
-runtime-0.5: # core component
+#runtime-0.5: # core component
+#  Category: runtimes
+#  Channel: stable
+runtime-0.3: # core component
   Category: runtimes
   Channel: stable
   
