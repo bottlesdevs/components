@@ -1,8 +1,0 @@
-Name: runtime-0.3
-Provider: bottles
-Channel: stable
-File:
-- file_name: runtime.tar.gz
-  url: https://github.com/bottlesdevs/runtime/releases/download/0.3/runtime.tar.gz
-  file_checksum: 278658be5df6fd09f50b28bf0dbdd94a
-  rename: runtime.tar.gz
