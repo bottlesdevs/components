@@ -1,0 +1,8 @@
+Name: caffe-7.10-1
+Provider: bottles
+Channel: stable
+File:
+- file_name: caffe-7.10-1.tar.xz
+  url: https://github.com/bottlesdevs/wine/releases/download/caffe-7.10-1/caffe-7.10-1.tar.xz
+  file_checksum: c89cbf8e0e2316668bb6a52ec31df578
+  rename: ccaffe-7.10-1.tar.xz
