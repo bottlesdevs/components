@@ -213,6 +213,10 @@ lutris-ge-6.12:
   
 # Vaniglia
 # -----------------------
+vaniglia-7.11:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 vaniglia-7.10:
   Category: runners
   Sub-category: wine
