@@ -11,12 +11,19 @@ winebridge-1.1.0: # core component
   Category: winebridge
   Channel: stable
 
+# Soda
+# -----------------------
+soda-7.0:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+
 # Caffe
 # -----------------------
 caffe-7.10-1:
   Category: runners
   Sub-category: wine
-  Channel: stable
+  Channel: unstable
 caffe-7.10:
   Category: runners
   Sub-category: wine
