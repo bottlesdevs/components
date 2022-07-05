@@ -71,6 +71,42 @@ caffe-6.23:
   
 # Wine GE
 # -----------------------
+wine-ge-7-20:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-19:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-18:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-17:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-16:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-15:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-14:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-13:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+wine-ge-7-12:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 wine-ge-7-11:
   Category: runners
   Sub-category: wine
@@ -429,3 +465,4 @@ dxvk-nvapi-v0.4:
 latencyflex-v0.1.0:
   Category: latencyflex
   Channel: stable
+
