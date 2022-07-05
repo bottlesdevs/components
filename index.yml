@@ -306,6 +306,22 @@ vaniglia-21.1.0-cx:
 
 # Proton GE
 # -----------------------
+GE-Proton7-24:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+GE-Proton7-23:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+GE-Proton7-22:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+GE-Proton7-21:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
 GE-Proton7-20:
   Category: runners
   Sub-category: proton
@@ -465,4 +481,3 @@ dxvk-nvapi-v0.4:
 latencyflex-v0.1.0:
   Category: latencyflex
   Channel: stable
-
