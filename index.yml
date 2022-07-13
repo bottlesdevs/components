@@ -425,6 +425,9 @@ vkd3d-proton-2.5:
   
 # DXVK
 # -----------------------
+dxvk-1.10.2:
+  Category: dxvk
+  Channel: stable
 dxvk-1.10.1:
   Category: dxvk
   Channel: stable
