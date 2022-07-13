@@ -416,6 +416,9 @@ w3c-6.19:
   
 # VKD3D
 # -----------------------
+vkd3d-proton-2.6-1-5b73139:
+  Category: vkd3d
+  Channel: unstable
 vkd3d-proton-2.6:
   Category: vkd3d
   Channel: stable
