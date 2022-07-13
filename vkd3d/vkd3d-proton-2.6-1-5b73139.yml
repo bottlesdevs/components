@@ -1,0 +1,8 @@
+Name: vkd3d-proton-2.6-1-5b73139
+Provider: bottles
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.6-1-5b73139.tar.xz
+  url: https://github.com/bottlesdevs/vkd3d-proton/releases/download/vkd3d-proton-2.6-1-5b73139/vkd3d-proton-2.6-1-5b73139.tar.xz
+  file_checksum: 9dfbe732fa813009bb72cb5367c51867
+  rename: vkd3d-proton-2.6-1-5b73139.tar.gz
