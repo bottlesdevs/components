@@ -1,0 +1,10 @@
+Name: lutris-ge-7.0-GE-4-LoL
+Provider: lutris
+Maintainer: GloriousEggroll
+Channel: stable
+File:
+- file_name: wine-lutris-ge-lol-7.0-4-x86_64.tar.xz
+  url: https://github.com/GloriousEggroll/wine-ge-custom/releases/download/7.0-GE-4-LoL/wine-lutris-ge-lol-7.0-4-x86_64.tar.xz
+  file_checksum: 4b5276670623805caa3a4fa4a9ad2fda
+  file_size: 89414260
+  rename: wine-lutris-ge-lol-7.0-4-x86_64.tar.xz
