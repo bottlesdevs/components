@@ -79,6 +79,10 @@ caffe-6.23:
   
 # Wine GE
 # -----------------------
+wine-ge-7-24:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 wine-ge-7-23:
   Category: runners
   Sub-category: wine
@@ -326,6 +330,10 @@ vaniglia-21.1.0-cx:
 
 # Proton GE
 # -----------------------
+GE-Proton7-28:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
 GE-Proton7-27:
   Category: runners
   Sub-category: proton
