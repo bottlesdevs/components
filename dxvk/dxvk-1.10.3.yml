@@ -1,0 +1,8 @@
+Name: dxvk-1.10.3
+Provider: doitsujin
+Channel: stable
+File:
+- file_name: dxvk-1.10.3.tar.gz
+  url: https://github.com/doitsujin/dxvk/releases/download/v1.10.3/dxvk-1.10.3.tar.gz
+  file_checksum: 1c07b9d70ecc5df6c3ba9d13efaa351e
+  rename: dxvk-1.10.3.tar.gz
