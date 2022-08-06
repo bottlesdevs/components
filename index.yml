@@ -277,6 +277,10 @@ lutris-ge-6.12:
   Category: runners
   Sub-category: wine
   Channel: unstable
+lutris-ge-7.14-GE-1-LoL:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
   
 # Vaniglia
 # -----------------------
