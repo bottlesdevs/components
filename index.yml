@@ -509,6 +509,9 @@ dxvk-1.7.3:
 
 # DXVK Async
 # -----------------------
+dxvk-async-1.10.3:
+  Category: dxvk
+  Channel: stable
 dxvk-async-1.10.2:
   Category: dxvk
   Channel: stable
