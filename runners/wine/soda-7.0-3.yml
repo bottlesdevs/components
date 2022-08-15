@@ -1,0 +1,8 @@
+Name: soda-7.0-3
+Provider: bottles
+Channel: stable
+File:
+- file_name: soda-7.0-3-x86_64.tar.xz
+  url: https://github.com/bottlesdevs/wine/releases/download/soda-7.0-3/soda-7.0-3-x86_64.tar.xz
+  file_checksum: 7a3958c9a7e922b8ccd069188aee7ec9
+  rename: soda-7.0-3-x86_64.tar.xz
