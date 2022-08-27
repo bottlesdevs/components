@@ -32,6 +32,10 @@ soda-7.0:
 
 # Caffe
 # -----------------------
+caffe-7.15:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 caffe-7.10-1:
   Category: runners
   Sub-category: wine
