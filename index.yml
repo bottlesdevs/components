@@ -292,6 +292,10 @@ lutris-ge-7.14-GE-1-LoL:
   
 # Vaniglia
 # -----------------------
+vaniglia-7.15:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 vaniglia-7.11:
   Category: runners
   Sub-category: wine
