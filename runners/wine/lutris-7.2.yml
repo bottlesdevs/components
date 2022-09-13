@@ -1,0 +1,8 @@
+Name: lutris-7.2
+Provider: lutris
+Channel: stable
+File:
+- file_name: wine-lutris-7.2-x86_64.tar.xz
+  url: https://github.com/lutris/wine/releases/download/lutris-wine-7.2/wine-lutris-7.2-x86_64.tar.xz
+  file_checksum: 2929bc6d7f1bd18fe52d508d0771c6bb
+  rename: wine-lutris-7.2-x86_64.tar.xz
