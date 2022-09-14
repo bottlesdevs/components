@@ -1,4 +1,4 @@
----    
+---
 # Runtime
 # -----------------------
 runtime-0.5: # core component
@@ -84,9 +84,13 @@ caffe-6.23:
   Category: runners
   Sub-category: wine
   Channel: stable
-  
+
 # Wine GE
 # -----------------------
+wine-ge-7-28:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 wine-ge-7-27:
   Category: runners
   Sub-category: wine
@@ -186,6 +190,18 @@ wine-ge-7-1:
 
 # Lutris
 # -----------------------
+lutris-7.2-2:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-7.2-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-7.2:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 lutris-7.1:
   Category: runners
   Sub-category: wine
@@ -301,7 +317,7 @@ lutris-ge-7.14-GE-1-LoL:
   Category: runners
   Sub-category: wine
   Channel: stable
-  
+
 # Vaniglia
 # -----------------------
 vaniglia-7.15:
@@ -358,6 +374,22 @@ vaniglia-21.1.0-cx:
 
 # Proton GE
 # -----------------------
+GE-Proton7-33:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+GE-Proton7-31:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+GE-Proton7-30:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+GE-Proton7-29:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
 GE-Proton7-28:
   Category: runners
   Sub-category: proton
@@ -470,14 +502,14 @@ Proton-4.11-GE-1:
   Category: runners
   Sub-category: proton
   Channel: stable
-  
+
 # W3c
 # -----------------------
 w3c-6.19:
   Category: runners
   Sub-category: wine
   Channel: stable
-  
+
 # VKD3D
 # -----------------------
 vkd3d-proton-2.6-1-5b73139:
@@ -489,7 +521,7 @@ vkd3d-proton-2.6:
 vkd3d-proton-2.5:
   Category: vkd3d
   Channel: stable
-  
+
 # DXVK
 # -----------------------
 dxvk-1.10.3:
@@ -540,7 +572,7 @@ dxvk-async-1.10:
 dxvk-async-1.9.4:
   Category: dxvk
   Channel: stable
-  
+
 # DXVK Nvapi
 # -----------------------
 dxvk-nvapi-v0.5.4:
@@ -558,7 +590,7 @@ dxvk-nvapi-v0.5.1:
 dxvk-nvapi-v0.4:
   Category: nvapi
   Channel: stable
-  
+
 # LatencyFleX
 # -----------------------
 latencyflex-v0.1.0:
