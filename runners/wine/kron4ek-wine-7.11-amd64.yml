@@ -1,0 +1,9 @@
+Name: kron4ek-wine-7.11-amd64
+Provider: bottles
+Channel: stable
+File:
+- file_name: wine-7.11-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/7.11/wine-7.11-amd64.tar.xz
+  file_checksum: 4b15090cf9b97ecc9354cc88a9018d2e
+  file_size: 54216500
+  rename: kron4ek-wine-7.11-amd64.tar.xz

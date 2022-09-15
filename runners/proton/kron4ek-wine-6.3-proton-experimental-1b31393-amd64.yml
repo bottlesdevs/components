@@ -1,0 +1,9 @@
+Name: kron4ek-wine-6.3-proton-experimental-1b31393-amd64
+Provider: bottles
+Channel: stable
+File:
+- file_name: wine-6.3-proton-experimental-1b31393-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/6.3-proton-exp/wine-6.3-proton-experimental-1b31393-amd64.tar.xz
+  file_checksum: 9e03fece5bc1c9cc701c0effe97be0e8
+  file_size: 40639828
+  rename: kron4ek-wine-6.3-proton-experimental-1b31393-amd64.tar.xz

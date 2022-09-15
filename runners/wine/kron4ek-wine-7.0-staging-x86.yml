@@ -1,0 +1,9 @@
+Name: kron4ek-wine-7.0-staging-x86
+Provider: bottles
+Channel: stable
+File:
+- file_name: wine-7.0-staging-x86.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/7.0/wine-7.0-staging-x86.tar.xz
+  file_checksum: a999c70afe8e087fc402b937f2eb1c0e
+  file_size: 26241124
+  rename: kron4ek-wine-7.0-staging-x86.tar.xz

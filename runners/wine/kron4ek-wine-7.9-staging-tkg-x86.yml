@@ -1,0 +1,9 @@
+Name: kron4ek-wine-7.9-staging-tkg-x86
+Provider: bottles
+Channel: stable
+File:
+- file_name: wine-7.9-staging-tkg-x86.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/7.9/wine-7.9-staging-tkg-x86.tar.xz
+  file_checksum: 23d21d9d95db242ee4d4cdf88744480f
+  file_size: 31149960
+  rename: kron4ek-wine-7.9-staging-tkg-x86.tar.xz
