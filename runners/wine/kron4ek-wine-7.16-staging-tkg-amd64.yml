@@ -1,5 +1,5 @@
 Name: kron4ek-wine-7.16-staging-tkg-amd64
-Provider: bottles
+Provider: Kron4ek
 Channel: stable
 File:
 - file_name: wine-7.16-staging-tkg-amd64.tar.xz
