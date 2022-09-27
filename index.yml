@@ -13,6 +13,10 @@ winebridge-1.1.0: # core component
 
 # Soda
 # -----------------------
+soda-7.0-4:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 soda-7.0-3:
   Category: runners
   Sub-category: wine
@@ -32,6 +36,10 @@ soda-7.0:
 
 # Caffe
 # -----------------------
+caffe-7.18:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 caffe-7.15:
   Category: runners
   Sub-category: wine
@@ -324,6 +332,10 @@ lutris-ge-7.14-GE-1-LoL:
 
 # Vaniglia
 # -----------------------
+vaniglia-7.18:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 vaniglia-7.15:
   Category: runners
   Sub-category: wine
