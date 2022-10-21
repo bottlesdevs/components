@@ -1,0 +1,9 @@
+Name: kron4ek-wine-7.13-staging-tkg-amd64
+Provider: Kron4ek
+Channel: stable
+File:
+- file_name: wine-7.13-staging-tkg-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/7.13/wine-7.13-staging-tkg-amd64.tar.xz
+  file_checksum: 824a96f7b493f165f3037e27c1339d99
+  file_size: 56918960
+  rename: kron4ek-wine-7.13-staging-tkg-amd64.tar.xz

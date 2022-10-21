@@ -1,0 +1,9 @@
+Name: kron4ek-wine-6.20-amd64
+Provider: Kron4ek
+Channel: stable
+File:
+- file_name: wine-6.20-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/6.20/wine-6.20-amd64.tar.xz
+  file_checksum: fa325f10a4efbafd10ca720a76ee9d5e
+  file_size: 47218180
+  rename: kron4ek-wine-6.20-amd64.tar.xz

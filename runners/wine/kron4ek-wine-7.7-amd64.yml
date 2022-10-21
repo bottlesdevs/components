@@ -1,0 +1,9 @@
+Name: kron4ek-wine-7.7-amd64
+Provider: Kron4ek
+Channel: stable
+File:
+- file_name: wine-7.7-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/7.7/wine-7.7-amd64.tar.xz
+  file_checksum: 3b7fa5fb266726f60452755ca64970d2
+  file_size: 53758420
+  rename: kron4ek-wine-7.7-amd64.tar.xz

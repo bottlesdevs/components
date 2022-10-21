@@ -1,0 +1,9 @@
+Name: kron4ek-wine-6.19-staging-x86
+Provider: bottles
+Channel: stable
+File:
+- file_name: wine-6.19-staging-x86.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/6.19/wine-6.19-staging-x86.tar.xz
+  file_checksum: 09179f5213fa90695830c7b25cdfdb6d
+  file_size: 24324840
+  rename: kron4ek-wine-6.19-staging-x86.tar.xz

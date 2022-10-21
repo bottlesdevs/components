@@ -1,0 +1,9 @@
+Name: kron4ek-wine-7.5-staging-tkg-amd64
+Provider: Kron4ek
+Channel: stable
+File:
+- file_name: wine-7.5-staging-tkg-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/7.5/wine-7.5-staging-tkg-amd64.tar.xz
+  file_checksum: 562c2f56b5eb78226a003130f2d7f550
+  file_size: 56127636
+  rename: kron4ek-wine-7.5-staging-tkg-amd64.tar.xz

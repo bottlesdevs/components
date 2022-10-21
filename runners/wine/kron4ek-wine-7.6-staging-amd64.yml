@@ -1,0 +1,9 @@
+Name: kron4ek-wine-7.6-staging-amd64
+Provider: Kron4ek
+Channel: stable
+File:
+- file_name: wine-7.6-staging-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/7.6/wine-7.6-staging-amd64.tar.xz
+  file_checksum: 2738efde03c4552ba4abd1441651edba
+  file_size: 55849560
+  rename: kron4ek-wine-7.6-staging-amd64.tar.xz
