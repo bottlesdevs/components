@@ -5,6 +5,6 @@ Fixes #(issue)
 - [ ] Manifest fix
 - [ ] Other
 
-# Whas This Tested Using a [Local Repository](https://maintainers.usebottles.com/Testing)?
+## Was this tested using a [Local Repository](https://maintainers.usebottles.com/Testing)?
 - [ ] Yes
 - [ ] No
