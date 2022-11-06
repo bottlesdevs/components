@@ -1,0 +1,8 @@
+Name: GE-Proton7-38
+Provider: gloriouseggroll
+Channel: stable
+File:
+- file_name: GE-Proton7-38.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton7-38/GE-Proton7-38.tar.gz
+  file_checksum: 04d23e81d23b9303965a409cb20176e3
+  rename: GE-Proton7-38.tar.gz
