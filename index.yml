@@ -103,6 +103,10 @@ caffe-6.23:
 
 # Wine GE
 # -----------------------
+wine-ge-7-34:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 wine-ge-7-33:
   Category: runners
   Sub-category: wine
