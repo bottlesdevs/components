@@ -418,6 +418,14 @@ vaniglia-21.1.0-cx:
 
 # Proton GE
 # -----------------------
+GE-Proton7-39:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+GE-Proton7-38:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
 GE-Proton7-37:
   Category: runners
   Sub-category: proton
