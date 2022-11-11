@@ -1,0 +1,8 @@
+Name: dxvk-2.0
+Provider: doitsujin
+Channel: stable
+File:
+- file_name: dxvk-2.0.tar.gz
+  url: https://github.com/doitsujin/dxvk/releases/download/v2.0/dxvk-2.0.tar.gz
+  file_checksum: 0c21970a365a22070272b58e1daff5d4
+  rename: dxvk-2.0.tar.gz
