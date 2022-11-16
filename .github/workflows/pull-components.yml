@@ -1,9 +1,6 @@
 name: CI
 
 on:
-  push:
-    # Only match main branch for now
-    branches: [ "main" ]
   schedule:
     # Check for update every day at 07:07
     - cron:  '7 7 * * *'
