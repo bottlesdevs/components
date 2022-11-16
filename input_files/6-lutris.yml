@@ -1,0 +1,80 @@
+lutris-7.2-2:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-7.2-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-7.2:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-7.1:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-7.1-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.21-6:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.21-6-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.14-4:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.14-4-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.13-3:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.13-3-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.13-2:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.13-2-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.10-7:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.10-7-fshack:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.4:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.1-3:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-6.0:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-5.21-2:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+lutris-5.21:
+  Category: runners
+  Sub-category: wine
+  Channel: stable

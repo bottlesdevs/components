@@ -13,8 +13,31 @@ To propose new components, it is necessary to open a [Pull Request](https://gith
 - [dxvk-1.9](https://github.com/bottlesdevs/components/blob/main/dxvk/dxvk-1.9.yml)
 - [vkd3d-v2.4](https://github.com/bottlesdevs/components/blob/main/vkd3d/vkd3d-v2.4.yml)
 
+To do it, there is currently two methods.
 
-### Manifest layout
+### 1 - Add an entry to the CI (prefered method)
+For most components, new stable versions (and experimental builds if they exist) are automatically pulled. This is accomplished by the [pull-components.yml](https://github.com/bottlesdevs/components/blob/main/.github/workflows/pull-components.yml) workflow, where components are described in the following format:
+
+```yaml
+repo : "doitsujin/dxvk", 
+workflow: "artifacts.yml", 
+branch: "master", 
+name-prefix: "dxvk-", 
+version-prefix: "v",
+yaml-file: "14-dxvk.yml"  
+Category: "dxvk", 
+Sub-category: "", 
+```
+where:
+- **repo** is the GitHub repository in the format `owner/repository`
+- **workflow** is the workflow filename used to generate exerimental builds, if any
+- **branch** is the **workflow** branch used to generate exerimental builds, if any
+- **name-prefix** is used to generate the full name of the component using **name-prefix** + `version` (e.g. `dxvk-` + `2.0`), and look for release/experimental asset whose filename is begining by **name-prefix**
+- **version-prefix** is used to find the latest release version whose [tag](https://github.com/doitsujin/dxvk/tags) is begining by **version-prefix**, and to remove **version-prefix** from the final `version` string (e.g. `v2.0` will become `2.0`)
+- **yaml-file** is the YAML component filename located in the [input_files](https://github.com/bottlesdevs/components/blob/main/input_files) directory
+- **Category** and **Sub-category** are repectively the Category and Sub-category as described in the **yaml-file** (e.g. [14-dxvk.yml](https://github.com/bottlesdevs/components/blob/main/input_files/14-dxvk.yml))
+
+### 2 - Manually (legacy method)
 Each poster must follow the following layout:
 ```yaml
 Name: caffe-7.2

@@ -1,0 +1,244 @@
+name: CI
+
+on:
+  push:
+    # Only match main branch for now
+    branches: [ "main" ]
+  schedule:
+    # Check for update every day at 07:07
+    - cron:  '7 7 * * *'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  PR_BRANCH: ci/${{ github.ref_name }}
+
+concurrency: 
+  # Github Actions does not support ${{ env.PR_BRANCH }} as group name...
+  group: ci/${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          path: "bottle-components-repository"
+          ref: ${{ github.ref_name }}
+      
+      - name: Create or reset ${{ env.PR_BRANCH }}
+        working-directory: "bottle-components-repository"
+        run: |
+          git checkout -B ${{ env.PR_BRANCH }}
+          git push -f --set-upstream origin ${{ env.PR_BRANCH }}
+
+  pull:
+    needs: prepare
+    strategy:
+      fail-fast: false
+      matrix:
+        components: [
+            {repo : "doitsujin/dxvk"                  , workflow: "artifacts.yml"          , branch: "master", name-prefix: "dxvk-"        , version-prefix: "v"        , Category: "dxvk"       , Sub-category: ""      , yaml-file: "14-dxvk.yml"         },
+            {repo : "HansKristian-Work/vkd3d-proton"  , workflow: "artifacts.yml"          , branch: "master", name-prefix: "vkd3d-proton-", version-prefix: "v"        , Category: "vkd3d"      , Sub-category: ""      , yaml-file: "13-vkd3d-proton.yml" },
+            {repo : "bottlesdevs/wine"                , workflow: ""                       , branch: "soda"  , name-prefix: "soda-"        , version-prefix: "soda-"    , Category: "runners"    , Sub-category: "wine"  , yaml-file: "3-soda.yml"          },
+            {repo : "bottlesdevs/wine"                , workflow: ""                       , branch: "caffe" , name-prefix: "caffe-"       , version-prefix: "caffe-"   , Category: "runners"    , Sub-category: "wine"  , yaml-file: "4-caffe.yml"         },
+            {repo : "GloriousEggroll/wine-ge-custom"  , workflow: ""                       , branch: "master", name-prefix: "wine-"        , version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "5-wine-GE-Proton.yml"},
+            {repo : "GloriousEggroll/proton-ge-custom", workflow: ""                       , branch: "master", name-prefix: "GE-Proton"    , version-prefix: "GE-Proton", Category: "runners"    , Sub-category: "proton", yaml-file: "10-GE-Proton.yml"    },
+            {repo : "ishitatsuyuki/LatencyFleX"       , workflow: "artifact.yml"           , branch: "master", name-prefix: "latencyflex-" , version-prefix: ""         , Category: "latencyflex", Sub-category: ""      , yaml-file: "17-latencyflex.yml"  },
+            {repo : "jp7677/dxvk-nvapi"               , workflow: "artifacts.yml"          , branch: "master", name-prefix: "dxvk-nvapi-"  , version-prefix: ""         , Category: "nvapi"      , Sub-category: ""      , yaml-file: "16-dxvk-nvapi.yml"   },
+            {repo : "Sporif/dxvk-async"               , workflow: ""                       , branch: "master", name-prefix: "dxvk-async-"  , version-prefix: ""         , Category: "dxvk"       , Sub-category: ""      , yaml-file: "15-dxvk-async.yml"   },
+          ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for new release
+        id: check-release
+        uses: bottlesdevs/actions-download-asset@master
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          repo: ${{ matrix.components.repo }}
+          version: latest
+          file: /${{ matrix.components.name-prefix }}.*[0-9\-_]+\.tar.*/
+          prefix: ${{ matrix.components.version-prefix }}
+
+      - uses: actions/checkout@v3
+        with:
+          path: "bottle-components-repository"
+          ref: ${{ env.PR_BRANCH }}
+
+      - uses: actions/checkout@v3
+        with:
+          repository: bottlesdevs/tools
+          path: "tools"
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install python3-pip zstd
+          pip3 install yq
+
+      - name: Define environment variables
+        run: |
+          lowercase_component_name=$(echo "${{ matrix.components.name-prefix }}${{ steps.check-release.outputs.version }}" | tr "[:upper:]" "[:lower:]")
+          echo "NAMEPREFIX=$(echo ${{ matrix.components.name-prefix }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+          echo "NAME=$lowercase_component_name" >> $GITHUB_ENV
+          echo "CATEGORY=${{ matrix.components.Category }}" >> $GITHUB_ENV
+          echo "SUBCATEGORY=${{ matrix.components.Sub-category }}" >> $GITHUB_ENV
+          echo "CHANNEL=stable" >> $GITHUB_ENV
+          echo "YAML_FILENAME=${{ matrix.components.yaml-file }}" >> $GITHUB_ENV
+          echo "CREATED_AT=${{ fromJSON(steps.check-release.outputs.asset).created_at }}" >> $GITHUB_ENV
+          echo "UPDATED=false" >> $GITHUB_ENV
+
+
+      - name: Update stable input_file entry
+        working-directory: "bottle-components-repository"
+        run: |
+          # This script can set env.UPDATED to true
+          ./input_files/update_yml_entries.sh
+
+      - name: Create release tar archive
+        if: env.UPDATED == 'true'
+        working-directory: "bottle-components-repository"
+        run: |
+          release_archive=${{ steps.check-release.outputs.out }}
+          if [[ $release_archive == *".tar.zst" ]]; then
+            tar --use-compress-program=unzstd -xvf $release_archive
+            tar -C "${{ env.NAME }}" -zcvf "${{ env.NAME }}.tar.gz" $(ls ${{ env.NAME }})
+            echo "UPLOAD_FILE=$(pwd)/${{ env.NAME }}.tar.gz" >> $GITHUB_ENV
+          fi
+
+      - name: Check for new artifact
+        id: download-artifact
+        if: matrix.components.workflow != '' && env.UPDATED != 'true'
+        uses: dawidd6/action-download-artifact@master
+        with:
+          github_token: ${{secrets.GITHUB_TOKEN}}
+          workflow: ${{ matrix.components.workflow }}
+          branch: ${{ matrix.components.branch }}
+          repo: ${{ matrix.components.repo }}
+          check_artifacts:  true
+          if_no_artifact_found: warn
+          path: artifact
+
+      - name: Update environment variables
+        if: env.UPDATED != 'true' && steps.download-artifact.outputs.found_artifact == 'true'
+        run: |
+          commit_sha1="${{ fromJSON(steps.download-artifact.outputs.artifacts)[0].workflow_run.head_sha }}"
+          lowercase_component_name=$(echo "${{ matrix.components.name-prefix }}${{ steps.check-release.outputs.version }}-1-${commit_sha1::7}" | tr "[:upper:]" "[:lower:]")
+          echo "NAME=$lowercase_component_name" >> $GITHUB_ENV
+          echo "CHANNEL=unstable" >> $GITHUB_ENV
+          echo "CREATED_AT=${{ fromJSON(steps.download-artifact.outputs.artifacts)[0].created_at }}" >> $GITHUB_ENV
+
+      - name: Update unstable input_file entry
+        if: env.UPDATED != 'true' && steps.download-artifact.outputs.found_artifact == 'true'
+        working-directory: "bottle-components-repository"
+        run: |
+          # This script can set env.UPDATED to true
+          ./input_files/update_yml_entries.sh
+
+      - name: Create artifact tar archive
+        if: env.UPDATED == 'true' && steps.download-artifact.outputs.found_artifact == 'true'
+        working-directory: "bottle-components-repository"
+        run: |
+          folder=$(find "${{ github.workspace }}/artifact" -name "${{ env.NAMEPREFIX }}*")
+          # Components specific tweaks
+          if [[ "${{ env.NAMEPREFIX }}" == "dxvk"* ]]; then
+            rm -rf "$folder/usr"
+          fi
+          tar -C "$folder" -zcvf "${{ env.NAME }}.tar.gz" $(ls "$folder")
+          echo "UPLOAD_FILE=$(pwd)/${{ env.NAME }}.tar.gz" >> $GITHUB_ENV
+
+      - name: Upload component archive
+        id: upload-component
+        uses: bottlesdevs/action-gh-release@master
+        if: env.UPLOAD_FILE != ''
+        with:
+          tag_name: "${{ env.NAME }}"
+          files: |
+            ${{ env.UPLOAD_FILE }}
+
+      - name : Generate appropriate YAML file
+        if: env.UPDATED == 'true'
+        working-directory: "bottle-components-repository"
+        run: |
+          repo=${{ matrix.components.repo }}
+          if [ "${{ env.UPLOAD_FILE }}" != "" ]; then
+            url="${{ steps.upload-component.outputs.assets && fromJSON(steps.upload-component.outputs.assets)[0].browser_download_url }}"
+            path="${{ env.UPLOAD_FILE }}"
+          else
+            url="${{ fromJSON(steps.check-release.outputs.asset).browser_download_url }}"
+            path="${{ steps.check-release.outputs.out }}"
+          fi
+          python "${{ github.workspace }}/tools/MaintainersHelpers/component-generator.py" "components" "${repo%/*}" "${{ env.NAME }}" "${repo%/*}" "${{ env.CHANNEL }}" "$url" "$path"
+          # Components specific tweaks
+          if [[ "${{ env.NAME }}" == "wine-ge"* ]]; then
+            echo "Post:" >> "${{ env.NAME }}.yml"
+            echo -e "- action: rename" >> "${{ env.NAME }}.yml"
+            echo -e "  source: lutris-${{ steps.check-release.outputs.version }}" >> "${{ env.NAME }}.yml"
+            echo -e "  dest: ${{ env.NAME }}" >> "${{ env.NAME }}.yml"
+          fi
+          mv "${{ env.NAME }}.yml" "${{ env.CATEGORY }}/${{ env.SUBCATEGORY }}"
+
+      - name : Commit changes
+        if: env.UPDATED == 'true'
+        working-directory: "bottle-components-repository"
+        timeout-minutes: 10
+        shell: bash {0}
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add "${{ env.CATEGORY }}/${{ env.SUBCATEGORY }}/*.yml" "input_files/${{ env.YAML_FILENAME }}"
+          git pull
+          git commit -m "Update ${{ env.YAML_FILENAME }}"
+          git push
+          success=$?
+          until [ $success -eq 0 ]; do
+            git pull --rebase;
+            git push
+            success=$?
+          done
+
+  finish:
+    needs: pull
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          path: "bottle-components-repository"
+          ref: ${{ env.PR_BRANCH }}
+          fetch-depth: 0
+
+      - name: Generate index.yml
+        working-directory: "bottle-components-repository"
+        run: |
+          git checkout ${{ github.ref_name }}
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git merge ${{ env.PR_BRANCH }}
+          ./generate_index.sh
+          git add index.yml
+          git commit -m "Generate index.yml" || true
+
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v4
+        with:
+          path: "bottle-components-repository"
+          branch: pr/${{ env.PR_BRANCH }}
+          delete-branch: true
+          title: "Update available :tada:"
+          body: One or more components have been updated!
+          token: ${{secrets.PAT}}
+
+      - name: Enable Pull Request Automerge
+        if: false && steps.cpr.outputs.pull-request-operation == 'created'
+        uses: peter-evans/enable-pull-request-automerge@v2
+        with:
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: squash
+          token: ${{secrets.GITHUB_TOKEN}}
+
+      - uses: hmarr/auto-approve-action@v3
+        if: false && steps.cpr.outputs.pull-request-operation == 'created'
+        with:
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
