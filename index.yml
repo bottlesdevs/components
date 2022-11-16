@@ -9,11 +9,13 @@
 runtime-0.5:
   Category: runtimes
   Channel: stable
+
 # ./input_files/2-winebridge.yml
 # -----------------------
 winebridge-1.1.0:
   Category: winebridge
   Channel: stable
+
 # ./input_files/3-soda.yml
 # -----------------------
 soda-7.0-7:
@@ -41,6 +43,7 @@ soda-7.0:
   Category: runners
   Sub-category: wine
   Channel: stable
+
 # ./input_files/4-caffe.yml
 # -----------------------
 caffe-7.20:
@@ -104,12 +107,14 @@ caffe-6.23:
   Category: runners
   Sub-category: wine
   Channel: stable
+
 # ./input_files/5-wine-GE-Proton.yml
 # -----------------------
 wine-ge-proton7-34:
   Category: runners
   Sub-category: wine
   Channel: stable
+  Date: '1667717572'
 wine-ge-proton7-33:
   Category: runners
   Sub-category: wine
@@ -226,6 +231,7 @@ wine-ge-proton7-1:
   Category: runners
   Sub-category: wine
   Channel: stable
+
 # ./input_files/6-lutris.yml
 # -----------------------
 lutris-7.2-2:
@@ -308,6 +314,7 @@ lutris-5.21:
   Category: runners
   Sub-category: wine
   Channel: stable
+
 # ./input_files/7-lutris-ge.yml
 # -----------------------
 lutris-ge-lol-7.0-5:
@@ -358,6 +365,7 @@ lutris-ge-7.14-GE-1-LoL:
   Category: runners
   Sub-category: wine
   Channel: stable
+
 # ./input_files/8-vaniglia.yml
 # -----------------------
 vaniglia-7.18:
@@ -404,6 +412,7 @@ vaniglia-6.18:
   Category: runners
   Sub-category: wine
   Channel: stable
+
 # ./input_files/9-vaniglia-cx.yml
 # -----------------------
 vaniglia-21.2.0-cx:
@@ -414,6 +423,7 @@ vaniglia-21.1.0-cx:
   Category: runners
   Sub-category: wine
   Channel: unstable
+
 # ./input_files/10-GE-Proton.yml
 # -----------------------
 ge-proton7-39:
@@ -565,6 +575,7 @@ Proton-4.11-GE-1:
   Category: runners
   Sub-category: proton
   Channel: stable
+
 # ./input_files/11-kron4ek.yml
 # -----------------------
 kron4ek-wine-7.20-amd64:
@@ -1247,12 +1258,14 @@ kron4ek-wine-6.3-proton-experimental-1b31393-x86:
   Category: runners
   Sub-category: proton
   Channel: stable
+
 # ./input_files/12-w3c.yml
 # -----------------------
 w3c-6.19:
   Category: runners
   Sub-category: wine
   Channel: stable
+
 # ./input_files/13-vkd3d-proton.yml
 # -----------------------
 vkd3d-proton-2.7:
@@ -1265,6 +1278,7 @@ vkd3d-proton-2.6:
 vkd3d-proton-2.5:
   Category: vkd3d
   Channel: stable
+
 # ./input_files/14-dxvk.yml
 # -----------------------
 dxvk-1.10.3:
@@ -1298,6 +1312,7 @@ dxvk-1.8.1:
 dxvk-1.7.3:
   Category: dxvk
   Channel: stable
+
 # ./input_files/15-dxvk-async.yml
 # -----------------------
 dxvk-async-1.10.3:
@@ -1316,6 +1331,7 @@ dxvk-async-1.10:
 dxvk-async-1.9.4:
   Category: dxvk
   Channel: stable
+
 # ./input_files/16-dxvk-nvapi.yml
 # -----------------------
 dxvk-nvapi-v0.5.4:
@@ -1334,6 +1350,7 @@ dxvk-nvapi-v0.5.1:
 dxvk-nvapi-v0.4:
   Category: nvapi
   Channel: stable
+
 # ./input_files/17-latencyflex.yml
 # -----------------------
 latencyflex-v0.1.0:
