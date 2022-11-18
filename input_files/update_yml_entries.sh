@@ -62,8 +62,8 @@ if [ "$channel" = "stable" ] && [ "$latest_channel" = "unstable" ]; then
     newer=1
 else
     ((time_diff=$created_at - $latest_date))
-    # For unstable builds, update no less than a week
-    if [ $time_diff -lt 0 ] || ([ "$channel" = "unstable" ] && [ $time_diff -lt $((60 * 60 * 24 * 7)) ]); then
+    # For unstable builds, update no less than two weeks
+    if [ $time_diff -lt 0 ] || ([ "$channel" = "unstable" ] && [ $time_diff -lt $((60 * 60 * 24 * 7 * 2)) ]); then
         newer=0
     else
         newer=1
