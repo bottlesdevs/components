@@ -1356,6 +1356,9 @@ dxvk-nvapi-v0.4:
 
 # ./input_files/17-latencyflex.yml
 # -----------------------
+latencyflex-v0.1.1:
+  Category: latencyflex
+  Channel: stable
 latencyflex-v0.1.0:
   Category: latencyflex
   Channel: stable

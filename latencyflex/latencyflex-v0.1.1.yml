@@ -1,0 +1,9 @@
+Name: latencyflex-v0.1.1
+Provider: ishitatsuyuki
+Channel: stable
+File:
+- file_name: latencyflex-v0.1.1.tar.xz
+  url: https://github.com/ishitatsuyuki/LatencyFleX/releases/download/v0.1.1/latencyflex-v0.1.1.tar.xz
+  file_checksum: 599c3b183da35059f5b52d989665145a
+  rename: latencyflex-v0.1.1.tar.xz
+  
