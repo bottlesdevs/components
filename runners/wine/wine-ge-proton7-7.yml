@@ -1,4 +1,4 @@
-Name: wine-ge-7-7
+Name: wine-ge-proton7-7
 Provider: gloriouseggroll
 Channel: stable
 File:
@@ -10,5 +10,5 @@ File:
 Post:
 - action: rename
   source: lutris-GE-Proton7-7
-  dest: wine-ge-7-7
+  dest: wine-ge-proton7-7
 
