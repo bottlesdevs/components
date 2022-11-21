@@ -147,7 +147,7 @@ jobs:
 
       - name: Upload component archive
         id: upload-component
-        uses: bottlesdevs/action-gh-release@master
+        uses: softprops/action-gh-release@v1
         if: env.UPLOAD_FILE != ''
         with:
           tag_name: "${{ env.NAME }}"
