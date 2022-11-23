@@ -2,8 +2,8 @@ name: CI
 
 on:
   schedule:
-    # Check for update every day at 07:07
-    - cron:  '7 7 * * *'
+    # Check for update every day at 07:11
+    - cron:  '11 7 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -48,15 +48,45 @@ jobs:
           ]
     runs-on: ubuntu-latest
     steps:
+      - name: Install dependencies
+        run: |
+          type -p curl >/dev/null || sudo apt install curl -y
+          curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+          sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
+          echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+          sudo apt-get update
+          sudo apt-get install gh python3-pip zstd gawk
+          pip3 install yq
+
       - name: Check for new release
         id: check-release
-        uses: bottlesdevs/actions-download-asset@master
-        with:
-          token: ${{secrets.GITHUB_TOKEN}}
-          repo: ${{ matrix.components.repo }}
-          version: latest
-          file: /${{ matrix.components.name-prefix }}.*[0-9\-_]+\.tar.*/
-          prefix: ${{ matrix.components.version-prefix }}
+        shell: bash {0}
+        run: |
+          latest_release=$(gh release list -R ${{ matrix.components.repo }} | grep -m1 "${{ matrix.components.version-prefix }}" | awk '{print $(NF-1)}')
+          if [ -z "$latest_release" ]; then
+            echo "::error::Cannot find release tag begining by: ${{ matrix.components.version-prefix }}"
+            exit 1
+          fi
+          asset_name=" "
+          found=false
+          i=-1
+          until [ -z "$asset_name" ] || [ "$found" = true ]; do
+            i=$((i + 1))
+            asset_name=$(gh release view "$latest_release" --json assets -q ".[] | .[$i] | .name" -R ${{ matrix.components.repo }})
+            if [[ "$asset_name" =~ ${{ matrix.components.name-prefix }}.*[0-9]+\.tar.* ]]; then
+              found=true
+            fi
+          done
+          if [ "$found" = false ]; then
+            echo "::error::Cannot find asset name begining by: ${{ matrix.components.name-prefix }}"
+            exit 1
+          else
+            asset_json=$(gh release view "$latest_release" --json assets -q ".[] | .[$i]" -R ${{ matrix.components.repo }})
+            echo "asset=$asset_json" >> $GITHUB_OUTPUT
+            echo "version=${latest_release#${{ matrix.components.version-prefix }}}" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/checkout@v3
         with:
@@ -68,12 +98,6 @@ jobs:
           repository: bottlesdevs/tools
           path: "tools"
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install python3-pip zstd
-          pip3 install yq
-
       - name: Define environment variables
         run: |
           lowercase_component_name=$(echo "${{ matrix.components.name-prefix }}${{ steps.check-release.outputs.version }}" | tr "[:upper:]" "[:lower:]")
@@ -83,7 +107,7 @@ jobs:
           echo "SUBCATEGORY=${{ matrix.components.Sub-category }}" >> $GITHUB_ENV
           echo "CHANNEL=stable" >> $GITHUB_ENV
           echo "YAML_FILENAME=${{ matrix.components.yaml-file }}" >> $GITHUB_ENV
-          echo "CREATED_AT=${{ fromJSON(steps.check-release.outputs.asset).created_at }}" >> $GITHUB_ENV
+          echo "CREATED_AT=${{ fromJSON(steps.check-release.outputs.asset).createdAt }}" >> $GITHUB_ENV
           echo "UPDATED=false" >> $GITHUB_ENV
 
 
@@ -97,7 +121,7 @@ jobs:
         if: env.UPDATED == 'true'
         working-directory: "bottle-components-repository"
         run: |
-          release_archive=${{ steps.check-release.outputs.out }}
+          release_archive=${{ fromJSON(steps.check-release.outputs.asset).url }}
           if [[ $release_archive == *".tar.zst" ]]; then
             tar --use-compress-program=unzstd -xvf $release_archive
             tar -C "${{ env.NAME }}" -zcvf "${{ env.NAME }}.tar.gz" $(ls ${{ env.NAME }})
@@ -163,10 +187,9 @@ jobs:
             url="${{ steps.upload-component.outputs.assets && fromJSON(steps.upload-component.outputs.assets)[0].browser_download_url }}"
             path="${{ env.UPLOAD_FILE }}"
           else
-            url="${{ fromJSON(steps.check-release.outputs.asset).browser_download_url }}"
-            path="${{ steps.check-release.outputs.out }}"
+            url="${{ fromJSON(steps.check-release.outputs.asset).url }}"
           fi
-          python "${{ github.workspace }}/tools/MaintainersHelpers/component-generator.py" "components" "${repo%/*}" "${{ env.NAME }}" "${repo%/*}" "${{ env.CHANNEL }}" "$url" "$path"
+          python "${{ github.workspace }}/tools/MaintainersHelpers/component-generator.py" "components" "${repo%/*}" "${{ env.NAME }}" "${repo%/*}" "${{ env.CHANNEL }}" "$url" $path
           # Components specific tweaks
           if [[ "${{ env.NAME }}" == "wine-ge"* ]]; then
             echo "Post:" >> "${{ env.NAME }}.yml"
