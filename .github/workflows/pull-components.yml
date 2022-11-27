@@ -248,7 +248,9 @@ jobs:
           delete-branch: true
           title: "Update available :tada:"
           body: One or more components have been updated!
-          token: ${{secrets.PAT}}
+          # PAT is not necessary unless auto-merge is used
+          # token: ${{secrets.PAT}}
+          token: ${{secrets.GITHUB_TOKEN}}
 
       - name: Enable Pull Request Automerge
         if: false && steps.cpr.outputs.pull-request-operation == 'created'
