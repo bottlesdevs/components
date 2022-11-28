@@ -1,0 +1,10 @@
+Name: dxvk-nvapi-v0.5.4-1-d79e571
+Provider: jp7677
+Maintainer: jp7677
+Channel: unstable
+File:
+- file_name: dxvk-nvapi-v0.5.4-1-d79e571.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-nvapi-v0.5.4-1-d79e571/dxvk-nvapi-v0.5.4-1-d79e571.tar.gz
+  file_checksum: a40760e436f4ccf0df4d8585607dc863
+  file_size: 2362223
+  rename: dxvk-nvapi-v0.5.4-1-d79e571.tar.gz
