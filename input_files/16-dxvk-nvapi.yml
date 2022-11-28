@@ -1,3 +1,7 @@
+dxvk-nvapi-v0.5.4-1-d79e571:
+  Category: nvapi
+  Channel: unstable
+  Date: '1669457401'
 dxvk-nvapi-v0.5.4:
   Category: nvapi
   Channel: stable

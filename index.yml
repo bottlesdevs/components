@@ -426,6 +426,11 @@ vaniglia-21.1.0-cx:
 
 # ./input_files/10-GE-Proton.yml
 # -----------------------
+ge-proton7-41:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1667865399'
 ge-proton7-39:
   Category: runners
   Sub-category: proton
@@ -1268,6 +1273,10 @@ w3c-6.19:
 
 # ./input_files/13-vkd3d-proton.yml
 # -----------------------
+vkd3d-proton-2.7-1-3c23022:
+  Category: vkd3d
+  Channel: unstable
+  Date: '1669392217'
 vkd3d-proton-2.7:
   Category: vkd3d
   Channel: stable
@@ -1281,6 +1290,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
+dxvk-2.0-1-7644776:
+  Category: dxvk
+  Channel: unstable
+  Date: '1669465705'
 dxvk-2.0:
   Category: dxvk
   Channel: stable
@@ -1318,6 +1331,10 @@ dxvk-1.7.3:
 
 # ./input_files/15-dxvk-async.yml
 # -----------------------
+dxvk-async-2.0:
+  Category: dxvk
+  Channel: stable
+  Date: '1668169011'
 dxvk-async-1.10.3:
   Category: dxvk
   Channel: stable
@@ -1337,6 +1354,10 @@ dxvk-async-1.9.4:
 
 # ./input_files/16-dxvk-nvapi.yml
 # -----------------------
+dxvk-nvapi-v0.5.4-1-d79e571:
+  Category: nvapi
+  Channel: unstable
+  Date: '1669457401'
 dxvk-nvapi-v0.5.4:
   Category: nvapi
   Channel: stable
