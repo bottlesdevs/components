@@ -1,0 +1,10 @@
+Name: dxvk-nvapi-v0.6
+Provider: jp7677
+Maintainer: jp7677
+Channel: stable
+File:
+- file_name: dxvk-nvapi-v0.6.tar.gz
+  url: https://github.com/jp7677/dxvk-nvapi/releases/download/v0.6/dxvk-nvapi-v0.6.tar.gz
+  file_checksum: 05eeee55100a73954e027eb983f691e6
+  file_size: 2372904
+  rename: dxvk-nvapi-v0.6.tar.gz
