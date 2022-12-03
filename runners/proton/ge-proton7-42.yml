@@ -1,0 +1,10 @@
+Name: ge-proton7-42
+Provider: GloriousEggroll
+Maintainer: GloriousEggroll
+Channel: stable
+File:
+- file_name: GE-Proton7-42.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton7-42/GE-Proton7-42.tar.gz
+  file_checksum: afad5250f0c10d25e78e0c8f37fcd821
+  file_size: 414720148
+  rename: GE-Proton7-42.tar.gz
