@@ -1,0 +1,8 @@
+Name: runtime-0.6
+Provider: bottles
+Channel: stable
+File:
+- file_name: runtime.tar.gz
+  url: https://github.com/bottlesdevs/runtime/releases/download/0.6/runtime.tar.gz
+  file_checksum: c6e6b0e22977ff1cd6477cfc17aadd8b
+  rename: runtime.tar.gz
