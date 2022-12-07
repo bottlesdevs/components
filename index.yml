@@ -6,6 +6,10 @@
 
 # ./input_files/1-runtime.yml
 # -----------------------
+runtime-0.6:
+  Category: runtimes
+  Channel: stable
+
 runtime-0.5:
   Category: runtimes
   Channel: stable
