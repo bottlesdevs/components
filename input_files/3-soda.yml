@@ -1,11 +1,8 @@
-soda-7.0-8:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
 soda-7.0-7:
   Category: runners
   Sub-category: wine
   Channel: stable
+  Date: '1667427951'
 soda-7.0-4:
   Category: runners
   Sub-category: wine
