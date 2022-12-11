@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.7-1-3c23022
+Provider: HansKristian-Work
+Maintainer: HansKristian-Work
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.7-1-3c23022.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.7-1-3c23022/vkd3d-proton-2.7-1-3c23022.tar.gz
+  file_checksum: 526e7bbb4189847d4b322fc2f3565974
+  file_size: 2335960
+  rename: vkd3d-proton-2.7-1-3c23022.tar.gz

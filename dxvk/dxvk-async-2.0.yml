@@ -1,0 +1,10 @@
+Name: dxvk-async-2.0
+Provider: Sporif
+Maintainer: Sporif
+Channel: stable
+File:
+- file_name: dxvk-async-2.0.tar.gz
+  url: https://github.com/Sporif/dxvk-async/releases/download/2.0/dxvk-async-2.0.tar.gz
+  file_checksum: 22accfdeba5ee7ce20e39d5042f3bcb4
+  file_size: 7629994
+  rename: dxvk-async-2.0.tar.gz
