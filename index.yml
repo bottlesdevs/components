@@ -22,6 +22,11 @@ winebridge-1.1.0:
 
 # ./input_files/3-soda.yml
 # -----------------------
+soda-7.0-8:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1670774392'
 soda-7.0-7:
   Category: runners
   Sub-category: wine
@@ -1299,10 +1304,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
-dxvk-2.0-1-7644776:
+dxvk-2.0-1-c55c093:
   Category: dxvk
   Channel: unstable
-  Date: '1669465705'
+  Date: '1670785732'
 dxvk-2.0:
   Category: dxvk
   Channel: stable
