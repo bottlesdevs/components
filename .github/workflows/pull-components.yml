@@ -121,10 +121,12 @@ jobs:
         if: env.UPDATED == 'true'
         working-directory: "bottle-components-repository"
         run: |
-          release_archive=${{ fromJSON(steps.check-release.outputs.asset).url }}
-          if [[ $release_archive == *".tar.zst" ]]; then
-            tar --use-compress-program=unzstd -xvf $release_archive
-            tar -C "${{ env.NAME }}" -zcvf "${{ env.NAME }}.tar.gz" $(ls ${{ env.NAME }})
+          release_archive_url=${{ fromJSON(steps.check-release.outputs.asset).url }}
+          release_archive_name=${{ fromJSON(steps.check-release.outputs.asset).name }}
+          if [[ $release_archive_name == *".tar.zst" ]]; then
+            curl -fsSLO "$release_archive_url"
+            tar --use-compress-program=unzstd -xvf $release_archive_name
+            tar -zcvf "${{ env.NAME }}.tar.gz" "${{ env.NAME }}"
             echo "UPLOAD_FILE=$(pwd)/${{ env.NAME }}.tar.gz" >> $GITHUB_ENV
           fi
 
