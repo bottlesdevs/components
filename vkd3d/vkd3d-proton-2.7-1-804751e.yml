@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.7-1-804751e
+Provider: HansKristian-Work
+Maintainer: HansKristian-Work
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.7-1-804751e.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.7-1-804751e/vkd3d-proton-2.7-1-804751e.tar.gz
+  file_checksum: 5f7881da67d371eee2cf9f8eead7e817
+  file_size: 2363392
+  rename: vkd3d-proton-2.7-1-804751e.tar.gz

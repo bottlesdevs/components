@@ -1,0 +1,10 @@
+Name: dxvk-2.0-1-c55c093
+Provider: doitsujin
+Maintainer: doitsujin
+Channel: unstable
+File:
+- file_name: dxvk-2.0-1-c55c093.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.0-1-c55c093/dxvk-2.0-1-c55c093.tar.gz
+  file_checksum: c4db9eaba2576416693ccde1586846c6
+  file_size: 7803653
+  rename: dxvk-2.0-1-c55c093.tar.gz
