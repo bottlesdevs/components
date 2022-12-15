@@ -166,7 +166,7 @@ jobs:
           if [[ "${{ env.NAMEPREFIX }}" == "dxvk"* ]]; then
             rm -rf "$folder/usr"
           fi
-          tar -C "$folder" -zcvf "${{ env.NAME }}.tar.gz" $(ls "$folder")
+          tar -C "$folder" -zcvf "${{ env.NAME }}.tar.gz" .
           echo "UPLOAD_FILE=$(pwd)/${{ env.NAME }}.tar.gz" >> $GITHUB_ENV
 
       - name: Upload component archive
