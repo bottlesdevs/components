@@ -1,7 +1,3 @@
-dxvk-2.0-1-c55c093:
-  Category: dxvk
-  Channel: unstable
-  Date: '1670785732'
 dxvk-2.0:
   Category: dxvk
   Channel: stable
