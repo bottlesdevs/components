@@ -128,6 +128,12 @@ jobs:
             tar --use-compress-program=unzstd -xvf $release_archive_name
             tar -zcvf "${{ env.NAME }}.tar.gz" "${{ env.NAME }}"
             echo "UPLOAD_FILE=$(pwd)/${{ env.NAME }}.tar.gz" >> $GITHUB_ENV
+          elif [[ $release_archive_name == "dxvk-nvapi"* ]]; then
+            curl -fsSLO "$release_archive_url"
+            mkdir "${{ env.NAME }}"
+            tar -xvf $release_archive_name --directory "${{ env.NAME }}"
+            tar -zcvf "${{ env.NAME }}.tar.gz" "${{ env.NAME }}"
+            echo "UPLOAD_FILE=$(pwd)/${{ env.NAME }}.tar.gz" >> $GITHUB_ENV
           fi
 
       - name: Check for new artifact
@@ -168,7 +174,9 @@ jobs:
           if [[ "${{ env.NAMEPREFIX }}" == "dxvk"* ]]; then
             rm -rf "$folder/usr"
           fi
-          tar -C "$folder" -zcvf "${{ env.NAME }}.tar.gz" .
+          mkdir "${{ env.NAME }}"
+          mv "$folder"/* "${{ env.NAME }}"
+          tar -zcvf "${{ env.NAME }}.tar.gz" "${{ env.NAME }}"
           echo "UPLOAD_FILE=$(pwd)/${{ env.NAME }}.tar.gz" >> $GITHUB_ENV
 
       - name: Upload component archive
