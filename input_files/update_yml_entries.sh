@@ -16,7 +16,8 @@ GITHUB_ENV=${GITHUB_ENV-/dev/null}
 command_wo_sub="{\"$component_name\": {\"Category\":\"$category\", \"Channel\": \"$channel\", \"Date\": \"$created_at\"}}"
 command_w_sub="{\"$component_name\": {\"Category\":\"$category\", \"Sub-category\":\"$subcategory\", \"Channel\": \"$channel\", \"Date\": \"$created_at\"}}"
 
-if ! [ -f "$filename" ]; then
+empty_file=$(yq "." $filename)
+if ! [ -f "$filename" ] || [ -z "$empty_file" ]; then
     touch $filename
     if [ -z "$subcategory" ]; then
         yq -n -i -y "$command_wo_sub" $filename
