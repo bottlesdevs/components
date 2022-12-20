@@ -4,7 +4,7 @@ Maintainer: jp7677
 Channel: stable
 File:
 - file_name: dxvk-nvapi-v0.6.tar.gz
-  url: https://github.com/jp7677/dxvk-nvapi/releases/download/v0.6/dxvk-nvapi-v0.6.tar.gz
-  file_checksum: 05eeee55100a73954e027eb983f691e6
-  file_size: 2372904
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-nvapi-v0.6/dxvk-nvapi-v0.6.tar.gz
+  file_checksum: 754d0a3f3dd8cf62dad27572f05c0a7f
+  file_size: 2373610
   rename: dxvk-nvapi-v0.6.tar.gz

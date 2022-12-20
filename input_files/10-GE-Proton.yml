@@ -1,3 +1,8 @@
+ge-proton7-43:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1671409619'
 ge-proton7-42:
   Category: runners
   Sub-category: proton
