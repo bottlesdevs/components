@@ -119,6 +119,11 @@ caffe-6.23:
 
 # ./input_files/5-wine-GE-Proton.yml
 # -----------------------
+wine-ge-proton7-35:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1671492367'
 wine-ge-proton7-34:
   Category: runners
   Sub-category: wine
@@ -435,6 +440,11 @@ vaniglia-21.1.0-cx:
 
 # ./input_files/10-GE-Proton.yml
 # -----------------------
+ge-proton7-43:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1671409619'
 ge-proton7-42:
   Category: runners
   Sub-category: proton
@@ -1304,10 +1314,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
-dxvk-2.0-1-18b0ef6:
+dxvk-2.0-1-12901b5:
   Category: dxvk
   Channel: unstable
-  Date: '1671209496'
+  Date: '1671503228'
 dxvk-2.0:
   Category: dxvk
   Channel: stable
@@ -1372,22 +1382,6 @@ dxvk-nvapi-v0.6:
   Category: nvapi
   Channel: stable
   Date: '1669741761'
-dxvk-nvapi-v0.5.4:
-  Category: nvapi
-  Channel: stable
-  Date: '1649403018'
-dxvk-nvapi-v0.5.3:
-  Category: nvapi
-  Channel: stable
-dxvk-nvapi-v0.5.2:
-  Category: nvapi
-  Channel: stable
-dxvk-nvapi-v0.5.1:
-  Category: nvapi
-  Channel: stable
-dxvk-nvapi-v0.4:
-  Category: nvapi
-  Channel: stable
 
 # ./input_files/17-latencyflex.yml
 # -----------------------

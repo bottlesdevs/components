@@ -1,0 +1,10 @@
+Name: dxvk-2.0-1-12901b5
+Provider: doitsujin
+Maintainer: doitsujin
+Channel: unstable
+File:
+- file_name: dxvk-2.0-1-12901b5.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.0-1-12901b5/dxvk-2.0-1-12901b5.tar.gz
+  file_checksum: 5cabe70d766d23439da9aa256d35e463
+  file_size: 7800706
+  rename: dxvk-2.0-1-12901b5.tar.gz

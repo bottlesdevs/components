@@ -1,0 +1,10 @@
+Name: ge-proton7-43
+Provider: GloriousEggroll
+Maintainer: GloriousEggroll
+Channel: stable
+File:
+- file_name: GE-Proton7-43.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton7-43/GE-Proton7-43.tar.gz
+  file_checksum: 1da8a4ac387f4290a3c7ce9eb4537a7c
+  file_size: 414729650
+  rename: GE-Proton7-43.tar.gz
