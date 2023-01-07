@@ -1297,6 +1297,10 @@ w3c-6.19:
 
 # ./input_files/13-vkd3d-proton.yml
 # -----------------------
+vkd3d-proton-2.8-1-f09e31a:
+  Category: vkd3d
+  Channel: unstable
+  Date: '1673026804'
 vkd3d-proton-2.8:
   Category: vkd3d
   Channel: stable
@@ -1314,10 +1318,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
-dxvk-2.0-1-12901b5:
+dxvk-2.0-1-196fefe:
   Category: dxvk
   Channel: unstable
-  Date: '1671503228'
+  Date: '1673050512'
 dxvk-2.0:
   Category: dxvk
   Channel: stable

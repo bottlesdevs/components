@@ -1,3 +1,7 @@
+vkd3d-proton-2.8-1-f09e31a:
+  Category: vkd3d
+  Channel: unstable
+  Date: '1673026804'
 vkd3d-proton-2.8:
   Category: vkd3d
   Channel: stable
