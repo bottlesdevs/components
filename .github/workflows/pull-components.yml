@@ -139,7 +139,7 @@ jobs:
       - name: Check for new artifact
         id: download-artifact
         if: matrix.components.workflow != '' && env.UPDATED != 'true'
-        uses: dawidd6/action-download-artifact@master
+        uses: dawidd6/action-download-artifact@v2
         with:
           github_token: ${{secrets.GITHUB_TOKEN}}
           workflow: ${{ matrix.components.workflow }}
@@ -263,7 +263,8 @@ jobs:
           token: ${{secrets.GITHUB_TOKEN}}
 
       - name: Enable Pull Request Automerge
-        if: false && steps.cpr.outputs.pull-request-operation == 'created'
+        if: false
+        # if: steps.cpr.outputs.pull-request-operation == 'created'
         uses: peter-evans/enable-pull-request-automerge@v2
         with:
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
@@ -271,6 +272,7 @@ jobs:
           token: ${{secrets.GITHUB_TOKEN}}
 
       - uses: hmarr/auto-approve-action@v3
-        if: false && steps.cpr.outputs.pull-request-operation == 'created'
+        if: false
+        # if: steps.cpr.outputs.pull-request-operation == 'created'
         with:
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
