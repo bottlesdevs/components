@@ -1,3 +1,7 @@
+dxvk-nvapi-v0.6-1-0827efb:
+  Category: nvapi
+  Channel: unstable
+  Date: '1673386396'
 dxvk-nvapi-v0.6:
   Category: nvapi
   Channel: stable
