@@ -1,0 +1,10 @@
+Name: dxvk-2.0-1-d020f44
+Provider: doitsujin
+Maintainer: doitsujin
+Channel: unstable
+File:
+- file_name: dxvk-2.0-1-d020f44.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.0-1-d020f44/dxvk-2.0-1-d020f44.tar.gz
+  file_checksum: d2f640c5a3239e8d374c15ea59a5eb92
+  file_size: 7835179
+  rename: dxvk-2.0-1-d020f44.tar.gz
