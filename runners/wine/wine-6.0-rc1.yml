@@ -1,0 +1,8 @@
+Name: wine-6.0-rc1
+Provider: bottles
+Channel: stable
+File:
+- file_name: wine-6.0-rc1.tar.gz
+  url: https://github.com/bottlesdevs/wine/archive/refs/tags/wine-6.0-rc1.tar.gz
+  file_checksum: f7d6c5bb63bc5535d17ca35d0d183037
+  rename: wine-6.0-rc1.tar.gz
