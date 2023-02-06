@@ -1,0 +1,10 @@
+Name: soda-7.0-9
+Provider: bottlesdevs
+Maintainer: bottlesdevs
+Channel: stable
+File:
+- file_name: soda-7.0-9-x86_64.tar.xz
+  url: https://github.com/bottlesdevs/wine/releases/download/soda-7.0-9/soda-7.0-9-x86_64.tar.xz
+  file_checksum: 8e064b846421b2743be5d543aac12393
+  file_size: 64429832
+  rename: soda-7.0-9-x86_64.tar.xz
