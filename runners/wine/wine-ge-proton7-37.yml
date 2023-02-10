@@ -1,0 +1,14 @@
+Name: wine-ge-proton7-37
+Provider: GloriousEggroll
+Maintainer: GloriousEggroll
+Channel: stable
+File:
+- file_name: wine-lutris-GE-Proton7-37-x86_64.tar.xz
+  url: https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton7-37/wine-lutris-GE-Proton7-37-x86_64.tar.xz
+  file_checksum: ba6820cb3bc0643064dacf3f45db513c
+  file_size: 91507004
+  rename: wine-lutris-GE-Proton7-37-x86_64.tar.xz
+Post:
+- action: rename
+  source: lutris-GE-Proton7-37
+  dest: wine-ge-proton7-37
