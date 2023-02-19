@@ -1353,6 +1353,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
+dxvk-2.1-1-0811813:
+  Category: dxvk
+  Channel: unstable
+  Date: '1676714935'
 dxvk-2.1:
   Category: dxvk
   Channel: stable
