@@ -1,0 +1,10 @@
+Name: dxvk-2.1-1-0811813
+Provider: doitsujin
+Maintainer: doitsujin
+Channel: unstable
+File:
+- file_name: dxvk-2.1-1-0811813.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.1-1-0811813/dxvk-2.1-1-0811813.tar.gz
+  file_checksum: 4d9ca2e5afb04566d45fe9af4c361976
+  file_size: 7843097
+  rename: dxvk-2.1-1-0811813.tar.gz
