@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.8-1-7be64c2
+Provider: HansKristian-Work
+Maintainer: HansKristian-Work
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.8-1-7be64c2.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.8-1-7be64c2/vkd3d-proton-2.8-1-7be64c2.tar.gz
+  file_checksum: 0b99f011190b754acf41215cf06b05e7
+  file_size: 2374850
+  rename: vkd3d-proton-2.8-1-7be64c2.tar.gz
