@@ -1421,10 +1421,10 @@ dxvk-async-1.9.4:
 
 # ./input_files/16-dxvk-nvapi.yml
 # -----------------------
-dxvk-nvapi-v0.6.1-1-0c54f06:
+dxvk-nvapi-v0.6.1-1-c422f6b:
   Category: nvapi
   Channel: unstable
-  Date: '1676320752'
+  Date: '1677700388'
 dxvk-nvapi-v0.6.1:
   Category: nvapi
   Channel: stable
