@@ -1,7 +1,7 @@
-dxvk-nvapi-v0.6.1-1-c422f6b:
+dxvk-nvapi-v0.6.2:
   Category: nvapi
-  Channel: unstable
-  Date: '1677700388'
+  Channel: stable
+  Date: '1677857382'
 dxvk-nvapi-v0.6.1:
   Category: nvapi
   Channel: stable
