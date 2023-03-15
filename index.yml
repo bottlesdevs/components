@@ -1342,10 +1342,10 @@ w3c-6.19:
 
 # ./input_files/13-vkd3d-proton.yml
 # -----------------------
-vkd3d-proton-2.8-1-7be64c2:
+vkd3d-proton-2.8-1-b7fb41b:
   Category: vkd3d
   Channel: unstable
-  Date: '1677182991'
+  Date: '1678730220'
 vkd3d-proton-2.8:
   Category: vkd3d
   Channel: stable
