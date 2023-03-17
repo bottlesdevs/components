@@ -124,6 +124,11 @@ caffe-6.23:
 
 # ./input_files/5-wine-GE-Proton.yml
 # -----------------------
+wine-ge-proton7-39:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1679028055'
 wine-ge-proton7-38:
   Category: runners
   Sub-category: wine
@@ -460,6 +465,11 @@ vaniglia-21.1.0-cx:
 
 # ./input_files/10-GE-Proton.yml
 # -----------------------
+ge-proton7-51:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1678926209'
 ge-proton7-50:
   Category: runners
   Sub-category: proton
