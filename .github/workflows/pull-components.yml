@@ -229,7 +229,8 @@ jobs:
           done
 
   finish:
-    needs: pull
+    needs: [prepare, pull]
+    if: always() && needs.prepare.result == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
