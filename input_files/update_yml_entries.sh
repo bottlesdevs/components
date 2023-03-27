@@ -13,16 +13,16 @@ created_at=$(date -d "$created_at" +%s)
 
 GITHUB_ENV=${GITHUB_ENV-/dev/null}
 
-command_wo_sub="{\"$component_name\": {\"Category\":\"$category\", \"Channel\": \"$channel\", \"Date\": \"$created_at\"}}"
-command_w_sub="{\"$component_name\": {\"Category\":\"$category\", \"Sub-category\":\"$subcategory\", \"Channel\": \"$channel\", \"Date\": \"$created_at\"}}"
+command_wo_sub='{"$component_name": {"Category":"$category", "Channel": "$channel", "Date": "$created_at"}}'
+command_w_sub='{"$component_name": {"Category":"$category", "Sub-category":"$subcategory", "Channel": "$channel", "Date": "$created_at"}}'
 
 empty_file=$(yq "." $filename)
 if ! [ -f "$filename" ] || [ -z "$empty_file" ]; then
     touch $filename
     if [ -z "$subcategory" ]; then
-        yq -n -i -y "$command_wo_sub" $filename
+        yq -n -i -y "$(eval echo $command_wo_sub)" $filename
     else
-        yq -n -i -y "$command_w_sub" $filename
+        yq -n -i -y "$(eval echo $command_w_sub)" $filename
     fi
     echo "Updated."
     echo "UPDATED=true" >> $GITHUB_ENV
@@ -31,9 +31,9 @@ fi
 
 create_entry () {
     if [ -z "$subcategory" ]; then
-        yq -i -y "$command_wo_sub + ." $filename
+        yq -i -y "$(eval echo $command_wo_sub) + ." $filename
     else
-        yq -i -y "$command_w_sub + ." $filename
+        yq -i -y "$(eval echo $command_w_sub) + ." $filename
     fi
 }
 
@@ -82,6 +82,15 @@ if [ "$newer" -eq 0 ]; then
     exit 1
 fi
 
+if [ "$channel" = "unstable" ] && [ "$latest_channel" = "unstable" ]; then
+    if [[ $latest =~ .*-([[:digit:]])-[[:alnum:]]{7} ]]; then
+        revision="${BASH_REMATCH[1]}"
+        commit_sha=${component_name: -7}
+        ((updated_revision=$revision+1))
+        component_name=${component_name/-$revision-$commit_sha/-$updated_revision-$commit_sha}
+        echo "NAME=$component_name" >> $GITHUB_ENV
+    fi
+fi
 
 if [ "$latest_channel" = "stable" ]; then
     create_entry

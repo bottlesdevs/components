@@ -50,12 +50,8 @@ jobs:
     steps:
       - name: Install dependencies
         run: |
-          type -p curl >/dev/null || sudo apt install curl -y
-          curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
-          sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
-          echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
           sudo apt-get update
-          sudo apt-get install gh python3-pip zstd gawk
+          sudo apt-get install python3-pip zstd gawk
           pip3 install yq
 
       - name: Check for new release
@@ -252,28 +248,31 @@ jobs:
 
       - name: Create Pull Request
         id: cpr
-        uses: peter-evans/create-pull-request@v4
-        with:
-          path: "bottle-components-repository"
-          branch: pr/${{ env.PR_BRANCH }}
-          delete-branch: true
-          title: "Update available :tada:"
-          body: One or more components have been updated!
+        working-directory: "bottle-components-repository"
+        shell: bash {0}
+        run: |
+          git checkout -B pr/${{ env.PR_BRANCH }}
+          git push -f --set-upstream origin pr/${{ env.PR_BRANCH }}
+
+          gh_output=$(gh pr create --title "Update available :tada:" --body "One or more components have been updated!" --head pr/${{ env.PR_BRANCH }} --base ${{ github.ref_name }})
+          echo "PR_CREATED=$([ $? -eq 0 ] && echo true || echo false)" >> $GITHUB_OUTPUT
+          pr_number=$($gh_output | tail -n1)
+          echo "PR_NUMBER=${pr_number#https://github.com/${{ github.repository }}/pull/}" >> $GITHUB_OUTPUT
+        env:
           # PAT is not necessary unless auto-merge is used
-          # token: ${{secrets.PAT}}
-          token: ${{secrets.GITHUB_TOKEN}}
+          # GH_TOKEN: ${{secrets.PAT}}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Enable Pull Request Automerge
         if: false
-        # if: steps.cpr.outputs.pull-request-operation == 'created'
-        uses: peter-evans/enable-pull-request-automerge@v2
-        with:
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-          merge-method: squash
-          token: ${{secrets.GITHUB_TOKEN}}
+        # if: steps.cpr.outputs.PR_CREATED == 'true'
+        run: gh pr merge --merge --auto "${{ steps.cpr.outputs.PR_NUMBER }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: hmarr/auto-approve-action@v3
+      - name: Auto approve
         if: false
-        # if: steps.cpr.outputs.pull-request-operation == 'created'
-        with:
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+        # if: steps.cpr.outputs.PR_CREATED == 'true'
+        run: gh pr review --approve "${{ steps.cpr.outputs.PR_NUMBER }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
