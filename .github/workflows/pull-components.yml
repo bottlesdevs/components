@@ -149,8 +149,7 @@ jobs:
         if: env.UPDATED != 'true' && steps.download-artifact.outputs.found_artifact == 'true'
         run: |
           commit_sha1="${{ fromJSON(steps.download-artifact.outputs.artifacts)[0].workflow_run.head_sha }}"
-          lowercase_component_name=$(echo "${{ matrix.components.name-prefix }}${{ steps.check-release.outputs.version }}-1-${commit_sha1::7}" | tr "[:upper:]" "[:lower:]")
-          echo "NAME=$lowercase_component_name" >> $GITHUB_ENV
+          echo "NAME=${{ env.NAME }}-1-${commit_sha1::7}" >> $GITHUB_ENV
           echo "CHANNEL=unstable" >> $GITHUB_ENV
           echo "CREATED_AT=${{ fromJSON(steps.download-artifact.outputs.artifacts)[0].created_at }}" >> $GITHUB_ENV
 
