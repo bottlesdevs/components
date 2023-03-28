@@ -86,8 +86,8 @@ if [ "$channel" = "unstable" ] && [ "$latest_channel" = "unstable" ]; then
     if [[ $latest =~ .*-([[:digit:]])-[[:alnum:]]{7} ]]; then
         revision="${BASH_REMATCH[1]}"
         commit_sha=${component_name: -7}
-        ((updated_revision=$revision+1))
-        component_name=${component_name/-$revision-$commit_sha/-$updated_revision-$commit_sha}
+        ((revision=$revision+1))
+        component_name=${component_name/-1-$commit_sha/-$revision-$commit_sha}
         echo "NAME=$component_name" >> $GITHUB_ENV
     fi
 fi
