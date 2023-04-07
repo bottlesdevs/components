@@ -51,7 +51,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install python3-pip zstd gawk
+          sudo apt-get install python3-pip zstd gawk gh
           pip3 install yq
 
       - name: Check for new release
@@ -135,23 +135,33 @@ jobs:
       - name: Check for new artifact
         id: download-artifact
         if: matrix.components.workflow != '' && env.UPDATED != 'true'
-        uses: dawidd6/action-download-artifact@v2
-        with:
-          github_token: ${{secrets.GITHUB_TOKEN}}
-          workflow: ${{ matrix.components.workflow }}
-          branch: ${{ matrix.components.branch }}
-          repo: ${{ matrix.components.repo }}
-          check_artifacts:  true
-          if_no_artifact_found: warn
-          path: artifact
+        shell: bash {0}
+        run: |
+          run_id=$(gh run list -b ${{ matrix.components.branch }} -w ${{ matrix.components.workflow }} -R ${{ matrix.components.repo }} --json databaseId -q '.[] | .databaseId' --status success -L 1)
+          status=$?
+          if [ $status -ne 0 ]; then
+            echo "::error::Could not get run ID of last successful run."
+            exit 1
+          fi
+          found_artifact=true
+          gh run download -R ${{ matrix.components.repo }} $run_id -D artifact
+          status=$?
+          if [ $status -ne 0 ]; then
+            echo "::warning::Could not download artifact, probably expired."
+            found_artifact=false
+          else
+            artifact_info=$(gh run view -R ${{ matrix.components.repo }} $run_id --json headSha,createdAt -q '.')
+            echo "artifact_info=$artifact_info" >> $GITHUB_OUTPUT
+          fi
+          echo "found_artifact=$found_artifact" >> $GITHUB_OUTPUT
 
       - name: Update environment variables
         if: env.UPDATED != 'true' && steps.download-artifact.outputs.found_artifact == 'true'
         run: |
-          commit_sha1="${{ fromJSON(steps.download-artifact.outputs.artifacts)[0].workflow_run.head_sha }}"
+          commit_sha1="${{ fromJSON(steps.download-artifact.outputs.artifact_info).headSha }}"
           echo "NAME=${{ env.NAME }}-1-${commit_sha1::7}" >> $GITHUB_ENV
           echo "CHANNEL=unstable" >> $GITHUB_ENV
-          echo "CREATED_AT=${{ fromJSON(steps.download-artifact.outputs.artifacts)[0].created_at }}" >> $GITHUB_ENV
+          echo "CREATED_AT=${{ fromJSON(steps.download-artifact.outputs.artifact_info).createdAt }}" >> $GITHUB_ENV
 
       - name: Update unstable input_file entry
         if: env.UPDATED != 'true' && steps.download-artifact.outputs.found_artifact == 'true'
@@ -176,12 +186,20 @@ jobs:
 
       - name: Upload component archive
         id: upload-component
-        uses: softprops/action-gh-release@v1
         if: env.UPLOAD_FILE != ''
-        with:
-          tag_name: "${{ env.NAME }}"
-          files: |
-            ${{ env.UPLOAD_FILE }}
+        shell: bash {0}
+        run: |
+          gh release create "${{ env.NAME }}" ${{ env.UPLOAD_FILE }} -n ""
+          status=$?
+          if [ $status -ne 0 ]; then
+            gh release upload "${{ env.NAME }}" ${{ env.UPLOAD_FILE }} --clobber
+            status=$?
+            if [ $status -ne 0 ]; then
+              echo "::error::Could not upload component."
+            fi
+          fi
+          asset=$(gh release view "${{ env.NAME }}" --json assets -q ".[] | .[0]")
+          echo "asset=$asset" >> $GITHUB_OUTPUT
 
       - name : Generate appropriate YAML file
         if: env.UPDATED == 'true'
@@ -189,7 +207,7 @@ jobs:
         run: |
           repo=${{ matrix.components.repo }}
           if [ "${{ env.UPLOAD_FILE }}" != "" ]; then
-            url="${{ steps.upload-component.outputs.assets && fromJSON(steps.upload-component.outputs.assets)[0].browser_download_url }}"
+            url="${{ steps.upload-component.outputs.asset && fromJSON(steps.upload-component.outputs.asset).url }}"
             path="${{ env.UPLOAD_FILE }}"
           else
             url="${{ fromJSON(steps.check-release.outputs.asset).url }}"
