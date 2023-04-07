@@ -13,7 +13,6 @@ env:
 concurrency: 
   # Github Actions does not support ${{ env.PR_BRANCH }} as group name...
   group: ci/${{ github.ref_name }}
-  cancel-in-progress: true
 
 jobs:
   prepare:
@@ -48,11 +47,19 @@ jobs:
           ]
     runs-on: ubuntu-latest
     steps:
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install python3-pip zstd gawk gh
-          pip3 install yq
+      - uses: actions/checkout@v3
+        with:
+          path: "bottle-components-repository"
+          ref: ${{ env.PR_BRANCH }}
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x' 
+          cache: 'pip'
+          cache-dependency-path: 'bottle-components-repository/input_files/requirements-dev.txt'
+
+      # Also needs python3-pip, zstd, gawk and gh packages which are pre-installed
+      - run: pip install -r bottle-components-repository/input_files/requirements-dev.txt
 
       - name: Check for new release
         id: check-release
@@ -83,11 +90,6 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: actions/checkout@v3
-        with:
-          path: "bottle-components-repository"
-          ref: ${{ env.PR_BRANCH }}
 
       - uses: actions/checkout@v3
         with:
