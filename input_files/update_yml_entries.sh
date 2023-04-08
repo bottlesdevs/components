@@ -1,20 +1,21 @@
 #!/bin/bash
 
 nameprefix="${1-$NAMEPREFIX}"
-component_name="${2-$NAME}"
-category="${3-$CATEGORY}"
-subcategory="${4-$SUBCATEGORY}"
-channel="${5-$CHANNEL}"
-filename="${6-$YAML_FILENAME}"
-created_at="${7-$CREATED_AT}"
+namesuffix="${2-$NAMESUFFIX}"
+component_name="${3-$NAME}"
+category="${4-$CATEGORY}"
+subcategory="${5-$SUBCATEGORY}"
+channel="${6-$CHANNEL}"
+filename="${7-$YAML_FILENAME}"
+created_at="${8-$CREATED_AT}"
 
 filename=$(dirname "$0")/$filename
 created_at=$(date -d "$created_at" +%s)
 
 GITHUB_ENV=${GITHUB_ENV-/dev/null}
 
-command_wo_sub='{"$component_name": {"Category":"$category", "Channel": "$channel", "Date": "$created_at"}}'
-command_w_sub='{"$component_name": {"Category":"$category", "Sub-category":"$subcategory", "Channel": "$channel", "Date": "$created_at"}}'
+command_wo_sub='{\(\"$component_name\"\): {\"Category\":\"$category\", \"Channel\": \"$channel\", \"Date\": \"$created_at\"}}'
+command_w_sub='{\(\"$component_name\"\): {\"Category\":\"$category\", \"Sub-category\": \"$subcategory\", \"Channel\": \"$channel\", \"Date\": \"$created_at\"}}'
 
 empty_file=$(yq "." $filename)
 if ! [ -f "$filename" ] || [ -z "$empty_file" ]; then
@@ -41,7 +42,7 @@ update_entry () {
     yq -i -y "with_entries(if .key == \"$latest\" then .key = \"$component_name\" else . end) | .\"$component_name\".Channel = \"$channel\" | .\"$component_name\".Date = \"$created_at\"" $filename
 }
 
-latest=$(yq -r 'path(.[])[0]' $filename | grep -m1 "$nameprefix")
+latest=$(yq -r 'path(.[])[0]' $filename | grep -E -m1 "$nameprefix.*[[:digit:]]+$namesuffix")
 
 if [ -z "$latest" ]; then
     create_entry

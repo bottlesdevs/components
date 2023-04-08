@@ -26,7 +26,13 @@ jobs:
       - name: Create or reset ${{ env.PR_BRANCH }}
         working-directory: "bottle-components-repository"
         run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
           git checkout -B ${{ env.PR_BRANCH }}
+          mkdir patch_dir
+          touch patch_dir/dummy
+          git add patch_dir/dummy
+          git commit -m "Add dummy file"
           git push -f --set-upstream origin ${{ env.PR_BRANCH }}
 
   pull:
@@ -35,15 +41,21 @@ jobs:
       fail-fast: false
       matrix:
         components: [
-            {repo : "doitsujin/dxvk"                  , workflow: "artifacts.yml"          , branch: "master", name-prefix: "dxvk-"        , version-prefix: "v"        , Category: "dxvk"       , Sub-category: ""      , yaml-file: "14-dxvk.yml"         },
-            {repo : "HansKristian-Work/vkd3d-proton"  , workflow: "artifacts.yml"          , branch: "master", name-prefix: "vkd3d-proton-", version-prefix: "v"        , Category: "vkd3d"      , Sub-category: ""      , yaml-file: "13-vkd3d-proton.yml" },
-            {repo : "bottlesdevs/wine"                , workflow: ""                       , branch: "soda"  , name-prefix: "soda-"        , version-prefix: "soda-"    , Category: "runners"    , Sub-category: "wine"  , yaml-file: "3-soda.yml"          },
-            {repo : "bottlesdevs/wine"                , workflow: ""                       , branch: "caffe" , name-prefix: "caffe-"       , version-prefix: "caffe-"   , Category: "runners"    , Sub-category: "wine"  , yaml-file: "4-caffe.yml"         },
-            {repo : "GloriousEggroll/wine-ge-custom"  , workflow: ""                       , branch: "master", name-prefix: "wine-"        , version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "5-wine-GE-Proton.yml"},
-            {repo : "GloriousEggroll/proton-ge-custom", workflow: ""                       , branch: "master", name-prefix: "GE-Proton"    , version-prefix: "GE-Proton", Category: "runners"    , Sub-category: "proton", yaml-file: "10-GE-Proton.yml"    },
-            {repo : "ishitatsuyuki/LatencyFleX"       , workflow: "artifact.yml"           , branch: "master", name-prefix: "latencyflex-" , version-prefix: ""         , Category: "latencyflex", Sub-category: ""      , yaml-file: "17-latencyflex.yml"  },
-            {repo : "jp7677/dxvk-nvapi"               , workflow: "artifacts.yml"          , branch: "master", name-prefix: "dxvk-nvapi-"  , version-prefix: ""         , Category: "nvapi"      , Sub-category: ""      , yaml-file: "16-dxvk-nvapi.yml"   },
-            {repo : "Sporif/dxvk-async"               , workflow: ""                       , branch: "master", name-prefix: "dxvk-async-"  , version-prefix: ""         , Category: "dxvk"       , Sub-category: ""      , yaml-file: "15-dxvk-async.yml"   },
+            {order: 1 , repo : "doitsujin/dxvk"                  , workflow: "artifacts.yml"          , branch: "master", name-prefix: "dxvk-"        , name-suffix: ""                  , version-prefix: "v"        , Category: "dxvk"       , Sub-category: ""      , yaml-file: "14-dxvk.yml"         },
+            {order: 2 , repo : "HansKristian-Work/vkd3d-proton"  , workflow: "artifacts.yml"          , branch: "master", name-prefix: "vkd3d-proton-", name-suffix: ""                  , version-prefix: "v"        , Category: "vkd3d"      , Sub-category: ""      , yaml-file: "13-vkd3d-proton.yml" },
+            {order: 3 , repo : "bottlesdevs/wine"                , workflow: ""                       , branch: "soda"  , name-prefix: "soda-"        , name-suffix: ""                  , version-prefix: "soda-"    , Category: "runners"    , Sub-category: "wine"  , yaml-file: "3-soda.yml"          },
+            {order: 4 , repo : "bottlesdevs/wine"                , workflow: ""                       , branch: "caffe" , name-prefix: "caffe-"       , name-suffix: ""                  , version-prefix: "caffe-"   , Category: "runners"    , Sub-category: "wine"  , yaml-file: "4-caffe.yml"         },
+            {order: 5 , repo : "GloriousEggroll/wine-ge-custom"  , workflow: ""                       , branch: "master", name-prefix: "wine-"        , name-suffix: ""                  , version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "5-wine-GE-Proton.yml"},
+            {order: 6 , repo : "GloriousEggroll/proton-ge-custom", workflow: ""                       , branch: "master", name-prefix: "GE-Proton"    , name-suffix: ""                  , version-prefix: "GE-Proton", Category: "runners"    , Sub-category: "proton", yaml-file: "10-GE-Proton.yml"    },
+            {order: 7 , repo : "ishitatsuyuki/LatencyFleX"       , workflow: "artifact.yml"           , branch: "master", name-prefix: "latencyflex-" , name-suffix: ""                  , version-prefix: ""         , Category: "latencyflex", Sub-category: ""      , yaml-file: "17-latencyflex.yml"  },
+            {order: 8 , repo : "jp7677/dxvk-nvapi"               , workflow: "artifacts.yml"          , branch: "master", name-prefix: "dxvk-nvapi-"  , name-suffix: ""                  , version-prefix: ""         , Category: "nvapi"      , Sub-category: ""      , yaml-file: "16-dxvk-nvapi.yml"   },
+            {order: 9 , repo : "Sporif/dxvk-async"               , workflow: ""                       , branch: "master", name-prefix: "dxvk-async-"  , name-suffix: ""                  , version-prefix: ""         , Category: "dxvk"       , Sub-category: ""      , yaml-file: "15-dxvk-async.yml"   },
+            {order: 10, repo : "Kron4ek/Wine-Builds"             , workflow: ""                       , branch: "master", name-prefix: "wine-"        , name-suffix: "-x86"              , version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "11-kron4ek.yml"      },
+            {order: 11, repo : "Kron4ek/Wine-Builds"             , workflow: ""                       , branch: "master", name-prefix: "wine-"        , name-suffix: "-staging-x86"      , version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "11-kron4ek.yml"      },
+            {order: 12, repo : "Kron4ek/Wine-Builds"             , workflow: ""                       , branch: "master", name-prefix: "wine-"        , name-suffix: "-staging-tkg-x86"  , version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "11-kron4ek.yml"      },
+            {order: 13, repo : "Kron4ek/Wine-Builds"             , workflow: ""                       , branch: "master", name-prefix: "wine-"        , name-suffix: "-staging-tkg-amd64", version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "11-kron4ek.yml"      },
+            {order: 14, repo : "Kron4ek/Wine-Builds"             , workflow: ""                       , branch: "master", name-prefix: "wine-"        , name-suffix: "-staging-amd64"    , version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "11-kron4ek.yml"      },
+            {order: 15, repo : "Kron4ek/Wine-Builds"             , workflow: ""                       , branch: "master", name-prefix: "wine-"        , name-suffix: "-amd64"            , version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "11-kron4ek.yml"      },
           ]
     runs-on: ubuntu-latest
     steps:
@@ -76,12 +88,12 @@ jobs:
           until [ -z "$asset_name" ] || [ "$found" = true ]; do
             i=$((i + 1))
             asset_name=$(gh release view "$latest_release" --json assets -q ".[] | .[$i] | .name" -R ${{ matrix.components.repo }})
-            if [[ "$asset_name" =~ ${{ matrix.components.name-prefix }}.*[0-9]+\.tar.* ]]; then
+            if [[ "$asset_name" =~ ${{ matrix.components.name-prefix }}.*[0-9]+${{ matrix.components.name-suffix }}\.tar.* ]]; then
               found=true
             fi
           done
           if [ "$found" = false ]; then
-            echo "::error::Cannot find asset name begining by: ${{ matrix.components.name-prefix }}"
+            echo "::error::Cannot find a corresponding asset name."
             exit 1
           else
             asset_json=$(gh release view "$latest_release" --json assets -q ".[] | .[$i]" -R ${{ matrix.components.repo }})
@@ -98,8 +110,9 @@ jobs:
 
       - name: Define environment variables
         run: |
-          lowercase_component_name=$(echo "${{ matrix.components.name-prefix }}${{ steps.check-release.outputs.version }}" | tr "[:upper:]" "[:lower:]")
+          lowercase_component_name=$(echo "${{ matrix.components.name-prefix }}${{ steps.check-release.outputs.version }}${{ matrix.components.name-suffix }}" | tr "[:upper:]" "[:lower:]")
           echo "NAMEPREFIX=$(echo ${{ matrix.components.name-prefix }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+          echo "NAMESUFFIX=$(echo ${{ matrix.components.name-suffix }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
           echo "NAME=$lowercase_component_name" >> $GITHUB_ENV
           echo "CATEGORY=${{ matrix.components.Category }}" >> $GITHUB_ENV
           echo "SUBCATEGORY=${{ matrix.components.Sub-category }}" >> $GITHUB_ENV
@@ -107,7 +120,11 @@ jobs:
           echo "YAML_FILENAME=${{ matrix.components.yaml-file }}" >> $GITHUB_ENV
           echo "CREATED_AT=${{ fromJSON(steps.check-release.outputs.asset).createdAt }}" >> $GITHUB_ENV
           echo "UPDATED=false" >> $GITHUB_ENV
-
+          # Components specific tweaks
+          if [[ "${{ matrix.components.repo }}" == "Kron4ek/Wine-Builds" ]]; then
+            echo "NAMEPREFIX=kron4ek-$(echo ${{ matrix.components.name-prefix }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+            echo "NAME=kron4ek-$lowercase_component_name" >> $GITHUB_ENV
+          fi
 
       - name: Update stable input_file entry
         working-directory: "bottle-components-repository"
@@ -202,27 +219,35 @@ jobs:
           fi
           asset=$(gh release view "${{ env.NAME }}" --json assets -q ".[] | .[0]")
           echo "asset=$asset" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name : Generate appropriate YAML file
         if: env.UPDATED == 'true'
         working-directory: "bottle-components-repository"
         run: |
           repo=${{ matrix.components.repo }}
+          name=${{ env.NAME }}
           if [ "${{ env.UPLOAD_FILE }}" != "" ]; then
             url="${{ steps.upload-component.outputs.asset && fromJSON(steps.upload-component.outputs.asset).url }}"
             path="${{ env.UPLOAD_FILE }}"
           else
             url="${{ fromJSON(steps.check-release.outputs.asset).url }}"
           fi
-          python "${{ github.workspace }}/tools/MaintainersHelpers/component-generator.py" "components" "${repo%/*}" "${{ env.NAME }}" "${repo%/*}" "${{ env.CHANNEL }}" "$url" $path
+          python "${{ github.workspace }}/tools/MaintainersHelpers/component-generator.py" "components" "${repo%/*}" "$name" "${repo%/*}" "${{ env.CHANNEL }}" "$url" $path
           # Components specific tweaks
-          if [[ "${{ env.NAME }}" == "wine-ge"* ]]; then
-            echo "Post:" >> "${{ env.NAME }}.yml"
-            echo -e "- action: rename" >> "${{ env.NAME }}.yml"
-            echo -e "  source: lutris-${{ steps.check-release.outputs.version }}" >> "${{ env.NAME }}.yml"
-            echo -e "  dest: ${{ env.NAME }}" >> "${{ env.NAME }}.yml"
+          if [[ "$repo" == "GloriousEggroll/wine-ge-custom" ]]; then
+            echo "Post:" >> "$name.yml"
+            echo -e "- action: rename" >> "$name.yml"
+            echo -e "  source: lutris-${{ steps.check-release.outputs.version }}" >> "$name.yml"
+            echo -e "  dest: $name" >> "$name.yml"
+          elif [[ "$repo" == "Kron4ek/Wine-Builds" ]]; then
+            echo "Post:" >> "$name.yml"
+            echo -e "- action: rename" >> "$name.yml"
+            echo -e "  source: ${name#kron4ek-}" >> "$name.yml"
+            echo -e "  dest: $name" >> "$name.yml"
           fi
-          mv "${{ env.NAME }}.yml" "${{ env.CATEGORY }}/${{ env.SUBCATEGORY }}"
+          mv "$name.yml" "${{ env.CATEGORY }}/${{ env.SUBCATEGORY }}"
 
       - name : Commit changes
         if: env.UPDATED == 'true'
@@ -232,9 +257,13 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add "${{ env.CATEGORY }}/${{ env.SUBCATEGORY }}/*.yml" "input_files/${{ env.YAML_FILENAME }}"
+          git add "${{ env.CATEGORY }}/${{ env.SUBCATEGORY }}/${{ env.NAME }}.yml" "input_files/${{ env.YAML_FILENAME }}"
+          git commit -m "Dummy"
+          git diff HEAD~1 HEAD > patch_dir/"${{ matrix.components.order }}-${{ env.NAME }}.patch"
+          git reset --hard HEAD~1
+          git add patch_dir/*.patch
           git pull
-          git commit -m "Update ${{ env.YAML_FILENAME }}"
+          git commit -m "Dummy"
           git push
           success=$?
           until [ $success -eq 0 ]; do
@@ -260,7 +289,15 @@ jobs:
           git checkout ${{ github.ref_name }}
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git merge ${{ env.PR_BRANCH }}
+          git merge ${{ env.PR_BRANCH }} --no-commit --no-ff
+          git reset
+          readarray -d '' entries < <(printf '%s\0' patch_dir/*.patch | sort -zV)
+          for entry in "${entries[@]}"; do
+            patch -p1 --fuzz 5 < "$entry"
+            git add -- . ':!patch_dir' ':!**.orig'
+            entry=${entry#patch_dir/*-}
+            git commit -a -m "Add component ${entry%\.patch}"
+          done
           ./generate_index.sh
           git add index.yml
           git commit -m "Generate index.yml" || true
