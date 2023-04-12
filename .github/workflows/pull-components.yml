@@ -111,7 +111,8 @@ jobs:
       - name: Define environment variables
         run: |
           lowercase_component_name=$(echo "${{ matrix.components.name-prefix }}${{ steps.check-release.outputs.version }}${{ matrix.components.name-suffix }}" | tr "[:upper:]" "[:lower:]")
-          echo "NAMEPREFIX=$(echo ${{ matrix.components.name-prefix }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+          name_prefix="$(echo ${{ matrix.components.name-prefix }} | tr '[:upper:]' '[:lower:]')"
+          echo "NAMEPREFIX=$name_prefix" >> $GITHUB_ENV
           echo "NAMESUFFIX=$(echo ${{ matrix.components.name-suffix }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
           echo "NAME=$lowercase_component_name" >> $GITHUB_ENV
           echo "CATEGORY=${{ matrix.components.Category }}" >> $GITHUB_ENV
@@ -121,8 +122,17 @@ jobs:
           echo "CREATED_AT=${{ fromJSON(steps.check-release.outputs.asset).createdAt }}" >> $GITHUB_ENV
           echo "UPDATED=false" >> $GITHUB_ENV
           # Components specific tweaks
-          if [[ "${{ matrix.components.repo }}" == "Kron4ek/Wine-Builds" ]]; then
-            echo "NAMEPREFIX=kron4ek-$(echo ${{ matrix.components.name-prefix }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+          if [[ "${{ matrix.components.repo }}" == "GloriousEggroll/wine-ge-custom" ]]; then
+            url="${{ fromJSON(steps.check-release.outputs.asset).url }}"
+            name="${url##*/wine-}"
+            name="${name%.tar*}"
+            name="${name%-x86_64}"
+            if [[ "$name" == "lutris-ge-lol-"* ]]; then
+              echo "NAMEPREFIX=lutris-ge-lol-" >> $GITHUB_ENV
+              echo "NAME=$name" >> $GITHUB_ENV
+            fi
+          elif [[ "${{ matrix.components.repo }}" == "Kron4ek/Wine-Builds" ]]; then
+            echo "NAMEPREFIX=kron4ek-$name_prefix" >> $GITHUB_ENV
             echo "NAME=kron4ek-$lowercase_component_name" >> $GITHUB_ENV
           fi
 
@@ -237,9 +247,12 @@ jobs:
           python "${{ github.workspace }}/tools/MaintainersHelpers/component-generator.py" "components" "${repo%/*}" "$name" "${repo%/*}" "${{ env.CHANNEL }}" "$url" $path
           # Components specific tweaks
           if [[ "$repo" == "GloriousEggroll/wine-ge-custom" ]]; then
+            source="${url##*/wine-}"
+            source="${source%.tar*}"
+            source="${source%-x86_64}"
             echo "Post:" >> "$name.yml"
             echo -e "- action: rename" >> "$name.yml"
-            echo -e "  source: lutris-${{ steps.check-release.outputs.version }}" >> "$name.yml"
+            echo -e "  source: $source" >> "$name.yml"
             echo -e "  dest: $name" >> "$name.yml"
           elif [[ "$repo" == "Kron4ek/Wine-Builds" ]]; then
             echo "Post:" >> "$name.yml"
