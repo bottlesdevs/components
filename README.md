@@ -72,8 +72,11 @@ Post:
   dest: lutris-6.14-2-fshack
 ```
 
-We provide an [automatic tools](https://github.com/bottlesdevs/tools/blob/main/MaintainersHelpers/component-generator.py) for generating the manifest. Please double check and test the manfiest before open a pull request.
+We provide an [automatic tools](https://github.com/bottlesdevs/tools/blob/main/MaintainersHelpers/component-generator.py) for generating the manifest.
 
+In addition to the manifest, en entry must be created in the corresponding file located in the [input_files](https://github.com/bottlesdevs/components/blob/main/input_files) directory. The index can then be regenerated using the [generate_index.sh](https://github.com/bottlesdevs/components/blob/main/generate_index.sh) script.
+
+Please double check and test using the `LOCAL_COMPONENTS=/path/to/components flatpak run com.usebottles.bottles` command before open a pull request.
 
 ### Guidelines
 The sources of the components must be public and searchable and must not infringe any copyright. Also, each archive must contain the compiled version and not the source code.
