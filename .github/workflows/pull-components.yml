@@ -183,6 +183,8 @@ jobs:
             echo "artifact_info=$artifact_info" >> $GITHUB_OUTPUT
           fi
           echo "found_artifact=$found_artifact" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update environment variables
         if: env.UPDATED != 'true' && steps.download-artifact.outputs.found_artifact == 'true'
@@ -216,6 +218,7 @@ jobs:
       - name: Upload component archive
         id: upload-component
         if: env.UPLOAD_FILE != ''
+        working-directory: "bottle-components-repository"
         shell: bash {0}
         run: |
           gh release create "${{ env.NAME }}" ${{ env.UPLOAD_FILE }} -n ""
