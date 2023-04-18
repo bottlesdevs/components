@@ -1,3 +1,123 @@
+kron4ek-wine-proton-8.0-1-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.6-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.6-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.6-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.5-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.5-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.5-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.4-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.4-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.4-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.3-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.3-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.3-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.2-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.2-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.2-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.1-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.1-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.1-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.0-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.0-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-8.0-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-7.0-6-proton-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-7.22-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-7.22-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-7.22-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-7.21-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-7.21-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-7.21-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+kron4ek-wine-7.0-5-proton-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 kron4ek-wine-7.20-amd64:
   Category: runners
   Sub-category: wine
