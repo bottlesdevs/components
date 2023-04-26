@@ -30,9 +30,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git checkout -B ${{ env.PR_BRANCH }}
           mkdir patch_dir
-          touch patch_dir/dummy
-          git add patch_dir/dummy
-          git commit -m "Add dummy file"
+          touch patch_dir/.gitkeep
+          git add patch_dir/.gitkeep
+          git commit -m "Add .gitkeep file"
           git push -f --set-upstream origin ${{ env.PR_BRANCH }}
 
   pull:
@@ -271,12 +271,12 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           git add "${{ env.CATEGORY }}/${{ env.SUBCATEGORY }}/${{ env.NAME }}.yml" "input_files/${{ env.YAML_FILENAME }}"
-          git commit -m "Dummy"
+          git commit -m "Add ${{ env.NAME }}"
           git diff HEAD~1 HEAD > patch_dir/"${{ matrix.components.order }}-${{ env.NAME }}.patch"
           git reset --hard HEAD~1
           git add patch_dir/*.patch
           git pull
-          git commit -m "Dummy"
+          git commit -m "Add ${{ env.NAME }}"
           git push
           success=$?
           until [ $success -eq 0 ]; do
