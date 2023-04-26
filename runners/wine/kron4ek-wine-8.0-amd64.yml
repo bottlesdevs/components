@@ -1,0 +1,12 @@
+Name: kron4ek-wine-8.0-amd64
+Provider: Kron4ek
+Channel: stable
+File:
+- file_name: wine-8.0-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/8.0/wine-8.0-amd64.tar.xz
+  file_checksum: bc058b535e5f6a4ec5f2ed66571bbdd7
+  rename: kron4ek-wine-8.0-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-8.0-amd64
+  dest: kron4ek-wine-8.0-amd64

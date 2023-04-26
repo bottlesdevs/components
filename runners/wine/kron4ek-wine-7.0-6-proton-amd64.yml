@@ -1,0 +1,12 @@
+Name: kron4ek-wine-7.0-6-proton-amd64
+Provider: Kron4ek
+Channel: stable
+File:
+- file_name: wine-7.0-6-proton-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/7.0-6-proton/wine-7.0-6-proton-amd64.tar.xz
+  file_checksum: 4385611352019cfac24800c3ad9d8f45
+  rename: kron4ek-wine-7.0-6-proton-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-7.0-6-proton-amd64
+  dest: kron4ek-wine-7.0-6-proton-amd64
