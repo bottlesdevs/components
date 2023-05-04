@@ -1,0 +1,10 @@
+Name: dxvk-2.1-2-b357d16
+Provider: doitsujin
+Maintainer: doitsujin
+Channel: unstable
+File:
+- file_name: dxvk-2.1-2-b357d16.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.1-2-b357d16/dxvk-2.1-2-b357d16.tar.gz
+  file_checksum: b1f6e1fa6d20d06b54e9bd6bfce2c51b
+  file_size: 7932505
+  rename: dxvk-2.1-2-b357d16.tar.gz
