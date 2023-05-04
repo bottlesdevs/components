@@ -124,6 +124,11 @@ caffe-6.23:
 
 # ./input_files/5-wine-GE-Proton.yml
 # -----------------------
+wine-ge-proton8-1:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1682987182'
 wine-ge-proton7-41:
   Category: runners
   Sub-category: wine
@@ -470,6 +475,11 @@ vaniglia-21.1.0-cx:
 
 # ./input_files/10-GE-Proton.yml
 # -----------------------
+ge-proton8-1:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1682907809'
 ge-proton7-53:
   Category: runners
   Sub-category: proton
@@ -672,10 +682,16 @@ Proton-4.11-GE-1:
 
 # ./input_files/11-kron4ek.yml
 # -----------------------
+kron4ek-wine-proton-8.0-2-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1683057733'
 kron4ek-wine-proton-8.0-1-amd64:
   Category: runners
   Sub-category: wine
   Channel: stable
+  Date: '1681761176'
 kron4ek-wine-8.6-amd64:
   Category: runners
   Sub-category: wine
@@ -1482,10 +1498,10 @@ w3c-6.19:
 
 # ./input_files/13-vkd3d-proton.yml
 # -----------------------
-vkd3d-proton-2.8-1-b7fb41b:
+vkd3d-proton-2.8-2-453d274:
   Category: vkd3d
   Channel: unstable
-  Date: '1678730220'
+  Date: '1683123565'
 vkd3d-proton-2.8:
   Category: vkd3d
   Channel: stable
@@ -1503,10 +1519,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
-dxvk-2.1-1-977669c:
+dxvk-2.1-2-b357d16:
   Category: dxvk
   Channel: unstable
-  Date: '1679781374'
+  Date: '1683115444'
 dxvk-2.1:
   Category: dxvk
   Channel: stable
@@ -1571,10 +1587,10 @@ dxvk-async-1.9.4:
 
 # ./input_files/16-dxvk-nvapi.yml
 # -----------------------
-dxvk-nvapi-v0.6.2-1-742b17c:
+dxvk-nvapi-v0.6.3:
   Category: nvapi
-  Channel: unstable
-  Date: '1679509658'
+  Channel: stable
+  Date: '1683034170'
 dxvk-nvapi-v0.6.2:
   Category: nvapi
   Channel: stable
@@ -1590,6 +1606,10 @@ dxvk-nvapi-v0.6:
 
 # ./input_files/17-latencyflex.yml
 # -----------------------
+latencyflex-v0.1.1-1-73bcb07:
+  Category: latencyflex
+  Channel: unstable
+  Date: '1681633270'
 latencyflex-v0.1.1:
   Category: latencyflex
   Channel: stable
