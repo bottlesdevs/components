@@ -1,0 +1,10 @@
+Name: latencyflex-v0.1.1-1-73bcb07
+Provider: ishitatsuyuki
+Maintainer: ishitatsuyuki
+Channel: unstable
+File:
+- file_name: latencyflex-v0.1.1-1-73bcb07.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/latencyflex-v0.1.1-1-73bcb07/latencyflex-v0.1.1-1-73bcb07.tar.gz
+  file_checksum: 0144b5dcd8d313ff796a39a2b6d34575
+  file_size: 501052
+  rename: latencyflex-v0.1.1-1-73bcb07.tar.gz
