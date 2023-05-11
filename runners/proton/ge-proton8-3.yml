@@ -1,0 +1,10 @@
+Name: ge-proton8-3
+Provider: GloriousEggroll
+Maintainer: GloriousEggroll
+Channel: stable
+File:
+- file_name: GE-Proton8-3.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton8-3/GE-Proton8-3.tar.gz
+  file_checksum: 15481f3f9e37dfe868523d9f2503abb4
+  file_size: 436800799
+  rename: GE-Proton8-3.tar.gz
