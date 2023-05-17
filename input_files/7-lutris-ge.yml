@@ -1,16 +1,8 @@
-lutris-ge-lol-7.0-5:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
 lutris-ge-7.2-2:
   Category: runners
   Sub-category: wine
   Channel: stable
 lutris-ge-7.1-1:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
-lutris-ge-7.0-GE-1-LoL:
   Category: runners
   Sub-category: wine
   Channel: stable
@@ -42,7 +34,3 @@ lutris-ge-6.12:
   Category: runners
   Sub-category: wine
   Channel: unstable
-lutris-ge-7.14-GE-1-LoL:
-  Category: runners
-  Sub-category: wine
-  Channel: stable
