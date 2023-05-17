@@ -129,6 +129,10 @@ lutris-ge-lol-8.7-1:
   Sub-category: wine
   Channel: stable
   Date: '1683772944'
+lutris-ge-lol-7.0-8:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
 wine-ge-proton8-5:
   Category: runners
   Sub-category: wine
