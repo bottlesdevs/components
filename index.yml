@@ -704,6 +704,11 @@ Proton-4.11-GE-1:
 
 # ./input_files/11-kron4ek.yml
 # -----------------------
+kron4ek-wine-8.8-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1684094206'
 kron4ek-wine-proton-8.0-2-amd64:
   Category: runners
   Sub-category: wine
