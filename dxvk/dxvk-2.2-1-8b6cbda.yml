@@ -1,0 +1,10 @@
+Name: dxvk-2.2-1-8b6cbda
+Provider: doitsujin
+Maintainer: doitsujin
+Channel: unstable
+File:
+- file_name: dxvk-2.2-1-8b6cbda.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.2-1-8b6cbda/dxvk-2.2-1-8b6cbda.tar.gz
+  file_checksum: 5c9c9b1685d21227a5bb7cb2da88f8ff
+  file_size: 8092573
+  rename: dxvk-2.2-1-8b6cbda.tar.gz
