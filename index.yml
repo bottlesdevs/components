@@ -719,6 +719,16 @@ Proton-4.11-GE-1:
 
 # ./input_files/11-kron4ek.yml
 # -----------------------
+kron4ek-wine-8.10-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1686731947'
+kron4ek-wine-8.10-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1686731989'
 kron4ek-wine-8.9-staging-amd64:
   Category: runners
   Sub-category: wine
@@ -1558,6 +1568,10 @@ w3c-6.19:
 
 # ./input_files/13-vkd3d-proton.yml
 # -----------------------
+vkd3d-proton-2.9-1-87b0c4a:
+  Category: vkd3d
+  Channel: unstable
+  Date: '1686744360'
 vkd3d-proton-2.9:
   Category: vkd3d
   Channel: stable
@@ -1579,10 +1593,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
-dxvk-2.2-1-8b6cbda:
+dxvk-2.2-2-bd575a4:
   Category: dxvk
   Channel: unstable
-  Date: '1685487390'
+  Date: '1686770552'
 dxvk-2.2:
   Category: dxvk
   Channel: stable
