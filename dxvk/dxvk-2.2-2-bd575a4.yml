@@ -1,0 +1,10 @@
+Name: dxvk-2.2-2-bd575a4
+Provider: doitsujin
+Maintainer: doitsujin
+Channel: unstable
+File:
+- file_name: dxvk-2.2-2-bd575a4.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.2-2-bd575a4/dxvk-2.2-2-bd575a4.tar.gz
+  file_checksum: 9a9e076e922525e48e8af0e025b4cbdb
+  file_size: 8112956
+  rename: dxvk-2.2-2-bd575a4.tar.gz
