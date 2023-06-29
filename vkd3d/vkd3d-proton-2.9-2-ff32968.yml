@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.9-2-ff32968
+Provider: HansKristian-Work
+Maintainer: HansKristian-Work
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.9-2-ff32968.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.9-2-ff32968/vkd3d-proton-2.9-2-ff32968.tar.gz
+  file_checksum: 2e77ec8830aeb1e995432efc09f355e8
+  file_size: 2514440
+  rename: vkd3d-proton-2.9-2-ff32968.tar.gz
