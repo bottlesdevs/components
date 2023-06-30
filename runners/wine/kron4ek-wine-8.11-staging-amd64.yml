@@ -1,0 +1,14 @@
+Name: kron4ek-wine-8.11-staging-amd64
+Provider: Kron4ek
+Maintainer: Kron4ek
+Channel: stable
+File:
+- file_name: wine-8.11-staging-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/8.11/wine-8.11-staging-amd64.tar.xz
+  file_checksum: 06f1e9752213dadb54ba63154aef3349
+  file_size: 59622360
+  rename: wine-8.11-staging-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-8.11-staging-amd64
+  dest: kron4ek-wine-8.11-staging-amd64
