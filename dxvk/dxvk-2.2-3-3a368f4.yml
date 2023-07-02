@@ -1,0 +1,10 @@
+Name: dxvk-2.2-3-3a368f4
+Provider: doitsujin
+Maintainer: doitsujin
+Channel: unstable
+File:
+- file_name: dxvk-2.2-3-3a368f4.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.2-3-3a368f4/dxvk-2.2-3-3a368f4.tar.gz
+  file_checksum: a51837ea6a7ddea5682712e37b764bcd
+  file_size: 8144470
+  rename: dxvk-2.2-3-3a368f4.tar.gz
