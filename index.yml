@@ -1695,10 +1695,10 @@ dxvk-async-1.9.4:
 
 # ./input_files/16-dxvk-nvapi.yml
 # -----------------------
-dxvk-nvapi-v0.6.3-1-cb61c3f:
+dxvk-nvapi-v0.6.3-2-f2e8ed9:
   Category: nvapi
   Channel: unstable
-  Date: '1686088048'
+  Date: '1688538624'
 dxvk-nvapi-v0.6.3:
   Category: nvapi
   Channel: stable
@@ -1718,10 +1718,10 @@ dxvk-nvapi-v0.6:
 
 # ./input_files/17-latencyflex.yml
 # -----------------------
-latencyflex-v0.1.1-1-73bcb07:
+latencyflex-v0.1.1-2-3bc9636:
   Category: latencyflex
   Channel: unstable
-  Date: '1681633270'
+  Date: '1688445864'
 latencyflex-v0.1.1:
   Category: latencyflex
   Channel: stable
