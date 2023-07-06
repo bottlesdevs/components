@@ -1,0 +1,10 @@
+Name: latencyflex-v0.1.1-2-3bc9636
+Provider: ishitatsuyuki
+Maintainer: ishitatsuyuki
+Channel: unstable
+File:
+- file_name: latencyflex-v0.1.1-2-3bc9636.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/latencyflex-v0.1.1-2-3bc9636/latencyflex-v0.1.1-2-3bc9636.tar.gz
+  file_checksum: fd28fdd0bfe5696326af55f48820de58
+  file_size: 500294
+  rename: latencyflex-v0.1.1-2-3bc9636.tar.gz

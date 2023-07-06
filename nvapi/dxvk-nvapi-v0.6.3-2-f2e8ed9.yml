@@ -1,0 +1,10 @@
+Name: dxvk-nvapi-v0.6.3-2-f2e8ed9
+Provider: jp7677
+Maintainer: jp7677
+Channel: unstable
+File:
+- file_name: dxvk-nvapi-v0.6.3-2-f2e8ed9.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-nvapi-v0.6.3-2-f2e8ed9/dxvk-nvapi-v0.6.3-2-f2e8ed9.tar.gz
+  file_checksum: 916585664f795031dda7ad1b87a954bd
+  file_size: 2527311
+  rename: dxvk-nvapi-v0.6.3-2-f2e8ed9.tar.gz
