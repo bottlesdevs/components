@@ -1,9 +1,0 @@
-Name: kron4ek-wine-7.0-1-proton-x86
-Provider: Kron4ek
-Channel: stable
-File:
-- file_name: wine-7.0-1-proton-x86.tar.xz
-  url: https://github.com/Kron4ek/Wine-Builds/releases/download/7.0-1-proton/wine-7.0-1-proton-x86.tar.xz
-  file_checksum: 134a70f8f4572a92ecb663b9f82091da
-  file_size: 24623964
-  rename: kron4ek-wine-7.0-1-proton-x86.tar.xz

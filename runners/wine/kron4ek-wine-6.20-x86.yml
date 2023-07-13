@@ -1,9 +1,0 @@
-Name: kron4ek-wine-6.20-x86
-Provider: Kron4ek
-Channel: stable
-File:
-- file_name: wine-6.20-x86.tar.xz
-  url: https://github.com/Kron4ek/Wine-Builds/releases/download/6.20/wine-6.20-x86.tar.xz
-  file_checksum: dad23ff5a1518cd80af451683980f937
-  file_size: 25560636
-  rename: kron4ek-wine-6.20-x86.tar.xz
