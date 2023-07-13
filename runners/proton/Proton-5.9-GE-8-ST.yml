@@ -1,8 +1,0 @@
-Name: Proton-5.9-GE-8-ST
-Provider: gloriouseggroll
-Channel: stable
-File:
-- file_name: Proton-5.9-GE-8-ST.tar.gz
-  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/5.9-GE-8-ST/Proton-5.9-GE-8-ST.tar.gz
-  file_checksum: 46620fa45e400e4b6eca1ef4450c3e60
-  rename: Proton-5.9-GE-8-ST.tar.gz

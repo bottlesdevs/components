@@ -1,8 +1,0 @@
-Name: Proton-7.3-GE-1
-Provider: gloriouseggroll
-Channel: stable
-File:
-- file_name: Proton-7.3-GE-1.tar.gz
-  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/7.3-GE-1/Proton-7.3-GE-1.tar.gz
-  file_checksum: 89da9e684259ed23b83615bb6d30f27b
-  rename: Proton-7.3-GE-1.tar.gz

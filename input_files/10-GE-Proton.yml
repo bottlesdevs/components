@@ -190,35 +190,3 @@ ge-proton7-4:
   Category: runners
   Sub-category: proton
   Channel: stable
-Proton-7.3-GE-1:
-  Category: runners
-  Sub-category: proton
-  Channel: stable
-Proton-7.2-GE-2:
-  Category: runners
-  Sub-category: proton
-  Channel: stable
-Proton-7.1-GE-2:
-  Category: runners
-  Sub-category: proton
-  Channel: stable
-Proton-6.21-GE-2:
-  Category: runners
-  Sub-category: proton
-  Channel: stable
-Proton-6.20-GE-1:
-  Category: runners
-  Sub-category: proton
-  Channel: stable
-Proton-6.19-GE-2:
-  Category: runners
-  Sub-category: proton
-  Channel: stable
-Proton-5.9-GE-8-ST:
-  Category: runners
-  Sub-category: proton
-  Channel: stable
-Proton-4.11-GE-1:
-  Category: runners
-  Sub-category: proton
-  Channel: stable
