@@ -1,0 +1,10 @@
+Name: dxvk-2.2-4-c599f95
+Provider: doitsujin
+Maintainer: doitsujin
+Channel: unstable
+File:
+- file_name: dxvk-2.2-4-c599f95.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.2-4-c599f95/dxvk-2.2-4-c599f95.tar.gz
+  file_checksum: 3750894663dcb974e8acbbbe0b58b82f
+  file_size: 8146378
+  rename: dxvk-2.2-4-c599f95.tar.gz

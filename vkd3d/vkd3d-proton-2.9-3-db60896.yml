@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.9-3-db60896
+Provider: HansKristian-Work
+Maintainer: HansKristian-Work
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.9-3-db60896.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.9-3-db60896/vkd3d-proton-2.9-3-db60896.tar.gz
+  file_checksum: ecbe4e5efe134d8f08f8b81da7364260
+  file_size: 2516223
+  rename: vkd3d-proton-2.9-3-db60896.tar.gz
