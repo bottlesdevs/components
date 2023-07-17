@@ -14,4 +14,6 @@ for entry in "${entries[@]}"; do
    echo -e "# -----------------------" >> "$DIR/index.yml"
    cat "$entry" >> "$DIR/index.yml"
 done
-cp index.yml $(curl https://raw.githubusercontent.com/bottlesdevs/Bottles/main/VERSION)
+bottle_version=$(curl https://raw.githubusercontent.com/bottlesdevs/Bottles/main/VERSION)
+cp index.yml $bottle_version.yml
+git add $bottle_version.yml
