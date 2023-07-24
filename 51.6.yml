@@ -128,6 +128,11 @@ caffe-6.23:
 
 # ./input_files/5-wine-GE-Proton.yml
 # -----------------------
+wine-ge-proton8-12:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1689988692'
 wine-ge-proton8-10:
   Category: runners
   Sub-category: wine
@@ -506,6 +511,21 @@ vaniglia-21.1.0-cx:
 
 # ./input_files/10-GE-Proton.yml
 # -----------------------
+ge-proton8-9:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1690036613'
+ge-proton8-8:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1689986905'
+ge-proton8-7:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1689923302'
 ge-proton8-6:
   Category: runners
   Sub-category: proton
@@ -701,6 +721,31 @@ ge-proton7-4:
 
 # ./input_files/11-kron4ek.yml
 # -----------------------
+kron4ek-wine-8.13-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1690115414'
+kron4ek-wine-8.13-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1690115433'
+kron4ek-wine-8.13-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1690115450'
+kron4ek-wine-proton-8.0-3-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1689978709'
+kron4ek-wine-8.0.2-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1689850003'
 kron4ek-wine-8.12-amd64:
   Category: runners
   Sub-category: wine
@@ -1238,10 +1283,10 @@ kron4ek-wine-6.3-proton-experimental-1b31393-amd64:
 
 # ./input_files/13-vkd3d-proton.yml
 # -----------------------
-vkd3d-proton-2.9-2-ff32968:
+vkd3d-proton-2.9-3-db60896:
   Category: vkd3d
   Channel: unstable
-  Date: '1687973090'
+  Date: '1689514963'
 vkd3d-proton-2.9:
   Category: vkd3d
   Channel: stable
@@ -1263,10 +1308,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
-dxvk-2.2-3-3a368f4:
+dxvk-2.2-4-c599f95:
   Category: dxvk
   Channel: unstable
-  Date: '1688224358'
+  Date: '1689534985'
 dxvk-2.2:
   Category: dxvk
   Channel: stable
