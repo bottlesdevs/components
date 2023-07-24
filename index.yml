@@ -507,6 +507,11 @@ vaniglia-21.1.0-cx:
 
 # ./input_files/10-GE-Proton.yml
 # -----------------------
+ge-proton8-9:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1690036613'
 ge-proton8-8:
   Category: runners
   Sub-category: proton
@@ -744,6 +749,21 @@ Proton-4.11-GE-1:
 
 # ./input_files/11-kron4ek.yml
 # -----------------------
+kron4ek-wine-8.13-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1690115414'
+kron4ek-wine-8.13-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1690115433'
+kron4ek-wine-8.13-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1690115450'
 kron4ek-wine-proton-8.0-3-amd64:
   Category: runners
   Sub-category: wine
