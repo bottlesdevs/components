@@ -1,9 +1,0 @@
-Name: kron4ek-wine-7.1-staging-tkg-x86
-Provider: Kron4ek
-Channel: stable
-File:
-- file_name: wine-7.1-staging-tkg-x86.tar.xz
-  url: https://github.com/Kron4ek/Wine-Builds/releases/download/7.1/wine-7.1-staging-tkg-x86.tar.xz
-  file_checksum: 3d0f5204ab5ecccc1cc06f890440bd9c
-  file_size: 26331980
-  rename: kron4ek-wine-7.1-staging-tkg-x86.tar.xz

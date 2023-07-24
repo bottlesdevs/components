@@ -1,8 +1,0 @@
-Name: Proton-4.11-GE-1
-Provider: gloriouseggroll
-Channel: stable
-File:
-- file_name: Proton-4.11-GE-1.tar.gz
-  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/4.11-GE-1/Proton-4.11-GE-1.tar.gz
-  file_checksum: a6bc8b0bf36639ba843d366d8440b6d4
-  rename: Proton-4.11-GE-1.tar.gz

@@ -1,9 +1,0 @@
-Name: kron4ek-wine-7.10-x86
-Provider: Kron4ek
-Channel: stable
-File:
-- file_name: wine-7.10-x86.tar.xz
-  url: https://github.com/Kron4ek/Wine-Builds/releases/download/7.10/wine-7.10-x86.tar.xz
-  file_checksum: 6bf6711c3ffbc89840e59bc849297b66
-  file_size: 29183628
-  rename: kron4ek-wine-7.10-x86.tar.xz

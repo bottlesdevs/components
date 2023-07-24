@@ -1,8 +1,0 @@
-Name: Proton-6.18-GE-2
-Provider: gloriouseggroll
-Channel: stable
-File:
-- file_name: Proton-6.18-GE-2.tar.gz
-  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/6.18-GE-2/Proton-6.18-GE-2.tar.gz
-  file_checksum: 2b04284b415986259c993f228ad22523
-  rename: Proton-6.18-GE-2.tar.gz
