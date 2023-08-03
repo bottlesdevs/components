@@ -128,6 +128,11 @@ caffe-6.23:
 
 # ./input_files/5-wine-GE-Proton.yml
 # -----------------------
+wine-ge-proton8-13:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1691015250'
 lutris-ge-lol-p8-12:
   Category: runners
   Sub-category: wine
@@ -516,6 +521,11 @@ vaniglia-21.1.0-cx:
 
 # ./input_files/10-GE-Proton.yml
 # -----------------------
+ge-proton8-10:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1691012333'
 ge-proton8-9:
   Category: runners
   Sub-category: proton
