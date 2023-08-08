@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.9-4-45f513d
+Provider: HansKristian-Work
+Maintainer: HansKristian-Work
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.9-4-45f513d.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.9-4-45f513d/vkd3d-proton-2.9-4-45f513d.tar.gz
+  file_checksum: 4039a339e69c9981acc2dfc49b8624d4
+  file_size: 2530677
+  rename: vkd3d-proton-2.9-4-45f513d.tar.gz
