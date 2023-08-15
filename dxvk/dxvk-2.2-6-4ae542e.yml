@@ -1,0 +1,10 @@
+Name: dxvk-2.2-6-4ae542e
+Provider: doitsujin
+Maintainer: doitsujin
+Channel: unstable
+File:
+- file_name: dxvk-2.2-6-4ae542e.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.2-6-4ae542e/dxvk-2.2-6-4ae542e.tar.gz
+  file_checksum: e715a98fd23aad85e19169a1cf66aad9
+  file_size: 8161275
+  rename: dxvk-2.2-6-4ae542e.tar.gz
