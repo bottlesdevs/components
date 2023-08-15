@@ -79,6 +79,7 @@ jobs:
             {order: 10, repo : "Kron4ek/Wine-Builds"             , workflow: ""                       , branch: "master", name-prefix: "wine-"        , name-suffix: "-staging-tkg-amd64", version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "11-kron4ek.yml"      },
             {order: 11, repo : "Kron4ek/Wine-Builds"             , workflow: ""                       , branch: "master", name-prefix: "wine-"        , name-suffix: "-staging-amd64"    , version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "11-kron4ek.yml"      },
             {order: 12, repo : "Kron4ek/Wine-Builds"             , workflow: ""                       , branch: "master", name-prefix: "wine-"        , name-suffix: "-amd64"            , version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "11-kron4ek.yml"      },
+            {order: 13, repo : "bottlesdevs/runtime"             , workflow: ""                       , branch: "main"  , name-prefix: "runtime-"     , name-suffix: ""                  , version-prefix: ""         , Category: "runtimes"   , Sub-category: ""      , yaml-file: "1-runtime.yml"       },
           ]
     runs-on: ubuntu-latest
     steps:
