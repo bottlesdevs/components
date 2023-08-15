@@ -6,3 +6,7 @@ File:
   url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton7-24/GE-Proton7-24.tar.gz
   file_checksum: d83ec967a1273186344a7c4117dba296
   rename: GE-Proton7-24.tar.gz
+Post:
+- action: rename
+  source: GE-Proton7-24
+  dest: ge-proton7-24

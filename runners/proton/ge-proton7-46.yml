@@ -8,3 +8,7 @@ File:
   file_checksum: bdbc6d89b15f5785db86a36437a6427d
   file_size: 414190692
   rename: GE-Proton7-46.tar.gz
+Post:
+- action: rename
+  source: GE-Proton7-46
+  dest: ge-proton7-46

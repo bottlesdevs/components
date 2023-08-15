@@ -290,8 +290,9 @@ jobs:
           fi
           python "${{ github.workspace }}/tools/MaintainersHelpers/component-generator.py" "components" "CI" "$name" "${repo%/*}" "${{ env.CHANNEL }}" "$url" $path
           # Components specific tweaks
-          if [[ "$repo" == "GloriousEggroll/wine-ge-custom" ]]; then
-            source="${url##*/wine-}"
+          if [[ "$repo" == "GloriousEggroll"* ]]; then
+            source="${url##*/}"
+            source="${source#wine-}"
             source="${source%.tar*}"
             source="${source%-x86_64}"
             echo "Post:" >> "$name.yml"

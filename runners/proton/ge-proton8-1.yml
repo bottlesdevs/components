@@ -8,3 +8,7 @@ File:
   file_checksum: c0d0484e35ca5789d774fbc5aa9dd81b
   file_size: 436695046
   rename: GE-Proton8-1.tar.gz
+Post:
+- action: rename
+  source: GE-Proton8-1
+  dest: ge-proton8-1

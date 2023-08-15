@@ -8,3 +8,7 @@ File:
   file_checksum: 3140b8a5778d7a7d1ddc5bb15b307a1a
   file_size: 414675043
   rename: GE-Proton7-53.tar.gz
+Post:
+- action: rename
+  source: GE-Proton7-53
+  dest: ge-proton7-53
