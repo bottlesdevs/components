@@ -1,0 +1,10 @@
+Name: vaniglia-8.6
+Provider: bottles
+Maintainer: bottles
+Channel: stable
+File:
+- file_name: vaniglia-8.6-x86_64.tar.gz
+  url: https://github.com/bottlesdevs/wine/releases/download/8.6/vaniglia-8.6-x86_64.tar.gz
+  file_checksum: 7eb05a7eb689d53a1db698f1d190b303
+  file_size: 117459995
+  rename: vaniglia-8.6-x86_64.tar.gz
