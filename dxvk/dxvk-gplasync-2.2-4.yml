@@ -1,0 +1,10 @@
+Name: dxvk-gplasync-2.2-4
+Provider: Ph42oN
+Maintainer: koplo199
+Channel: stable
+File:
+- file_name: dxvk-gplasync-v2.2-4.tar.gz
+  url: https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/a3b55d5ebf14d2bd20397c80887a6dc1af23a0b7/releases/dxvk-gplasync-v2.2-4.tar.gz
+  file_checksum: 785fd7b0b6ee7743e8a8504d60713f9f
+  file_size: 7880919
+  rename: dxvk-gplasync-v2.2-4.tar.gz
