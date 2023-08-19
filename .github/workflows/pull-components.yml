@@ -288,7 +288,7 @@ jobs:
           else
             url="${{ fromJSON(steps.check-release.outputs.asset).url }}"
           fi
-          python "${{ github.workspace }}/tools/MaintainersHelpers/component-generator.py" "components" "${repo%/*}" "$name" "${repo%/*}" "${{ env.CHANNEL }}" "$url" $path
+          python "${{ github.workspace }}/tools/MaintainersHelpers/component-generator.py" "components" "CI" "$name" "${repo%/*}" "${{ env.CHANNEL }}" "$url" $path
           # Components specific tweaks
           if [[ "$repo" == "GloriousEggroll/wine-ge-custom" ]]; then
             source="${url##*/wine-}"
