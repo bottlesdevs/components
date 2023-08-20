@@ -9,3 +9,7 @@ File:
 
 
 
+Post:
+- action: rename
+  source: GE-Proton7-4
+  dest: ge-proton7-4

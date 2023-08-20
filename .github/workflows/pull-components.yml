@@ -290,8 +290,9 @@ jobs:
           fi
           python "${{ github.workspace }}/tools/MaintainersHelpers/component-generator.py" "components" "CI" "$name" "${repo%/*}" "${{ env.CHANNEL }}" "$url" $path
           # Components specific tweaks
-          if [[ "$repo" == "GloriousEggroll/wine-ge-custom" ]]; then
-            source="${url##*/wine-}"
+          if [[ "$repo" == "GloriousEggroll"* ]]; then
+            source="${url##*/}"
+            source="${source#wine-}"
             source="${source%.tar*}"
             source="${source%-x86_64}"
             echo "Post:" >> "$name.yml"
@@ -316,7 +317,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git add "${{ env.CATEGORY }}/${{ env.SUBCATEGORY }}/${{ env.NAME }}.yml" "input_files/${{ env.YAML_FILENAME }}"
           git commit -m "Add ${{ env.NAME }}"
-          file_name="${{ matrix.components.order }}-$(date -d "${{ env.CREATED_AT }}" +%s)-${{ env.NAME }}.patch"
+          file_name="$(date -d "${{ github.event.created_at }}" +%s)-${{ matrix.components.order }}-${{ env.NAME }}.patch"
           git diff HEAD~1 HEAD > "$file_name"
           git fetch origin ${{ env.WORKING_BRANCH }}:${{ env.WORKING_BRANCH }}
           git switch ${{ env.WORKING_BRANCH }}
