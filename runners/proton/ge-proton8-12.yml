@@ -1,0 +1,10 @@
+Name: ge-proton8-12
+Provider: GloriousEggroll
+Maintainer: CI
+Channel: stable
+File:
+- file_name: GE-Proton8-12.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton8-12/GE-Proton8-12.tar.gz
+  file_checksum: c8aa0b9f96b5da30efb4d2b87ceccab7
+  file_size: 440549780
+  rename: GE-Proton8-12.tar.gz
