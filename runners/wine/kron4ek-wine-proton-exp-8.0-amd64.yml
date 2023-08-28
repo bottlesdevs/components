@@ -1,0 +1,14 @@
+Name: kron4ek-wine-proton-exp-8.0-amd64
+Provider: Kron4ek
+Maintainer: CI
+Channel: stable
+File:
+- file_name: wine-proton-exp-8.0-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/proton-exp-8.0/wine-proton-exp-8.0-amd64.tar.xz
+  file_checksum: 958bef672e79143adb7a35ceccfa3c9d
+  file_size: 58590472
+  rename: wine-proton-exp-8.0-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-proton-exp-8.0-amd64
+  dest: kron4ek-wine-proton-exp-8.0-amd64
