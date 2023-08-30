@@ -1,0 +1,10 @@
+Name: dxvk-2.2-7-7e10021
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.2-7-7e10021.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.2-7-7e10021/dxvk-2.2-7-7e10021.tar.gz
+  file_checksum: 610aadc5cae952ee28f3525f4cc5191a
+  file_size: 8187573
+  rename: dxvk-2.2-7-7e10021.tar.gz
