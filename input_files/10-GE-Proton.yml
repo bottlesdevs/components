@@ -1,3 +1,8 @@
+ge-proton8-14:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1693595016'
 ge-proton8-13:
   Category: runners
   Sub-category: proton
