@@ -1,3 +1,8 @@
+kron4ek-wine-8.15-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1693656719'
 kron4ek-wine-proton-exp-8.0-amd64:
   Category: runners
   Sub-category: wine
