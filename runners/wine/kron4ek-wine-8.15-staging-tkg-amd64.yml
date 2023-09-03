@@ -1,0 +1,14 @@
+Name: kron4ek-wine-8.15-staging-tkg-amd64
+Provider: Kron4ek
+Maintainer: CI
+Channel: stable
+File:
+- file_name: wine-8.15-staging-tkg-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/8.15/wine-8.15-staging-tkg-amd64.tar.xz
+  file_checksum: beede55f6c3c265f14f1f5292851b5e4
+  file_size: 57424296
+  rename: wine-8.15-staging-tkg-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-8.15-staging-tkg-amd64
+  dest: kron4ek-wine-8.15-staging-tkg-amd64
