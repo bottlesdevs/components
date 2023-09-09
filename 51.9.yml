@@ -1439,6 +1439,10 @@ dxvk-1.7.3:
 
 # ./input_files/15-dxvk-async.yml
 # -----------------------
+dxvk-gplasync-v2.3-1:
+  Category: dxvk
+  Channel: stable
+  Date: '1694176068'
 dxvk-gplasync-v2.2-4:
   Category: dxvk
   Channel: stable
@@ -1466,10 +1470,10 @@ dxvk-async-1.9.4:
 
 # ./input_files/16-dxvk-nvapi.yml
 # -----------------------
-dxvk-nvapi-v0.6.3-4-26452ea:
+dxvk-nvapi-v0.6.4:
   Category: nvapi
-  Channel: unstable
-  Date: '1692737701'
+  Channel: stable
+  Date: '1694242161'
 dxvk-nvapi-v0.6.3:
   Category: nvapi
   Channel: stable
