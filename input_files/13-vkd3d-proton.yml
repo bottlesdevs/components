@@ -1,7 +1,7 @@
-vkd3d-proton-2.9-6-c10f889:
+vkd3d-proton-2.10:
   Category: vkd3d
-  Channel: unstable
-  Date: '1694016894'
+  Channel: stable
+  Date: '1694440369'
 vkd3d-proton-2.9:
   Category: vkd3d
   Channel: stable
