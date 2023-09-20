@@ -1,0 +1,10 @@
+Name: dxvk-2.3-1-494f7fd
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.3-1-494f7fd.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.3-1-494f7fd/dxvk-2.3-1-494f7fd.tar.gz
+  file_checksum: a17273fd3c6aa76ae240c1c1988e0b57
+  file_size: 8188366
+  rename: dxvk-2.3-1-494f7fd.tar.gz
