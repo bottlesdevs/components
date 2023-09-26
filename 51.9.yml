@@ -131,6 +131,11 @@ caffe-6.23:
 
 # ./input_files/5-wine-GE-Proton.yml
 # -----------------------
+wine-ge-proton8-17:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1695631876'
 wine-ge-proton8-16:
   Category: runners
   Sub-category: wine
