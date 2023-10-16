@@ -1,3 +1,7 @@
+dxvk-nvapi-v0.6.4-1-ed4338f:
+  Category: nvapi
+  Channel: unstable
+  Date: '1696703437'
 dxvk-nvapi-v0.6.4:
   Category: nvapi
   Channel: stable
