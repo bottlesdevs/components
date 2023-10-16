@@ -1,0 +1,10 @@
+Name: dxvk-2.3-2-4d97468
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.3-2-4d97468.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.3-2-4d97468/dxvk-2.3-2-4d97468.tar.gz
+  file_checksum: ebe57e7a8fc3372b7b217360bcd35d47
+  file_size: 8188907
+  rename: dxvk-2.3-2-4d97468.tar.gz

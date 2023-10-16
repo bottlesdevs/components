@@ -1,0 +1,14 @@
+Name: ge-proton8-19
+Provider: GloriousEggroll
+Maintainer: CI
+Channel: stable
+File:
+- file_name: GE-Proton8-19.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton8-19/GE-Proton8-19.tar.gz
+  file_checksum: 82504a6e776956e635764e9527de8337
+  file_size: 442487952
+  rename: GE-Proton8-19.tar.gz
+Post:
+- action: rename
+  source: GE-Proton8-19
+  dest: ge-proton8-19
