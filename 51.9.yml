@@ -131,6 +131,11 @@ caffe-6.23:
 
 # ./input_files/5-wine-GE-Proton.yml
 # -----------------------
+wine-ge-proton8-21:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1698051094'
 wine-ge-proton8-20:
   Category: runners
   Sub-category: wine
@@ -563,6 +568,11 @@ vaniglia-21.1.0-cx:
 
 # ./input_files/10-GE-Proton.yml
 # -----------------------
+ge-proton8-21:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1698049043'
 ge-proton8-20:
   Category: runners
   Sub-category: proton
@@ -1499,10 +1509,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
-dxvk-2.3-2-4d97468:
+dxvk-2.3-3-f45911a:
   Category: dxvk
   Channel: unstable
-  Date: '1696593942'
+  Date: '1698065567'
 dxvk-2.3:
   Category: dxvk
   Channel: stable

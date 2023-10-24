@@ -1,0 +1,10 @@
+Name: dxvk-2.3-3-f45911a
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.3-3-f45911a.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.3-3-f45911a/dxvk-2.3-3-f45911a.tar.gz
+  file_checksum: 7c5172407ce321c07c17e1a2862c1317
+  file_size: 8193937
+  rename: dxvk-2.3-3-f45911a.tar.gz

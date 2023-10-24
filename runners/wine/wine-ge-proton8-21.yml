@@ -1,0 +1,14 @@
+Name: wine-ge-proton8-21
+Provider: GloriousEggroll
+Maintainer: CI
+Channel: stable
+File:
+- file_name: wine-lutris-GE-Proton8-21-x86_64.tar.xz
+  url: https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton8-21/wine-lutris-GE-Proton8-21-x86_64.tar.xz
+  file_checksum: d4602be14767f2fead64f34acccd27ba
+  file_size: 233570064
+  rename: wine-lutris-GE-Proton8-21-x86_64.tar.xz
+Post:
+- action: rename
+  source: lutris-GE-Proton8-21
+  dest: wine-ge-proton8-21
