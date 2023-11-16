@@ -1,0 +1,10 @@
+Name: dxvk-2.3-4-ea31498
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.3-4-ea31498.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.3-4-ea31498/dxvk-2.3-4-ea31498.tar.gz
+  file_checksum: aa573a2e420964ec5fe85c9ffe53b527
+  file_size: 8193739
+  rename: dxvk-2.3-4-ea31498.tar.gz
