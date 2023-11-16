@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.10-4-1bcda32
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.10-4-1bcda32.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.10-4-1bcda32/vkd3d-proton-2.10-4-1bcda32.tar.gz
+  file_checksum: d6420766d2d8e6ed6984e2ae02d37677
+  file_size: 2636699
+  rename: vkd3d-proton-2.10-4-1bcda32.tar.gz
