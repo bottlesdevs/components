@@ -1,3 +1,8 @@
+caffe-8.21:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1701300398'
 caffe-8.18:
   Category: runners
   Sub-category: wine

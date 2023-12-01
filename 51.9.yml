@@ -29,6 +29,11 @@ winebridge-1.1.0:
 
 # ./input_files/3-soda.yml
 # -----------------------
+soda-8.0-2:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1701298137'
 soda-experimental_8.0:
   Category: runners
   Sub-category: wine
@@ -72,6 +77,11 @@ soda-7.0:
 
 # ./input_files/4-caffe.yml
 # -----------------------
+caffe-8.21:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1701300398'
 caffe-8.18:
   Category: runners
   Sub-category: wine
@@ -593,6 +603,11 @@ vaniglia-21.1.0-cx:
 
 # ./input_files/10-GE-Proton.yml
 # -----------------------
+ge-proton8-25:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1700610670'
 ge-proton8-24:
   Category: runners
   Sub-category: proton
@@ -873,6 +888,21 @@ ge-proton7-4:
 
 # ./input_files/11-kron4ek.yml
 # -----------------------
+kron4ek-wine-8.21-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1700953495'
+kron4ek-wine-8.21-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1700953508'
+kron4ek-wine-8.21-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1700953513'
 kron4ek-wine-8.20-amd64:
   Category: runners
   Sub-category: wine
@@ -1550,10 +1580,10 @@ kron4ek-wine-6.3-proton-experimental-1b31393-amd64:
 
 # ./input_files/13-vkd3d-proton.yml
 # -----------------------
-vkd3d-proton-2.10-4-1bcda32:
+vkd3d-proton-2.11:
   Category: vkd3d
-  Channel: unstable
-  Date: '1699539726'
+  Channel: stable
+  Date: '1700842638'
 vkd3d-proton-2.10:
   Category: vkd3d
   Channel: stable
