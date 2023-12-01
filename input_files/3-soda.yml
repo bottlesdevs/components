@@ -1,3 +1,8 @@
+soda-8.0-2:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1701298137'
 soda-experimental_8.0:
   Category: runners
   Sub-category: wine
