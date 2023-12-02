@@ -1,0 +1,10 @@
+Name: dxvk-2.3-5-1b31aa5
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.3-5-1b31aa5.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.3-5-1b31aa5/dxvk-2.3-5-1b31aa5.tar.gz
+  file_checksum: 060dbb0091b71b593005245dd2f4f6e8
+  file_size: 7691439
+  rename: dxvk-2.3-5-1b31aa5.tar.gz
