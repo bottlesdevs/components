@@ -151,6 +151,11 @@ caffe-6.23:
 
 # ./input_files/5-wine-GE-Proton.yml
 # -----------------------
+wine-ge-proton8-25:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1701450465'
 wine-ge-proton8-24:
   Category: runners
   Sub-category: wine
@@ -1609,10 +1614,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
-dxvk-2.3-4-ea31498:
+dxvk-2.3-5-1b31aa5:
   Category: dxvk
   Channel: unstable
-  Date: '1699988097'
+  Date: '1701436489'
 dxvk-2.3:
   Category: dxvk
   Channel: stable
