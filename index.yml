@@ -151,6 +151,16 @@ caffe-6.23:
 
 # ./input_files/5-wine-GE-Proton.yml
 # -----------------------
+wine-ge-proton8-27-lol:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1702590157'
+wine-ge-proton8-25-lol:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1702532116'
 wine-ge-proton8-25:
   Category: runners
   Sub-category: wine
@@ -893,6 +903,21 @@ ge-proton7-4:
 
 # ./input_files/11-kron4ek.yml
 # -----------------------
+kron4ek-wine-9.0-rc1-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1702129427'
+kron4ek-wine-9.0-rc1-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1702129434'
+kron4ek-wine-9.0-rc1-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1702129439'
 kron4ek-wine-8.21-amd64:
   Category: runners
   Sub-category: wine
@@ -1585,6 +1610,10 @@ kron4ek-wine-6.3-proton-experimental-1b31393-amd64:
 
 # ./input_files/13-vkd3d-proton.yml
 # -----------------------
+vkd3d-proton-2.11-1-06bf468:
+  Category: vkd3d
+  Channel: unstable
+  Date: '1702482623'
 vkd3d-proton-2.11:
   Category: vkd3d
   Channel: stable
