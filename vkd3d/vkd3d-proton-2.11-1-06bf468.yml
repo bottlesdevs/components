@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.11-1-06bf468
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.11-1-06bf468.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.11-1-06bf468/vkd3d-proton-2.11-1-06bf468.tar.gz
+  file_checksum: 5bcc0bdbedf2daa0a7059807f5a1cc57
+  file_size: 2568329
+  rename: vkd3d-proton-2.11-1-06bf468.tar.gz
