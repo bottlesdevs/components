@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.11.1
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: stable
+File:
+- file_name: vkd3d-proton-2.11.1.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.11.1/vkd3d-proton-2.11.1.tar.gz
+  file_checksum: 5390b5050f6b98676545aa685a9d88b5
+  file_size: 2568997
+  rename: vkd3d-proton-2.11.1.tar.gz
