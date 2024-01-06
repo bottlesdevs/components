@@ -1,0 +1,10 @@
+Name: dxvk-2.3-6-adb33d3
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.3-6-adb33d3.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.3-6-adb33d3/dxvk-2.3-6-adb33d3.tar.gz
+  file_checksum: 9811897693cf97cb23a5d8d78600fc0b
+  file_size: 7694338
+  rename: dxvk-2.3-6-adb33d3.tar.gz

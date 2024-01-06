@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.11.1-1-bb3948f
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.11.1-1-bb3948f.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.11.1-1-bb3948f/vkd3d-proton-2.11.1-1-bb3948f.tar.gz
+  file_checksum: da34a56079659816d1a7fbb39ec07503
+  file_size: 2568282
+  rename: vkd3d-proton-2.11.1-1-bb3948f.tar.gz
