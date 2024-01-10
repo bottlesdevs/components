@@ -1,0 +1,14 @@
+Name: ge-proton8-27
+Provider: GloriousEggroll
+Maintainer: CI
+Channel: stable
+File:
+- file_name: GE-Proton8-27.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton8-27/GE-Proton8-27.tar.gz
+  file_checksum: 0a51627dab324df1456facde1b006544
+  file_size: 428679858
+  rename: GE-Proton8-27.tar.gz
+Post:
+- action: rename
+  source: GE-Proton8-27
+  dest: ge-proton8-27

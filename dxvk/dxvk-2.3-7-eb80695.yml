@@ -1,0 +1,10 @@
+Name: dxvk-2.3-7-eb80695
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.3-7-eb80695.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.3-7-eb80695/dxvk-2.3-7-eb80695.tar.gz
+  file_checksum: ff31097b1bad27e4da4fca7067fdc405
+  file_size: 7698353
+  rename: dxvk-2.3-7-eb80695.tar.gz
