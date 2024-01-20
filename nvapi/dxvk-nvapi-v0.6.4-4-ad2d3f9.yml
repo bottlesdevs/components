@@ -1,0 +1,10 @@
+Name: dxvk-nvapi-v0.6.4-4-ad2d3f9
+Provider: jp7677
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-nvapi-v0.6.4-4-ad2d3f9.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-nvapi-v0.6.4-4-ad2d3f9/dxvk-nvapi-v0.6.4-4-ad2d3f9.tar.gz
+  file_checksum: c85c4bb5bfadb7b9ed995c88d2acb3c7
+  file_size: 2658155
+  rename: dxvk-nvapi-v0.6.4-4-ad2d3f9.tar.gz
