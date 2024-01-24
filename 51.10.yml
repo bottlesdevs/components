@@ -908,6 +908,11 @@ ge-proton7-4:
 
 # ./input_files/11-kron4ek.yml
 # -----------------------
+kron4ek-wine-proton-8.0-5-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1706035811'
 kron4ek-wine-9.0-amd64:
   Category: runners
   Sub-category: wine
@@ -1682,10 +1687,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
-dxvk-2.3-7-eb80695:
+dxvk-2.3-8-d4c5fc7:
   Category: dxvk
   Channel: unstable
-  Date: '1704793431'
+  Date: '1706022075'
 dxvk-2.3:
   Category: dxvk
   Channel: stable
