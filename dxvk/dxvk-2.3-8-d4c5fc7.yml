@@ -1,0 +1,10 @@
+Name: dxvk-2.3-8-d4c5fc7
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.3-8-d4c5fc7.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.3-8-d4c5fc7/dxvk-2.3-8-d4c5fc7.tar.gz
+  file_checksum: e642fbf78c121f21e29488be201e53e3
+  file_size: 7701652
+  rename: dxvk-2.3-8-d4c5fc7.tar.gz
