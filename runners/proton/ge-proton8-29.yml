@@ -1,0 +1,14 @@
+Name: ge-proton8-29
+Provider: GloriousEggroll
+Maintainer: CI
+Channel: stable
+File:
+- file_name: GE-Proton8-29.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton8-29/GE-Proton8-29.tar.gz
+  file_checksum: 024ca9583aa501cfcb4ce54bb49cceb6
+  file_size: 448147023
+  rename: GE-Proton8-29.tar.gz
+Post:
+- action: rename
+  source: GE-Proton8-29
+  dest: ge-proton8-29
