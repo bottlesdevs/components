@@ -1,3 +1,8 @@
+kron4ek-wine-9.2-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1707642623'
 kron4ek-wine-9.2-staging-amd64:
   Category: runners
   Sub-category: wine
