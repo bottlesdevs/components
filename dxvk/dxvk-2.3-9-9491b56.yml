@@ -1,0 +1,10 @@
+Name: dxvk-2.3-9-9491b56
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.3-9-9491b56.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.3-9-9491b56/dxvk-2.3-9-9491b56.tar.gz
+  file_checksum: ba4842947d99639ae3408fcd553c744c
+  file_size: 7709486
+  rename: dxvk-2.3-9-9491b56.tar.gz
