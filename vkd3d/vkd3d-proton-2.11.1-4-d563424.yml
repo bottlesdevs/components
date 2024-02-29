@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.11.1-4-d563424
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.11.1-4-d563424.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.11.1-4-d563424/vkd3d-proton-2.11.1-4-d563424.tar.gz
+  file_checksum: 927cb8e66df755d8304f2698f928b246
+  file_size: 2632552
+  rename: vkd3d-proton-2.11.1-4-d563424.tar.gz
