@@ -1,0 +1,14 @@
+Name: kron4ek-wine-9.3-staging-amd64
+Provider: Kron4ek
+Maintainer: CI
+Channel: stable
+File:
+- file_name: wine-9.3-staging-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/9.3/wine-9.3-staging-amd64.tar.xz
+  file_checksum: 08b909eb2f0623b9e9d879f9aacbe641
+  file_size: 58943096
+  rename: wine-9.3-staging-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-9.3-staging-amd64
+  dest: kron4ek-wine-9.3-staging-amd64
