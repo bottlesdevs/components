@@ -1,0 +1,10 @@
+Name: dxvk-2.3-10-6b3b934
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.3-10-6b3b934.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.3-10-6b3b934/dxvk-2.3-10-6b3b934.tar.gz
+  file_checksum: 2442e60d60fb094f93003d80806fd3ab
+  file_size: 7709369
+  rename: dxvk-2.3-10-6b3b934.tar.gz
