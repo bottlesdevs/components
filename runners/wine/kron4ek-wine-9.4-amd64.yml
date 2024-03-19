@@ -1,0 +1,14 @@
+Name: kron4ek-wine-9.4-amd64
+Provider: Kron4ek
+Maintainer: CI
+Channel: stable
+File:
+- file_name: wine-9.4-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/9.4/wine-9.4-amd64.tar.xz
+  file_checksum: 2ca2e2ae941374050c40845eb3256c4f
+  file_size: 55395624
+  rename: wine-9.4-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-9.4-amd64
+  dest: kron4ek-wine-9.4-amd64
