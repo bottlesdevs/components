@@ -84,7 +84,7 @@ if [ "$newer" -eq 0 ]; then
 fi
 
 if [ "$channel" = "unstable" ] && [ "$latest_channel" = "unstable" ]; then
-    if [[ $latest =~ .*-([[:digit:]])-[[:alnum:]]{7} ]]; then
+    if [[ $latest =~ .*-([[:digit:]]+)-[[:alnum:]]{7} ]]; then
         revision="${BASH_REMATCH[1]}"
         commit_sha=${component_name: -7}
         ((revision=$revision+1))
