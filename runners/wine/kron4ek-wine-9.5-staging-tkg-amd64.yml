@@ -1,0 +1,14 @@
+Name: kron4ek-wine-9.5-staging-tkg-amd64
+Provider: Kron4ek
+Maintainer: CI
+Channel: stable
+File:
+- file_name: wine-9.5-staging-tkg-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/9.5/wine-9.5-staging-tkg-amd64.tar.xz
+  file_checksum: b5f434169c7e2fb5350229f6b38392d2
+  file_size: 58953432
+  rename: wine-9.5-staging-tkg-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-9.5-staging-tkg-amd64
+  dest: kron4ek-wine-9.5-staging-tkg-amd64
