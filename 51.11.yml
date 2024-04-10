@@ -628,6 +628,11 @@ vaniglia-21.1.0-cx:
 
 # ./input_files/10-GE-Proton.yml
 # -----------------------
+ge-proton9-2:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1710998670'
 ge-proton9-1:
   Category: runners
   Sub-category: proton
@@ -948,6 +953,36 @@ ge-proton7-4:
 
 # ./input_files/11-kron4ek.yml
 # -----------------------
+kron4ek-wine-9.6-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1712480829'
+kron4ek-wine-9.6-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1712480835'
+kron4ek-wine-9.6-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1712480840'
+kron4ek-wine-9.5-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1711476891'
+kron4ek-wine-9.5-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1711476982'
+kron4ek-wine-9.5-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1711477025'
 kron4ek-wine-9.4-amd64:
   Category: runners
   Sub-category: wine
@@ -1755,6 +1790,10 @@ kron4ek-wine-6.3-proton-experimental-1b31393-amd64:
 
 # ./input_files/13-vkd3d-proton.yml
 # -----------------------
+vkd3d-proton-2.12-1-c3b3856:
+  Category: vkd3d
+  Channel: unstable
+  Date: '1712157990'
 vkd3d-proton-2.12:
   Category: vkd3d
   Channel: stable
@@ -1792,10 +1831,14 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
-dxvk-2.3-1-2e1a19c:
+dxvk-2.3.1-1-49e9ea5:
   Category: dxvk
   Channel: unstable
-  Date: '1710762989'
+  Date: '1712169126'
+dxvk-2.3.1:
+  Category: dxvk
+  Channel: stable
+  Date: '1710955086'
 dxvk-2.3:
   Category: dxvk
   Channel: stable
@@ -1845,6 +1888,10 @@ dxvk-1.7.3:
 
 # ./input_files/15-dxvk-async.yml
 # -----------------------
+dxvk-gplasync-v2.3.1-1:
+  Category: dxvk
+  Channel: stable
+  Date: '1711029560'
 dxvk-gplasync-v2.3-1:
   Category: dxvk
   Channel: stable
