@@ -1,0 +1,14 @@
+Name: ge-proton9-3
+Provider: GloriousEggroll
+Maintainer: CI
+Channel: stable
+File:
+- file_name: GE-Proton9-3.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton9-3/GE-Proton9-3.tar.gz
+  file_checksum: 0c772238fdc909800fa483773766651f
+  file_size: 435294359
+  rename: GE-Proton9-3.tar.gz
+Post:
+- action: rename
+  source: GE-Proton9-3
+  dest: ge-proton9-3
