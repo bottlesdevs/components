@@ -1,0 +1,10 @@
+Name: caffe-9.7
+Provider: bottlesdevs
+Maintainer: CI
+Channel: stable
+File:
+- file_name: caffe-9.7-x86_64.tar.xz
+  url: https://github.com/bottlesdevs/wine/releases/download/caffe-9.7/caffe-9.7-x86_64.tar.xz
+  file_checksum: fcdcba6b319362fe180ecc64583d11dc
+  file_size: 63772260
+  rename: caffe-9.7-x86_64.tar.xz

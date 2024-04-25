@@ -29,6 +29,11 @@ winebridge-1.1.0:
 
 # ./input_files/3-soda.yml
 # -----------------------
+soda-9-0:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1714029526'
 soda-8.0-2:
   Category: runners
   Sub-category: wine
@@ -77,6 +82,11 @@ soda-7.0:
 
 # ./input_files/4-caffe.yml
 # -----------------------
+caffe-9.7:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1714029044'
 caffe-9.2:
   Category: runners
   Sub-category: wine
@@ -963,6 +973,21 @@ ge-proton7-4:
 
 # ./input_files/11-kron4ek.yml
 # -----------------------
+kron4ek-wine-9.7-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1713711620'
+kron4ek-wine-9.7-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1713711625'
+kron4ek-wine-9.7-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1713711629'
 kron4ek-wine-9.6-amd64:
   Category: runners
   Sub-category: wine
