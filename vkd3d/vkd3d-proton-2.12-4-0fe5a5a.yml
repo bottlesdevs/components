@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.12-4-0fe5a5a
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.12-4-0fe5a5a.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.12-4-0fe5a5a/vkd3d-proton-2.12-4-0fe5a5a.tar.gz
+  file_checksum: e79c84e538a514978cbaf98dfff43e8a
+  file_size: 2642812
+  rename: vkd3d-proton-2.12-4-0fe5a5a.tar.gz
