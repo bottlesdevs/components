@@ -1,0 +1,8 @@
+Name: GE-Proton7-26
+Provider: gloriouseggroll
+Channel: stable
+File:
+- file_name: GE-Proton7-26.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton7-26/GE-Proton7-26.tar.gz
+  file_checksum: cd6faa28fd335ac9aa4371671a85f1ec
+  rename: GE-Proton7-26.tar.gz
