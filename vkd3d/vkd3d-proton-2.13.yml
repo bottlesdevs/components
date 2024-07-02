@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.13
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: stable
+File:
+- file_name: vkd3d-proton-2.13.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.13/vkd3d-proton-2.13.tar.gz
+  file_checksum: 20c3da1f5c2ca3f6acc5acf91252f6d4
+  file_size: 2647732
+  rename: vkd3d-proton-2.13.tar.gz
