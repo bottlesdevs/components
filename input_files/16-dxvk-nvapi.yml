@@ -1,3 +1,7 @@
+dxvk-nvapi-v0.7.1:
+  Category: nvapi
+  Channel: stable
+  Date: '1718985009'
 dxvk-nvapi-v0.7.0:
   Category: nvapi
   Channel: stable
