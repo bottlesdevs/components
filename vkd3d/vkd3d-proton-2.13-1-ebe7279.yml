@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.13-1-ebe7279
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.13-1-ebe7279.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.13-1-ebe7279/vkd3d-proton-2.13-1-ebe7279.tar.gz
+  file_checksum: e2931292cae303380626b69db5148d17
+  file_size: 2656207
+  rename: vkd3d-proton-2.13-1-ebe7279.tar.gz
