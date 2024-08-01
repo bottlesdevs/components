@@ -1,0 +1,33 @@
+diff --git a/input_files/11-kron4ek.yml b/input_files/11-kron4ek.yml
+index 5a0185b..d401692 100644
+--- a/input_files/11-kron4ek.yml
++++ b/input_files/11-kron4ek.yml
+@@ -1,3 +1,8 @@
++kron4ek-wine-9.14-amd64:
++  Category: runners
++  Sub-category: wine
++  Channel: stable
++  Date: '1722444638'
+ kron4ek-wine-9.13-amd64:
+   Category: runners
+   Sub-category: wine
+diff --git a/runners/wine/kron4ek-wine-9.14-amd64.yml b/runners/wine/kron4ek-wine-9.14-amd64.yml
+new file mode 100644
+index 0000000..6d07db6
+--- /dev/null
++++ b/runners/wine/kron4ek-wine-9.14-amd64.yml
+@@ -0,0 +1,14 @@
++Name: kron4ek-wine-9.14-amd64
++Provider: Kron4ek
++Maintainer: CI
++Channel: stable
++File:
++- file_name: wine-9.14-amd64.tar.xz
++  url: https://github.com/Kron4ek/Wine-Builds/releases/download/9.14/wine-9.14-amd64.tar.xz
++  file_checksum: c0e7c77fb830169ba670493acca8f9b5
++  file_size: 56052904
++  rename: wine-9.14-amd64.tar.xz
++Post:
++- action: rename
++  source: wine-9.14-amd64
++  dest: kron4ek-wine-9.14-amd64
