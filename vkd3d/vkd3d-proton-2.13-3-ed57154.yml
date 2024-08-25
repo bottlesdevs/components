@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.13-3-ed57154
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.13-3-ed57154.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.13-3-ed57154/vkd3d-proton-2.13-3-ed57154.tar.gz
+  file_checksum: 2ac324a2e83a4bfd52117c5292d158a0
+  file_size: 2661883
+  rename: vkd3d-proton-2.13-3-ed57154.tar.gz
