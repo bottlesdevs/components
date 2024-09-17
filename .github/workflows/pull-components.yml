@@ -246,10 +246,10 @@ jobs:
         if: env.UPDATED == 'true' && steps.download-artifact.outputs.found_artifact == 'true'
         working-directory: "bottle-components-repository"
         run: |
-          folder=$(find "${{ github.workspace }}/artifact" -name "${{ env.NAMEPREFIX }}*")
+          folder=$(find "${{ github.workspace }}/artifact" -type d -name "${{ env.NAMEPREFIX }}*")
           # Components specific tweaks
           if [[ "${{ env.NAMEPREFIX }}" == "dxvk"* ]]; then
-            rm -rf "$folder/usr"
+            rm -rf "$folder/dxvk-native"*
           fi
           mkdir "${{ env.NAME }}"
           mv "$folder"/* "${{ env.NAME }}"
