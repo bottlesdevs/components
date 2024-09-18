@@ -1,0 +1,10 @@
+Name: dxvk-2.4-1-11ec603
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.4-1-11ec603.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.4-1-11ec603/dxvk-2.4-1-11ec603.tar.gz
+  file_checksum: 9fcec74a6f751e35564334c76b73292a
+  file_size: 9241645
+  rename: dxvk-2.4-1-11ec603.tar.gz
