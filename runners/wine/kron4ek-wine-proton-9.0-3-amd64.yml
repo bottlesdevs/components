@@ -1,0 +1,14 @@
+Name: kron4ek-wine-proton-9.0-3-amd64
+Provider: Kron4ek
+Maintainer: CI
+Channel: stable
+File:
+- file_name: wine-proton-9.0-3-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/proton-9.0-3/wine-proton-9.0-3-amd64.tar.xz
+  file_checksum: bbe8e84d6c6b55deb2b29ce6994e2d2e
+  file_size: 56785544
+  rename: wine-proton-9.0-3-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-proton-9.0-3-amd64
+  dest: kron4ek-wine-proton-9.0-3-amd64
