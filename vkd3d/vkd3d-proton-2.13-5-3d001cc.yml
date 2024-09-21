@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.13-5-3d001cc
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.13-5-3d001cc.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.13-5-3d001cc/vkd3d-proton-2.13-5-3d001cc.tar.gz
+  file_checksum: 9365256b8f3881b73fe01c559a1cda60
+  file_size: 2674560
+  rename: vkd3d-proton-2.13-5-3d001cc.tar.gz
