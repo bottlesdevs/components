@@ -638,6 +638,11 @@ vaniglia-21.1.0-cx:
 
 # ./input_files/10-GE-Proton.yml
 # -----------------------
+ge-proton9-14:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1727162685'
 ge-proton9-13:
   Category: runners
   Sub-category: proton
