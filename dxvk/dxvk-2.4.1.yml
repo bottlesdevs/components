@@ -1,0 +1,10 @@
+Name: dxvk-2.4.1
+Provider: doitsujin
+Maintainer: CI
+Channel: stable
+File:
+- file_name: dxvk-2.4.1.tar.gz
+  url: https://github.com/doitsujin/dxvk/releases/download/v2.4.1/dxvk-2.4.1.tar.gz
+  file_checksum: f2bb1a1a24b432c507304c77bce9f69d
+  file_size: 9276868
+  rename: dxvk-2.4.1.tar.gz
