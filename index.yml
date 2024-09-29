@@ -638,6 +638,11 @@ vaniglia-21.1.0-cx:
 
 # ./input_files/10-GE-Proton.yml
 # -----------------------
+ge-proton9-15:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1727576435'
 ge-proton9-14:
   Category: runners
   Sub-category: proton
@@ -2156,6 +2161,10 @@ dxvk-1.7.3:
 
 # ./input_files/15-dxvk-async.yml
 # -----------------------
+dxvk-gplasync-v2.4.1-1:
+  Category: dxvk
+  Channel: stable
+  Date: '1727432711'
 dxvk-gplasync-v2.4-1:
   Category: dxvk
   Channel: stable
