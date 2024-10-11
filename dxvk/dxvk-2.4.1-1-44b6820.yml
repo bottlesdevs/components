@@ -1,0 +1,10 @@
+Name: dxvk-2.4.1-1-44b6820
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.4.1-1-44b6820.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.4.1-1-44b6820/dxvk-2.4.1-1-44b6820.tar.gz
+  file_checksum: ced9214599f19e89eddcdd12a7e74270
+  file_size: 9250580
+  rename: dxvk-2.4.1-1-44b6820.tar.gz
