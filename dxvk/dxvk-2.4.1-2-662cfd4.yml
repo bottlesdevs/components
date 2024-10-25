@@ -1,0 +1,10 @@
+Name: dxvk-2.4.1-2-662cfd4
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.4.1-2-662cfd4.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.4.1-2-662cfd4/dxvk-2.4.1-2-662cfd4.tar.gz
+  file_checksum: a47c8b99fab9223676de4abd886bed66
+  file_size: 9345462
+  rename: dxvk-2.4.1-2-662cfd4.tar.gz
