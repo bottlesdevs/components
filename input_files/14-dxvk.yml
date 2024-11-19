@@ -1,3 +1,7 @@
+dxvk-2.5.1:
+  Category: dxvk
+  Channel: stable
+  Date: '1731929669'
 dxvk-2.5:
   Category: dxvk
   Channel: stable
