@@ -1043,6 +1043,21 @@ ge-proton7-4:
 
 # ./input_files/11-kron4ek.yml
 # -----------------------
+kron4ek-wine-9.22-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1732398456'
+kron4ek-wine-9.22-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1732398463'
+kron4ek-wine-9.22-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1732398472'
 kron4ek-wine-9.21-amd64:
   Category: runners
   Sub-category: wine
@@ -2234,6 +2249,10 @@ dxvk-1.7.3:
 
 # ./input_files/15-dxvk-async.yml
 # -----------------------
+dxvk-gplasync-v2.5.1-1:
+  Category: dxvk
+  Channel: stable
+  Date: '1732382681'
 dxvk-gplasync-v2.5-1:
   Category: dxvk
   Channel: stable
