@@ -2249,6 +2249,10 @@ dxvk-1.7.3:
 
 # ./input_files/15-dxvk-async.yml
 # -----------------------
+dxvk-gplasync-v2.5.1-2:
+  Category: dxvk
+  Channel: stable
+  Date: '1732460462'
 dxvk-gplasync-v2.5.1-1:
   Category: dxvk
   Channel: stable
