@@ -1,0 +1,10 @@
+Name: dxvk-2.5.1-1-d956b18
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.5.1-1-d956b18.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.5.1-1-d956b18/dxvk-2.5.1-1-d956b18.tar.gz
+  file_checksum: 4e9cb9b1a4fe200f84e24de2a1966b45
+  file_size: 9778870
+  rename: dxvk-2.5.1-1-d956b18.tar.gz
