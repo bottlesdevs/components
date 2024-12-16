@@ -1,3 +1,18 @@
+kron4ek-wine-10.0-rc2-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1734299677'
+kron4ek-wine-10.0-rc2-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1734300015'
+kron4ek-wine-10.0-rc2-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1734300053'
 kron4ek-wine-proton-9.0-4-amd64:
   Category: runners
   Sub-category: wine
