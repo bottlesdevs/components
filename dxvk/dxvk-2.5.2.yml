@@ -1,0 +1,10 @@
+Name: dxvk-2.5.2
+Provider: doitsujin
+Maintainer: CI
+Channel: stable
+File:
+- file_name: dxvk-2.5.2.tar.gz
+  url: https://github.com/doitsujin/dxvk/releases/download/v2.5.2/dxvk-2.5.2.tar.gz
+  file_checksum: b1bfc3203d875b4e4d0238de46463017
+  file_size: 9784599
+  rename: dxvk-2.5.2.tar.gz
