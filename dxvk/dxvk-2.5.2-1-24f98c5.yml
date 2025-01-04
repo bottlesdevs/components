@@ -1,0 +1,10 @@
+Name: dxvk-2.5.2-1-24f98c5
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.5.2-1-24f98c5.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.5.2-1-24f98c5/dxvk-2.5.2-1-24f98c5.tar.gz
+  file_checksum: d2402621e54f46fcaf57fe62d5d74ce4
+  file_size: 9788650
+  rename: dxvk-2.5.2-1-24f98c5.tar.gz
