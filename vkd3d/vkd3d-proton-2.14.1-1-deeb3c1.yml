@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.14.1-1-deeb3c1
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.14.1-1-deeb3c1.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.14.1-1-deeb3c1/vkd3d-proton-2.14.1-1-deeb3c1.tar.gz
+  file_checksum: f73b02f93065d9cb0ffe1a0bcfcf4079
+  file_size: 2975618
+  rename: vkd3d-proton-2.14.1-1-deeb3c1.tar.gz
