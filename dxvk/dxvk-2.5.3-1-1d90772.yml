@@ -1,0 +1,10 @@
+Name: dxvk-2.5.3-1-1d90772
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.5.3-1-1d90772.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.5.3-1-1d90772/dxvk-2.5.3-1-1d90772.tar.gz
+  file_checksum: 80e3ea01d3b1ef26e447aaa648f8d8f1
+  file_size: 10108390
+  rename: dxvk-2.5.3-1-1d90772.tar.gz
