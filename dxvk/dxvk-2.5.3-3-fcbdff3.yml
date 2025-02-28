@@ -1,0 +1,10 @@
+Name: dxvk-2.5.3-3-fcbdff3
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.5.3-3-fcbdff3.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.5.3-3-fcbdff3/dxvk-2.5.3-3-fcbdff3.tar.gz
+  file_checksum: 9ec973b7b3361364c99b15d9dd25a42a
+  file_size: 10229934
+  rename: dxvk-2.5.3-3-fcbdff3.tar.gz
