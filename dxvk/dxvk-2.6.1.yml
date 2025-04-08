@@ -1,0 +1,10 @@
+Name: dxvk-2.6.1
+Provider: doitsujin
+Maintainer: CI
+Channel: stable
+File:
+- file_name: dxvk-2.6.1.tar.gz
+  url: https://github.com/doitsujin/dxvk/releases/download/v2.6.1/dxvk-2.6.1.tar.gz
+  file_checksum: 7053b756765aa9d0446dfebea9e6ac19
+  file_size: 10312443
+  rename: dxvk-2.6.1.tar.gz
