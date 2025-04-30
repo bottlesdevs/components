@@ -1,0 +1,10 @@
+Name: dxvk-gplasync-v2.6.1-1
+Provider: Ph42oN
+Maintainer: CI
+Channel: stable
+File:
+- file_name: dxvk-gplasync-v2.6.1-1.tar.gz?ref_type=heads
+  url: https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/releases/dxvk-gplasync-v2.6.1-1.tar.gz?ref_type=heads
+  file_checksum: 81bb220c2f1cb1e7789b9679a100f2e9
+  file_size: 10329027
+  rename: dxvk-gplasync-v2.6.1-1.tar.gz?ref_type=heads
