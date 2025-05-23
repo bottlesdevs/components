@@ -1,0 +1,10 @@
+Name: dxvk-2.6.1-3-a97039b
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.6.1-3-a97039b.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.6.1-3-a97039b/dxvk-2.6.1-3-a97039b.tar.gz
+  file_checksum: 7f3996a50e27b8b366e6f83bff2fef5d
+  file_size: 10074478
+  rename: dxvk-2.6.1-3-a97039b.tar.gz
