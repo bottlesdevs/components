@@ -1093,6 +1093,21 @@ ge-proton7-4:
 
 # ./input_files/11-kron4ek.yml
 # -----------------------
+kron4ek-wine-10.9-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1748937621'
+kron4ek-wine-10.9-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1748937629'
+kron4ek-wine-10.9-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1748937637'
 kron4ek-wine-proton-exp-10.0-amd64:
   Category: runners
   Sub-category: wine
@@ -2365,10 +2380,10 @@ kron4ek-wine-6.3-proton-experimental-1b31393-amd64:
 
 # ./input_files/13-vkd3d-proton.yml
 # -----------------------
-vkd3d-proton-2.14.1-8-e20e037:
+vkd3d-proton-2.14.1-9-2753384:
   Category: vkd3d
   Channel: unstable
-  Date: '1747229820'
+  Date: '1748952554'
 vkd3d-proton-2.14.1:
   Category: vkd3d
   Channel: stable
