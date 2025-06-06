@@ -1,0 +1,10 @@
+Name: dxvk-2.6.1-4-10c9ef0
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.6.1-4-10c9ef0.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.6.1-4-10c9ef0/dxvk-2.6.1-4-10c9ef0.tar.gz
+  file_checksum: da20f495b901b7e1282464e091300fea
+  file_size: 10366898
+  rename: dxvk-2.6.1-4-10c9ef0.tar.gz
