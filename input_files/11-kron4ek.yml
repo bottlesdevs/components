@@ -1,3 +1,8 @@
+kron4ek-wine-10.11-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1751436182'
 kron4ek-wine-10.10-amd64:
   Category: runners
   Sub-category: wine
