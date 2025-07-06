@@ -1,0 +1,10 @@
+Name: dxvk-2.7
+Provider: doitsujin
+Maintainer: CI
+Channel: stable
+File:
+- file_name: dxvk-2.7.tar.gz
+  url: https://github.com/doitsujin/dxvk/releases/download/v2.7/dxvk-2.7.tar.gz
+  file_checksum: bf7ea9486f93981eaa34c8831b837eb6
+  file_size: 10276188
+  rename: dxvk-2.7.tar.gz
