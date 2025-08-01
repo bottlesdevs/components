@@ -1,3 +1,8 @@
+kron4ek-wine-proton-10.0-2-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1753975920'
 kron4ek-wine-10.12-amd64:
   Category: runners
   Sub-category: wine
