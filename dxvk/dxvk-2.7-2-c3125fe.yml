@@ -1,0 +1,10 @@
+Name: dxvk-2.7-2-c3125fe
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.7-2-c3125fe.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.7-2-c3125fe/dxvk-2.7-2-c3125fe.tar.gz
+  file_checksum: 9cf989ddbae2a4700ce9f0ae8fd38c6b
+  file_size: 10294598
+  rename: dxvk-2.7-2-c3125fe.tar.gz
