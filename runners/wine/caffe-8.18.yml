@@ -3,8 +3,8 @@ Provider: bottlesdevs
 Maintainer: CI
 Channel: stable
 File:
-- file_name: caffe-8.18-x86_64.tar.xz
-  url: https://github.com/bottlesdevs/wine/releases/download/caffe-8.18/caffe-8.18-x86_64.tar.xz
-  file_checksum: 10dc6077d10343f8e7c3e7ac05e9ed04
-  file_size: 64465180
-  rename: caffe-8.18-x86_64.tar.xz
+    - file_name: caffe-8.18-x86_64.tar.xz
+      url: https://github.com/bottlesdevs/wine/releases/download/caffe-8.18/caffe-8.18-x86_64.tar.xz
+      file_checksum: 0ffeaa6c41486da60bb2703d1ed86890
+      file_size: 64465180
+      rename: caffe-8.18-x86_64.tar.xz
