@@ -1143,6 +1143,11 @@ kron4ek-wine-10.13-staging-tkg-amd64:
   Sub-category: wine
   Channel: stable
   Date: '1755385726'
+kron4ek-wine-10.13-staging-tkg-ntsync-amd64-wow64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1755385757'
 kron4ek-wine-proton-10.0-2-amd64:
   Category: runners
   Sub-category: wine
