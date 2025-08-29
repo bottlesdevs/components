@@ -1,0 +1,14 @@
+Name: ge-proton10-15
+Provider: GloriousEggroll
+Maintainer: CI
+Channel: stable
+File:
+- file_name: GE-Proton10-15.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton10-15/GE-Proton10-15.tar.gz
+  file_checksum: e5c13c53a9f70c40f1a3d1a5d49147b8
+  file_size: 503128684
+  rename: GE-Proton10-15.tar.gz
+Post:
+- action: rename
+  source: GE-Proton10-15
+  dest: ge-proton10-15
