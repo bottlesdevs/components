@@ -1,7 +1,7 @@
-dxvk-2.7-3-402c290:
+dxvk-2.7.1:
   Category: dxvk
-  Channel: unstable
-  Date: '1756039649'
+  Channel: stable
+  Date: '1756549349'
 dxvk-2.7:
   Category: dxvk
   Channel: stable
