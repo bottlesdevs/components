@@ -1,0 +1,10 @@
+Name: dxvk-2.7.1-1-3798b12
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.7.1-1-3798b12.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.7.1-1-3798b12/dxvk-2.7.1-1-3798b12.tar.gz
+  file_checksum: 52d8abae187d4916db05440b72cc1220
+  file_size: 12317507
+  rename: dxvk-2.7.1-1-3798b12.tar.gz
