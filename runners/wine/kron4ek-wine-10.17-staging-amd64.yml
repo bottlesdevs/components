@@ -1,0 +1,14 @@
+Name: kron4ek-wine-10.17-staging-amd64
+Provider: Kron4ek
+Maintainer: CI
+Channel: stable
+File:
+- file_name: wine-10.17-staging-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/10.17/wine-10.17-staging-amd64.tar.xz
+  file_checksum: 7cae5ebf62d3ddc29f80d34879609c9a
+  file_size: 74380196
+  rename: wine-10.17-staging-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-10.17-staging-amd64
+  dest: kron4ek-wine-10.17-staging-amd64
