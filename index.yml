@@ -638,6 +638,11 @@ vaniglia-21.1.0-cx:
 
 # ./input_files/10-GE-Proton.yml
 # -----------------------
+ge-proton10-24:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1761718465'
 ge-proton10-23:
   Category: runners
   Sub-category: proton
@@ -2585,10 +2590,10 @@ kron4ek-wine-6.3-proton-experimental-1b31393-amd64:
 
 # ./input_files/13-vkd3d-proton.yml
 # -----------------------
-vkd3d-proton-2.14.1-17-949728a:
+vkd3d-proton-2.14.1-18-dd0babc:
   Category: vkd3d
   Channel: unstable
-  Date: '1760103209'
+  Date: '1761648119'
 vkd3d-proton-2.14.1:
   Category: vkd3d
   Channel: stable
