@@ -1,0 +1,10 @@
+Name: dxvk-2.7.1-4-e2394e8
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.7.1-4-e2394e8.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.7.1-4-e2394e8/dxvk-2.7.1-4-e2394e8.tar.gz
+  file_checksum: 2a766842dc2ce41da14e549a5b56a425
+  file_size: 15258625
+  rename: dxvk-2.7.1-4-e2394e8.tar.gz
