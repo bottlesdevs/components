@@ -4,7 +4,7 @@ Maintainer: CI
 Channel: stable
 File:
 - file_name: dxvk-nvapi-v0.9.0.tar.gz
-  url: https://github.com/bottlesdevs/components/releases/download/dxvk-nvapi-v0.9.0/dxvk-nvapi-v0.9.0.tar.gz
-  file_checksum: 2706992d1b501d0008cabba231b74a58
-  file_size: 4730812
+  url: https://github.com/jp7677/dxvk-nvapi/releases/download/v0.9.0/dxvk-nvapi-v0.9.0.tar.gz
+  file_checksum: 9d95178b32a1f0950b06ec314ff0d63bbffaf63e
+  file_size: 4731560
   rename: dxvk-nvapi-v0.9.0.tar.gz
