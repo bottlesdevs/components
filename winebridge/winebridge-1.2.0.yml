@@ -1,0 +1,8 @@
+Name: winebridge-1.2.0
+Provider: bottles
+Channel: stable
+File:
+- file_name: WineBridge-75aa25e.tar.xz
+  url: https://github.com/bottlesdevs/winebridge/releases/download/1.2.0/WineBridge-75aa25e.tar.xz
+  file_checksum: a0ef3ff68f35c898dc7b3d88f623f813
+  rename: WineBridge-75aa25e.tar.xz
