@@ -26,6 +26,9 @@ runtime-0.5:
 winebridge-1.1.0:
   Category: winebridge
   Channel: stable
+winebridge-1.2.0:
+  Category: winebridge
+  Channel: stable
 
 # ./input_files/3-soda.yml
 # -----------------------
