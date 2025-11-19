@@ -1,3 +1,6 @@
 winebridge-1.1.0:
   Category: winebridge
   Channel: stable
+winebridge-1.2.0:
+  Category: winebridge
+  Channel: stable
