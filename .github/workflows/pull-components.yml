@@ -19,7 +19,7 @@ jobs:
   prepare:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           path: "bottle-components-repository"
           ref: ${{ github.ref_name }}
@@ -89,7 +89,7 @@ jobs:
           ]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           path: "bottle-components-repository"
           ref: ${{ env.PR_BRANCH }}
@@ -157,7 +157,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           repository: bottlesdevs/tools
           path: "tools"
@@ -352,7 +352,7 @@ jobs:
     if: always() && needs.prepare.result == 'success'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           path: "bottle-components-repository"
           ref: ${{ env.WORKING_BRANCH }}
