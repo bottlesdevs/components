@@ -1,0 +1,10 @@
+Name: dxvk-2.7.1-7-21eb344
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.7.1-7-21eb344.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.7.1-7-21eb344/dxvk-2.7.1-7-21eb344.tar.gz
+  file_checksum: de1354fcafa7d20e582605595fd2b7e6
+  file_size: 15441280
+  rename: dxvk-2.7.1-7-21eb344.tar.gz
