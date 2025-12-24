@@ -1,0 +1,14 @@
+Name: kron4ek-wine-11.0-rc3-staging-amd64
+Provider: Kron4ek
+Maintainer: CI
+Channel: stable
+File:
+- file_name: wine-11.0-rc3-staging-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/11.0-rc3/wine-11.0-rc3-staging-amd64.tar.xz
+  file_checksum: ba69093d483ccc27b23876d8a6d35c7c
+  file_size: 77008812
+  rename: wine-11.0-rc3-staging-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-11.0-rc3-staging-amd64
+  dest: kron4ek-wine-11.0-rc3-staging-amd64
