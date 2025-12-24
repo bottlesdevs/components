@@ -81,7 +81,7 @@ jobs:
             {order: 12, repo : "Kron4ek/Wine-Builds"             , project-id: 0       , workflow: ""                       , branch: "master", name-prefix: "wine-"         , name-suffix: "-amd64"            , version-prefix: ""          , Category: "runners"    , Sub-category: "wine"  , yaml-file: "11-kron4ek.yml"      },
             {order: 13, repo : "bottlesdevs/runtime"             , project-id: 0       , workflow: ""                       , branch: "main"  , name-prefix: "runtime-"      , name-suffix: ""                  , version-prefix: ""          , Category: "runtimes"   , Sub-category: ""      , yaml-file: "1-runtime.yml"       },
             {order: 14, repo : "Ph42oN/dxvk-gplasync"            , project-id: 43488626, workflow: ""                       , branch: "main"  , name-prefix: "dxvk-gplasync-", name-suffix: ""                  , version-prefix: ""          , Category: "dxvk"       , Sub-category: ""      , yaml-file: "15-dxvk-async.yml"   },
-            {order: 15, repo : "Etaash-mathamsetty/Proton"       , project-id: 0       , workflow: ""                       , branch: "em-10" , name-prefix: "proton-EM-"    , name-suffix: ""                  , version-prefix: "proton-EM-", Category: "runners"    , Sub-category: "proton", yaml-file: "18-proton-EM.yml"    },
+            {order: 15, repo : "Etaash-mathamsetty/Proton"       , project-id: 0       , workflow: ""                       , branch: "em-10" , name-prefix: "proton-EM-"    , name-suffix: ""                  , version-prefix: "EM-"       , Category: "runners"    , Sub-category: "proton", yaml-file: "18-proton-EM.yml"    },
           ]
     runs-on: ubuntu-latest
     steps:
