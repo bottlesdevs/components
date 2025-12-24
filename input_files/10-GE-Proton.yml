@@ -1,3 +1,8 @@
+ge-proton10-27:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1766409329'
 ge-proton10-26:
   Category: runners
   Sub-category: proton
