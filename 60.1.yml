@@ -2975,3 +2975,11 @@ latencyflex-v0.1.1:
 latencyflex-v0.1.0:
   Category: latencyflex
   Channel: stable
+
+# ./input_files/18-proton-EM.yml
+# -----------------------
+proton-em-10.0-32:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1763330873'
