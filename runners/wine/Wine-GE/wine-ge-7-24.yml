@@ -1,0 +1,13 @@
+Name: wine-ge-7-24
+Provider: gloriouseggroll
+Channel: stable
+File:
+- file_name: wine-lutris-GE-Proton7-24-x86_64.tar.xz
+  url: https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton7-24/wine-lutris-GE-Proton7-24-x86_64.tar.xz
+  file_checksum: 5ea273d7d03452b873eba78b25c1a8b9
+  rename: wine-ge-7-24.tar.xz
+
+Post:
+- action: rename
+  source: lutris-GE-Proton7-24
+  dest: wine-ge-7-24

@@ -1,0 +1,9 @@
+Name: kron4ek-wine-7.2-staging-x86
+Provider: Kron4ek
+Channel: stable
+File:
+- file_name: wine-7.2-staging-x86.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/7.2/wine-7.2-staging-x86.tar.xz
+  file_checksum: a32d0da5e318fed3d2fca326333e835a
+  file_size: 26308860
+  rename: kron4ek-wine-7.2-staging-x86.tar.xz

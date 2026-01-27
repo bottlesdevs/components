@@ -1,0 +1,9 @@
+Name: kron4ek-wine-6.19-x86
+Provider: bottles
+Channel: stable
+File:
+- file_name: wine-6.19-x86.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/6.19/wine-6.19-x86.tar.xz
+  file_checksum: 1a1a5e098d3a5ea210c3d9affa39d0c6
+  file_size: 22423272
+  rename: kron4ek-wine-6.19-x86.tar.xz
