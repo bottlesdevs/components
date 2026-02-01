@@ -2786,10 +2786,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
-dxvk-2.7.1-9-d6c19f9:
+dxvk-2.7.1-10-8005016:
   Category: dxvk
   Channel: unstable
-  Date: '1768669176'
+  Date: '1769903128'
 dxvk-2.7.1:
   Category: dxvk
   Channel: stable
