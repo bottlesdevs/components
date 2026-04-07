@@ -1,0 +1,14 @@
+Name: kron4ek-wine-11.6-staging-amd64
+Provider: Kron4ek
+Maintainer: CI
+Channel: stable
+File:
+- file_name: wine-11.6-staging-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/11.6/wine-11.6-staging-amd64.tar.xz
+  file_checksum: 37eb399c8fe7bcccc91370ddf09b5aa5
+  file_size: 90603960
+  rename: wine-11.6-staging-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-11.6-staging-amd64
+  dest: kron4ek-wine-11.6-staging-amd64
