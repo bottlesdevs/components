@@ -3,8 +3,8 @@ Provider: bottlesdevs
 Maintainer: CI
 Channel: stable
 File:
-- file_name: soda-experimental_8.0-x86_64.tar.xz
-  url: https://github.com/bottlesdevs/wine/releases/download/soda-experimental_8.0/soda-experimental_8.0-x86_64.tar.xz
-  file_checksum: 9fd319cf6a5ce84cdfe54714e3689364
-  file_size: 66393428
-  rename: soda-experimental_8.0-x86_64.tar.xz
+    - file_name: soda-experimental_8.0-x86_64.tar.xz
+      url: https://github.com/bottlesdevs/wine/releases/download/soda-experimental_8.0/soda-experimental_8.0-x86_64.tar.xz
+      file_checksum: 286fdee4acfb5327db1f90e15d3af1f7
+      file_size: 66393428
+      rename: soda-experimental_8.0-x86_64.tar.xz

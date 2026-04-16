@@ -1,0 +1,10 @@
+Name: dxvk-2.7.1-14-5af3710
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.7.1-14-5af3710.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.7.1-14-5af3710/dxvk-2.7.1-14-5af3710.tar.gz
+  file_checksum: 2a996dfc9055faf54685eca13b16c5bf
+  file_size: 15996510
+  rename: dxvk-2.7.1-14-5af3710.tar.gz

@@ -1,0 +1,10 @@
+Name: dxvk-2.7.1-6-fc848a4
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.7.1-6-fc848a4.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.7.1-6-fc848a4/dxvk-2.7.1-6-fc848a4.tar.gz
+  file_checksum: 1a2267f79505009117fd87eb91a34213
+  file_size: 15371492
+  rename: dxvk-2.7.1-6-fc848a4.tar.gz

@@ -1,0 +1,10 @@
+Name: dxvk-2.7.1-3-919a65b
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.7.1-3-919a65b.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.7.1-3-919a65b/dxvk-2.7.1-3-919a65b.tar.gz
+  file_checksum: 25215febfb59bd971ce671a188a1af31
+  file_size: 15257329
+  rename: dxvk-2.7.1-3-919a65b.tar.gz

@@ -3,7 +3,7 @@ name: CI
 on:
   schedule:
     # Check for update every day at 07:11
-    - cron:  '11 7 * * *'
+    - cron: "11 7 * * *"
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -11,7 +11,7 @@ env:
   WORKING_BRANCH: ci/${{ github.ref_name }}
   PR_BRANCH: pr/ci/${{ github.ref_name }}
 
-concurrency: 
+concurrency:
   # Github Actions does not support ${{ env.WORKING_BRANCH }} as group name...
   group: ci/${{ github.ref_name }}
 
@@ -19,12 +19,12 @@ jobs:
   prepare:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           path: "bottle-components-repository"
           ref: ${{ github.ref_name }}
           fetch-depth: 0
-      
+
       - name: Create or reset ${{ env.WORKING_BRANCH }}
         working-directory: "bottle-components-repository"
         shell: bash {0}
@@ -66,36 +66,242 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        components: [      
-            {order: 1 , repo : "doitsujin/dxvk"                  , project-id: 0       , workflow: "artifacts.yml"          , branch: "master"      , name-prefix: "dxvk-"          , name-suffix: ""                  , version-prefix: "v"        , Category: "dxvk"       , Sub-category: ""      , yaml-file: "14-dxvk.yml"          },
-            {order: 2 , repo : "HansKristian-Work/vkd3d-proton"  , project-id: 0       , workflow: "artifacts.yml"          , branch: "master"      , name-prefix: "vkd3d-proton-"  , name-suffix: ""                  , version-prefix: "v"        , Category: "vkd3d"      , Sub-category: ""      , yaml-file: "13-vkd3d-proton.yml"  },
-            {order: 3 , repo : "bottlesdevs/wine"                , project-id: 0       , workflow: ""                       , branch: "soda"        , name-prefix: "soda-"          , name-suffix: ""                  , version-prefix: "soda-"    , Category: "runners"    , Sub-category: "wine"  , yaml-file: "3-soda.yml"           },
-            {order: 4 , repo : "bottlesdevs/wine"                , project-id: 0       , workflow: ""                       , branch: "caffe"       , name-prefix: "caffe-"         , name-suffix: ""                  , version-prefix: "caffe-"   , Category: "runners"    , Sub-category: "wine"  , yaml-file: "4-caffe.yml"          },
-            {order: 5 , repo : "GloriousEggroll/wine-ge-custom"  , project-id: 0       , workflow: ""                       , branch: "master"      , name-prefix: "wine-"          , name-suffix: ""                  , version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "5-wine-GE-Proton.yml" },
-            {order: 6 , repo : "GloriousEggroll/proton-ge-custom", project-id: 0       , workflow: ""                       , branch: "master"      , name-prefix: "GE-Proton"      , name-suffix: ""                  , version-prefix: "GE-Proton", Category: "runners"    , Sub-category: "proton", yaml-file: "10-GE-Proton.yml"     },
-            {order: 7 , repo : "ishitatsuyuki/LatencyFleX"       , project-id: 0       , workflow: "artifact.yml"           , branch: "master"      , name-prefix: "latencyflex-"   , name-suffix: ""                  , version-prefix: ""         , Category: "latencyflex", Sub-category: ""      , yaml-file: "17-latencyflex.yml"   },
-            {order: 8 , repo : "jp7677/dxvk-nvapi"               , project-id: 0       , workflow: "artifacts.yml"          , branch: "master"      , name-prefix: "dxvk-nvapi-"    , name-suffix: ""                  , version-prefix: ""         , Category: "nvapi"      , Sub-category: ""      , yaml-file: "16-dxvk-nvapi.yml"    },
-            {order: 9 , repo : "Sporif/dxvk-async"               , project-id: 0       , workflow: ""                       , branch: "master"      , name-prefix: "dxvk-async-"    , name-suffix: ""                  , version-prefix: ""         , Category: "dxvk"       , Sub-category: ""      , yaml-file: "15-dxvk-async.yml"    },
-            {order: 10, repo : "Kron4ek/Wine-Builds"             , project-id: 0       , workflow: ""                       , branch: "master"      , name-prefix: "wine-"          , name-suffix: "-staging-tkg-amd64", version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "11-kron4ek.yml"       },
-            {order: 11, repo : "Kron4ek/Wine-Builds"             , project-id: 0       , workflow: ""                       , branch: "master"      , name-prefix: "wine-"          , name-suffix: "-staging-amd64"    , version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "11-kron4ek.yml"       },
-            {order: 12, repo : "Kron4ek/Wine-Builds"             , project-id: 0       , workflow: ""                       , branch: "master"      , name-prefix: "wine-"          , name-suffix: "-amd64"            , version-prefix: ""         , Category: "runners"    , Sub-category: "wine"  , yaml-file: "11-kron4ek.yml"       },
-            {order: 13, repo : "bottlesdevs/runtime"             , project-id: 0       , workflow: ""                       , branch: "main"        , name-prefix: "runtime-"       , name-suffix: ""                  , version-prefix: ""         , Category: "runtimes"   , Sub-category: ""      , yaml-file: "1-runtime.yml"        },
-            {order: 14, repo : "Ph42oN/dxvk-gplasync"            , project-id: 43488626, workflow: ""                       , branch: "main"        , name-prefix: "dxvk-gplasync-" , name-suffix: ""                  , version-prefix: ""         , Category: "dxvk"       , Sub-category: ""      , yaml-file: "15-dxvk-async.yml"    },
-            {order: 15, repo : "CachyOS/proton-cachyos"          , project-id: 0       , workflow: ""                       , branch: "cachyos_main", name-prefix: "proton-cachyos-", name-suffix: "-x86_64"           , version-prefix: "cachyos-" , Category: "runners"    , Sub-category: "proton", yaml-file: "18-proton-cachyos.yml"},
-            {order: 16, repo : "CachyOS/proton-cachyos"          , project-id: 0       , workflow: ""                       , branch: "cachyos_main", name-prefix: "proton-cachyos-", name-suffix: "-x86_64_v3"        , version-prefix: "cachyos-" , Category: "runners"    , Sub-category: "proton", yaml-file: "18-proton-cachyos.yml"},
+        components:
+          [
+            {
+              order: 1,
+              repo: "doitsujin/dxvk",
+              project-id: 0,
+              workflow: "artifacts.yml",
+              branch: "master",
+              name-prefix: "dxvk-",
+              name-suffix: "",
+              version-prefix: "v",
+              Category: "dxvk",
+              Sub-category: "",
+              yaml-file: "14-dxvk.yml",
+            },
+            {
+              order: 2,
+              repo: "HansKristian-Work/vkd3d-proton",
+              project-id: 0,
+              workflow: "artifacts.yml",
+              branch: "master",
+              name-prefix: "vkd3d-proton-",
+              name-suffix: "",
+              version-prefix: "v",
+              Category: "vkd3d",
+              Sub-category: "",
+              yaml-file: "13-vkd3d-proton.yml",
+            },
+            {
+              order: 3,
+              repo: "bottlesdevs/wine",
+              project-id: 0,
+              workflow: "",
+              branch: "soda",
+              name-prefix: "soda-",
+              name-suffix: "",
+              version-prefix: "soda-",
+              Category: "runners",
+              Sub-category: "wine",
+              yaml-file: "3-soda.yml",
+            },
+            {
+              order: 4,
+              repo: "bottlesdevs/wine",
+              project-id: 0,
+              workflow: "",
+              branch: "caffe",
+              name-prefix: "caffe-",
+              name-suffix: "",
+              version-prefix: "caffe-",
+              Category: "runners",
+              Sub-category: "wine",
+              yaml-file: "4-caffe.yml",
+            },
+            {
+              order: 5,
+              repo: "GloriousEggroll/wine-ge-custom",
+              project-id: 0,
+              workflow: "",
+              branch: "master",
+              name-prefix: "wine-",
+              name-suffix: "",
+              version-prefix: "",
+              Category: "runners",
+              Sub-category: "wine",
+              yaml-file: "5-wine-GE-Proton.yml",
+            },
+            {
+              order: 6,
+              repo: "GloriousEggroll/proton-ge-custom",
+              project-id: 0,
+              workflow: "",
+              branch: "master",
+              name-prefix: "GE-Proton",
+              name-suffix: "",
+              version-prefix: "GE-Proton",
+              Category: "runners",
+              Sub-category: "proton",
+              yaml-file: "10-GE-Proton.yml",
+            },
+            {
+              order: 7,
+              repo: "ishitatsuyuki/LatencyFleX",
+              project-id: 0,
+              workflow: "artifact.yml",
+              branch: "master",
+              name-prefix: "latencyflex-",
+              name-suffix: "",
+              version-prefix: "",
+              Category: "latencyflex",
+              Sub-category: "",
+              yaml-file: "17-latencyflex.yml",
+            },
+            {
+              order: 8,
+              repo: "jp7677/dxvk-nvapi",
+              project-id: 0,
+              workflow: "artifacts.yml",
+              branch: "master",
+              name-prefix: "dxvk-nvapi-",
+              name-suffix: "",
+              version-prefix: "",
+              Category: "nvapi",
+              Sub-category: "",
+              yaml-file: "16-dxvk-nvapi.yml",
+            },
+            {
+              order: 9,
+              repo: "Sporif/dxvk-async",
+              project-id: 0,
+              workflow: "",
+              branch: "master",
+              name-prefix: "dxvk-async-",
+              name-suffix: "",
+              version-prefix: "",
+              Category: "dxvk",
+              Sub-category: "",
+              yaml-file: "15-dxvk-async.yml",
+            },
+            {
+              order: 10,
+              repo: "Kron4ek/Wine-Builds",
+              project-id: 0,
+              workflow: "",
+              branch: "master",
+              name-prefix: "wine-",
+              name-suffix: "-staging-tkg-amd64",
+              version-prefix: "",
+              Category: "runners",
+              Sub-category: "wine",
+              yaml-file: "11-kron4ek.yml",
+            },
+            {
+              order: 11,
+              repo: "Kron4ek/Wine-Builds",
+              project-id: 0,
+              workflow: "",
+              branch: "master",
+              name-prefix: "wine-",
+              name-suffix: "-staging-amd64",
+              version-prefix: "",
+              Category: "runners",
+              Sub-category: "wine",
+              yaml-file: "11-kron4ek.yml",
+            },
+            {
+              order: 12,
+              repo: "Kron4ek/Wine-Builds",
+              project-id: 0,
+              workflow: "",
+              branch: "master",
+              name-prefix: "wine-",
+              name-suffix: "-amd64",
+              version-prefix: "",
+              Category: "runners",
+              Sub-category: "wine",
+              yaml-file: "11-kron4ek.yml",
+            },
+            {
+              order: 13,
+              repo: "bottlesdevs/runtime",
+              project-id: 0,
+              workflow: "",
+              branch: "main",
+              name-prefix: "runtime-",
+              name-suffix: "",
+              version-prefix: "",
+              Category: "runtimes",
+              Sub-category: "",
+              yaml-file: "1-runtime.yml",
+            },
+            {
+              order: 14,
+              repo: "Ph42oN/dxvk-gplasync",
+              project-id: 43488626,
+              workflow: "",
+              branch: "main",
+              name-prefix: "dxvk-gplasync-",
+              name-suffix: "",
+              version-prefix: "",
+              Category: "dxvk",
+              Sub-category: "",
+              yaml-file: "15-dxvk-async.yml",
+            },
+            {
+              order: 15,
+              repo: "Etaash-mathamsetty/Proton",
+              project-id: 0,
+              workflow: "",
+              branch: "em-10",
+              name-prefix: "proton-EM-",
+              name-suffix: "",
+              version-prefix: "EM-",
+              Category: "runners",
+              Sub-category: "proton",
+              yaml-file: "18-proton-EM.yml",
+            },
+            {
+              order: 16,
+              repo: "CachyOS/proton-cachyos",
+              project-id: 0,
+              workflow: "",
+              branch: "cachyos_main",
+              name-prefix: "proton-cachyos-",
+              name-suffix: "-x86_64",
+              version-prefix: "cachyos-",
+              Category: "runners",
+              Sub-category: "proton",
+              yaml-file: "18-proton-cachyos.yml",
+            },
+            {
+              order: 17,
+              repo: "CachyOS/proton-cachyos",
+              project-id: 0,
+              workflow: "",
+              branch: "cachyos_main",
+              name-prefix: "proton-cachyos-",
+              name-suffix: "-x86_64_v3",
+              version-prefix: "cachyos-",
+              Category: "runners",
+              Sub-category: "proton",
+              yaml-file: "18-proton-cachyos.yml",
+            },
           ]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           path: "bottle-components-repository"
           ref: ${{ env.PR_BRANCH }}
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.x' 
-          cache: 'pip'
-          cache-dependency-path: 'bottle-components-repository/input_files/requirements-dev.txt'
+          python-version: "3.x"
+          cache: "pip"
+          cache-dependency-path: "bottle-components-repository/input_files/requirements-dev.txt"
 
       # Also needs python3-pip, zstd, gawk and gh packages which are pre-installed
       - run: pip install -r bottle-components-repository/input_files/requirements-dev.txt
@@ -146,7 +352,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: bottlesdevs/tools
           path: "tools"
@@ -278,7 +484,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name : Generate appropriate YAML file
+      - name: Generate appropriate YAML file
         if: env.UPDATED == 'true'
         working-directory: "bottle-components-repository"
         run: |
@@ -309,7 +515,7 @@ jobs:
           fi
           mv "$name.yml" "${{ env.CATEGORY }}/${{ env.SUBCATEGORY }}"
 
-      - name : Commit changes
+      - name: Commit changes
         if: env.UPDATED == 'true'
         working-directory: "bottle-components-repository"
         timeout-minutes: 10
@@ -341,7 +547,7 @@ jobs:
     if: always() && needs.prepare.result == 'success'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           path: "bottle-components-repository"
           ref: ${{ env.WORKING_BRANCH }}

@@ -1,0 +1,10 @@
+Name: dxvk-2.7-3-402c290
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.7-3-402c290.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.7-3-402c290/dxvk-2.7-3-402c290.tar.gz
+  file_checksum: a8a4d242498c9adac1a6969e9487fa85
+  file_size: 10307555
+  rename: dxvk-2.7-3-402c290.tar.gz

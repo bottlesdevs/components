@@ -1,0 +1,10 @@
+Name: vkd3d-proton-2.14.1-18-dd0babc
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: vkd3d-proton-2.14.1-18-dd0babc.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.14.1-18-dd0babc/vkd3d-proton-2.14.1-18-dd0babc.tar.gz
+  file_checksum: 268d9de34e3c99a32b4e22a7e4ba3418
+  file_size: 5010182
+  rename: vkd3d-proton-2.14.1-18-dd0babc.tar.gz

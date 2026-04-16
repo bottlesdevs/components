@@ -1,0 +1,10 @@
+Name: proton-em-10.0-33
+Provider: Etaash-mathamsetty
+Maintainer: CI
+Channel: stable
+File:
+- file_name: proton-EM-10.0-33.tar.xz
+  url: https://github.com/Etaash-mathamsetty/Proton/releases/download/EM-10.0-33/proton-EM-10.0-33.tar.xz
+  file_checksum: b74035c6623e59773af0ef2e401297d2
+  file_size: 340301840
+  rename: proton-EM-10.0-33.tar.xz

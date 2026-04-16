@@ -5,6 +5,6 @@ Channel: stable
 File:
 - file_name: vkd3d-proton-2.14.tar.gz
   url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-2.14/vkd3d-proton-2.14.tar.gz
-  file_checksum: d2cb20ade4d8227ce693d8c0634699a8
+  file_checksum: caa33c15d7f20adf84ca9b0371c3caca
   file_size: 2939444
   rename: vkd3d-proton-2.14.tar.gz
