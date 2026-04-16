@@ -3,7 +3,7 @@ name: CI
 on:
   schedule:
     # Check for update every day at 07:11
-    - cron: "11 7 * * *"
+    - cron:  '11 7 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -11,7 +11,7 @@ env:
   WORKING_BRANCH: ci/${{ github.ref_name }}
   PR_BRANCH: pr/ci/${{ github.ref_name }}
 
-concurrency:
+concurrency: 
   # Github Actions does not support ${{ env.WORKING_BRANCH }} as group name...
   group: ci/${{ github.ref_name }}
 
@@ -24,7 +24,7 @@ jobs:
           path: "bottle-components-repository"
           ref: ${{ github.ref_name }}
           fetch-depth: 0
-
+      
       - name: Create or reset ${{ env.WORKING_BRANCH }}
         working-directory: "bottle-components-repository"
         shell: bash {0}
@@ -95,9 +95,9 @@ jobs:
 
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
-          cache: "pip"
-          cache-dependency-path: "bottle-components-repository/input_files/requirements-dev.txt"
+          python-version: '3.x' 
+          cache: 'pip'
+          cache-dependency-path: 'bottle-components-repository/input_files/requirements-dev.txt'
 
       # Also needs python3-pip, zstd, gawk and gh packages which are pre-installed
       - run: pip install -r bottle-components-repository/input_files/requirements-dev.txt
@@ -280,7 +280,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate appropriate YAML file
+      - name : Generate appropriate YAML file
         if: env.UPDATED == 'true'
         working-directory: "bottle-components-repository"
         run: |
@@ -311,7 +311,7 @@ jobs:
           fi
           mv "$name.yml" "${{ env.CATEGORY }}/${{ env.SUBCATEGORY }}"
 
-      - name: Commit changes
+      - name : Commit changes
         if: env.UPDATED == 'true'
         working-directory: "bottle-components-repository"
         timeout-minutes: 10
