@@ -1,0 +1,14 @@
+Name: kron4ek-wine-11.7-staging-tkg-amd64
+Provider: Kron4ek
+Maintainer: CI
+Channel: stable
+File:
+- file_name: wine-11.7-staging-tkg-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/11.7/wine-11.7-staging-tkg-amd64.tar.xz
+  file_checksum: 2861257c63a53ae047b59b52c1488fb4
+  file_size: 90742460
+  rename: wine-11.7-staging-tkg-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-11.7-staging-tkg-amd64
+  dest: kron4ek-wine-11.7-staging-tkg-amd64
