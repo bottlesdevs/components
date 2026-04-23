@@ -1,0 +1,10 @@
+Name: dxvk-2.7.1-15-dd4b432
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.7.1-15-dd4b432.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.7.1-15-dd4b432/dxvk-2.7.1-15-dd4b432.tar.gz
+  file_checksum: c9ebaf64cb12a0067b24dff834c953a0
+  file_size: 16865368
+  rename: dxvk-2.7.1-15-dd4b432.tar.gz
