@@ -1,0 +1,10 @@
+Name: dxvk-2.7.1-16-2097f56
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.7.1-16-2097f56.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.7.1-16-2097f56/dxvk-2.7.1-16-2097f56.tar.gz
+  file_checksum: a2a1bebf9aeff34da52fcf30bf999f23
+  file_size: 16920258
+  rename: dxvk-2.7.1-16-2097f56.tar.gz
