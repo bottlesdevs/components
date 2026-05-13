@@ -1,0 +1,10 @@
+Name: dxvk-nvapi-v0.9.2
+Provider: jp7677
+Maintainer: CI
+Channel: stable
+File:
+- file_name: dxvk-nvapi-v0.9.2.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-nvapi-v0.9.2/dxvk-nvapi-v0.9.2.tar.gz
+  file_checksum: a2d873d2eb91cd4cb3a44242a60b0de4
+  file_size: 4926377
+  rename: dxvk-nvapi-v0.9.2.tar.gz
