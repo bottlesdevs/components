@@ -1226,6 +1226,21 @@ ge-proton7-4:
 
 # ./input_files/11-kron4ek.yml
 # -----------------------
+kron4ek-wine-11.10-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1780164366'
+kron4ek-wine-11.10-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1780164378'
+kron4ek-wine-11.10-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1780164390'
 kron4ek-wine-11.9-amd64:
   Category: runners
   Sub-category: wine
