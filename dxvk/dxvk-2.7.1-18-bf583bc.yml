@@ -1,0 +1,10 @@
+Name: dxvk-2.7.1-18-bf583bc
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.7.1-18-bf583bc.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.7.1-18-bf583bc/dxvk-2.7.1-18-bf583bc.tar.gz
+  file_checksum: 305d196f1b74842c8be1b4e400120ac6
+  file_size: 17665422
+  rename: dxvk-2.7.1-18-bf583bc.tar.gz
