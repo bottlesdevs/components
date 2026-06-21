@@ -1,0 +1,10 @@
+Name: dxvk-2.7.1-19-b0bb947
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-2.7.1-19-b0bb947.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-2.7.1-19-b0bb947/dxvk-2.7.1-19-b0bb947.tar.gz
+  file_checksum: 7c5776d93fc7e7afe92415c6b534a8d7
+  file_size: 17858287
+  rename: dxvk-2.7.1-19-b0bb947.tar.gz
