@@ -1,0 +1,33 @@
+diff --git a/input_files/10-GE-Proton.yml b/input_files/10-GE-Proton.yml
+index af85d32..32e4453 100644
+--- a/input_files/10-GE-Proton.yml
++++ b/input_files/10-GE-Proton.yml
+@@ -1,3 +1,8 @@
++ge-proton11-1:
++  Category: runners
++  Sub-category: proton
++  Channel: stable
++  Date: '1782269772'
+ ge-proton10-34:
+   Category: runners
+   Sub-category: proton
+diff --git a/runners/proton/ge-proton11-1.yml b/runners/proton/ge-proton11-1.yml
+new file mode 100644
+index 0000000..e0f6bf8
+--- /dev/null
++++ b/runners/proton/ge-proton11-1.yml
+@@ -0,0 +1,14 @@
++Name: ge-proton11-1
++Provider: GloriousEggroll
++Maintainer: CI
++Channel: stable
++File:
++- file_name: GE-Proton11-1-aarch64.tar.gz
++  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton11-1/GE-Proton11-1-aarch64.tar.gz
++  file_checksum: 2b61e1fe1dfc6beabfa00c7c2fb1207d
++  file_size: 605709010
++  rename: GE-Proton11-1-aarch64.tar.gz
++Post:
++- action: rename
++  source: GE-Proton11-1-aarch64
++  dest: ge-proton11-1
