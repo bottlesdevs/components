@@ -1,0 +1,9 @@
+Name: kron4ek-wine-6.22-x86
+Provider: Kron4ek
+Channel: stable
+File:
+- file_name: wine-6.22-x86.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/6.22/wine-6.22-x86.tar.xz
+  file_checksum: 9d6c318f6220e10e1b29bf1500251551
+  file_size: 24230396
+  rename: kron4ek-wine-6.22-x86.tar.xz

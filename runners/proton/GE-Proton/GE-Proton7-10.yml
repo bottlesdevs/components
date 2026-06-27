@@ -1,0 +1,8 @@
+Name: GE-Proton7-10
+Provider: gloriouseggroll
+Channel: stable
+File:
+- file_name: GE-Proton7-10.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton7-10/GE-Proton7-10.tar.gz
+  file_checksum: e5e84a4a551f88c7e32411152774b3ae
+  rename: GE-Proton7-10.tar.gz
