@@ -126,7 +126,7 @@ jobs:
             else
               asset_name=$(gh release view "$latest_release" --json assets -q ".[] | .[$i] | .name" -R ${{ matrix.components.repo }})
             fi
-            if [[ "$asset_name" =~ ${{ matrix.components.name-prefix }}.*[0-9]+${{ matrix.components.name-suffix }}\.tar.* ]]; then
+            if [[ "$asset_name" =~ ${{ matrix.components.name-prefix }}.*[0-9]+${{ matrix.components.name-suffix }}\.tar.* ]] && [[ ! "$asset_name" =~ (aarch64|arm64) ]]; then
               found=true
             fi
           done
