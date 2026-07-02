@@ -1,0 +1,14 @@
+Name: ge-proton11-1
+Provider: GloriousEggroll
+Maintainer: CI
+Channel: stable
+File:
+- file_name: GE-Proton11-1-aarch64.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton11-1/GE-Proton11-1-aarch64.tar.gz
+  file_checksum: 2b61e1fe1dfc6beabfa00c7c2fb1207d
+  file_size: 605709010
+  rename: GE-Proton11-1-aarch64.tar.gz
+Post:
+- action: rename
+  source: GE-Proton11-1-aarch64
+  dest: ge-proton11-1
