@@ -1,0 +1,14 @@
+Name: kron4ek-wine-proton-11.0-1-amd64
+Provider: Kron4ek
+Maintainer: CI
+Channel: stable
+File:
+- file_name: wine-proton-11.0-1-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/proton-11.0-1/wine-proton-11.0-1-amd64.tar.xz
+  file_checksum: f3d04aa714e89a13287fce196e33261e
+  file_size: 79749372
+  rename: wine-proton-11.0-1-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-proton-11.0-1-amd64
+  dest: kron4ek-wine-proton-11.0-1-amd64
