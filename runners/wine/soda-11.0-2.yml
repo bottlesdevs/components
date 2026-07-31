@@ -1,0 +1,10 @@
+Name: soda-11.0-2
+Provider: bottlesdevs
+Maintainer: CI
+Channel: stable
+File:
+    - file_name: soda-11.0-2-x86_64.tar.xz
+      url: https://github.com/bottlesdevs/wine/releases/download/soda-11.0-2/soda-11.0-2-x86_64.tar.xz
+      file_checksum: 084ee34046376704de8158977096324e
+      file_size: 151928224
+      rename: soda-11.0-2-x86_64.tar.xz
