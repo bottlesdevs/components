@@ -85,6 +85,7 @@ jobs:
             {order: 16, repo : "CachyOS/proton-cachyos"          , project-id: 0       , workflow: ""                       , branch: "cachyos_main", name-prefix: "proton-cachyos-", name-suffix: "-x86_64"           , version-prefix: "cachyos-"  , Category: "runners"    , Sub-category: "proton", yaml-file: "19-proton-cachyos.yml"},
             {order: 17, repo : "CachyOS/proton-cachyos"          , project-id: 0       , workflow: ""                       , branch: "cachyos_main", name-prefix: "proton-cachyos-", name-suffix: "-x86_64_v3"        , version-prefix: "cachyos-"  , Category: "runners"    , Sub-category: "proton", yaml-file: "19-proton-cachyos.yml"},
             {order: 18, repo : "CachyOS/proton-cachyos"          , project-id: 0       , workflow: ""                       , branch: "cachyos_main", name-prefix: "proton-cachyos-", name-suffix: "-x86_64_v4"        , version-prefix: "cachyos-"  , Category: "runners"    , Sub-category: "proton", yaml-file: "19-proton-cachyos.yml"},
+            {order: 19, repo : "WinterSnowfall/d7vk"              , project-id: 0       , workflow: ""                       , branch: "devel"       , name-prefix: "d7vk-v"         , name-suffix: ""                  , version-prefix: "v"         , Category: "d7vk"       , Sub-category: ""      , yaml-file: "20-d7vk.yml"        , archive-format: "zip", stable-only: true},
           ]
     runs-on: ubuntu-latest
     steps:
@@ -110,13 +111,21 @@ jobs:
             gitlab_json=$(curl -s https://gitlab.com/api/v4/projects/${{ matrix.components.project-id }}/releases)
             latest_release=$(echo -E "$gitlab_json" | jq -r ".[] | select(.tag_name | startswith(\"${{ matrix.components.version-prefix }}\")) | .tag_name" | head -1)
           else
-            latest_release=$(gh release list -R ${{ matrix.components.repo }} | grep -m1 "${{ matrix.components.version-prefix }}" | awk '{print $(NF-1)}')
+            release_args=()
+            if [[ "${{ matrix.components.stable-only }}" == "true" ]]; then
+              release_args+=(--exclude-drafts --exclude-pre-releases)
+            fi
+            latest_release=$(gh release list "${release_args[@]}" -R ${{ matrix.components.repo }} | grep -m1 "${{ matrix.components.version-prefix }}" | awk '{print $(NF-1)}')
           fi
           if [ -z "$latest_release" ]; then
             echo "::error::Cannot find release tag begining by: ${{ matrix.components.version-prefix }}"
             exit 1
           fi
           asset_name=" "
+          archive_pattern='\.tar.*'
+          if [[ "${{ matrix.components.archive-format }}" == "zip" ]]; then
+            archive_pattern='\.zip$'
+          fi
           found=false
           i=-1
           until [ -z "$asset_name" ] || [ "$asset_name" = null ] || [ "$found" = true ]; do
@@ -126,7 +135,7 @@ jobs:
             else
               asset_name=$(gh release view "$latest_release" --json assets -q ".[] | .[$i] | .name" -R ${{ matrix.components.repo }})
             fi
-            if [[ "$asset_name" =~ ${{ matrix.components.name-prefix }}.*[0-9]+${{ matrix.components.name-suffix }}\.tar.* ]] && [[ ! "$asset_name" =~ (aarch64|arm64) ]]; then
+            if [[ "$asset_name" =~ ${{ matrix.components.name-prefix }}.*[0-9]+${{ matrix.components.name-suffix }}$archive_pattern ]] && [[ ! "$asset_name" =~ (aarch64|arm64) ]]; then
               found=true
             fi
           done
