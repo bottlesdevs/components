@@ -1,0 +1,10 @@
+Name: dxvk-3.0.2-1-19dd2bb
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-3.0.2-1-19dd2bb.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-3.0.2-1-19dd2bb/dxvk-3.0.2-1-19dd2bb.tar.gz
+  file_checksum: 5f8eb2118c81e889c64f82d28cc57a5f
+  file_size: 17996631
+  rename: dxvk-3.0.2-1-19dd2bb.tar.gz
