@@ -84,8 +84,7 @@ jobs:
             {order: 15, repo : "Etaash-mathamsetty/Proton"       , project-id: 0       , workflow: ""                       , branch: "em-10"       , name-prefix: "proton-EM-"     , name-suffix: ""                  , version-prefix: "EM-"       , Category: "runners"    , Sub-category: "proton", yaml-file: "18-proton-EM.yml"     },
             {order: 16, repo : "CachyOS/proton-cachyos"          , project-id: 0       , workflow: ""                       , branch: "cachyos_main", name-prefix: "proton-cachyos-", name-suffix: "-x86_64"           , version-prefix: "cachyos-"  , Category: "runners"    , Sub-category: "proton", yaml-file: "19-proton-cachyos.yml"},
             {order: 17, repo : "CachyOS/proton-cachyos"          , project-id: 0       , workflow: ""                       , branch: "cachyos_main", name-prefix: "proton-cachyos-", name-suffix: "-x86_64_v3"        , version-prefix: "cachyos-"  , Category: "runners"    , Sub-category: "proton", yaml-file: "19-proton-cachyos.yml"},
-            {order: 18, repo : "CachyOS/proton-cachyos"          , project-id: 0       , workflow: ""                       , branch: "cachyos_main", name-prefix: "proton-cachyos-", name-suffix: "-x86_64_v4"        , version-prefix: "cachyos-"  , Category: "runners"    , Sub-category: "proton", yaml-file: "19-proton-cachyos.yml"},
-            {order: 19, repo : "WinterSnowfall/d7vk"              , project-id: 0       , workflow: ""                       , branch: "devel"       , name-prefix: "d7vk-v"         , name-suffix: ""                  , version-prefix: "v"         , Category: "d7vk"       , Sub-category: ""      , yaml-file: "20-d7vk.yml"        , archive-format: "zip", stable-only: true},
+            {order: 18, repo : "WinterSnowfall/d7vk"              , project-id: 0       , workflow: ""                       , branch: "devel"       , name-prefix: "d7vk-v"         , name-suffix: ""                  , version-prefix: "v"         , Category: "d7vk"       , Sub-category: ""      , yaml-file: "20-d7vk.yml"        , archive-format: "zip", stable-only: true},
           ]
     runs-on: ubuntu-latest
     steps:
@@ -135,7 +134,7 @@ jobs:
             else
               asset_name=$(gh release view "$latest_release" --json assets -q ".[] | .[$i] | .name" -R ${{ matrix.components.repo }})
             fi
-            if [[ "$asset_name" =~ ${{ matrix.components.name-prefix }}.*[0-9]+${{ matrix.components.name-suffix }}$archive_pattern ]] && [[ ! "$asset_name" =~ (aarch64|arm64) ]]; then
+            if [[ "$asset_name" =~ ${{ matrix.components.name-prefix }}.*[0-9].*${{ matrix.components.name-suffix }}$archive_pattern ]] && [[ ! "$asset_name" =~ (aarch64|arm64) ]]; then
               found=true
             fi
           done
