@@ -1,0 +1,10 @@
+Name: proton-em-10.0-37-hdr
+Provider: Etaash-mathamsetty
+Maintainer: CI
+Channel: stable
+File:
+- file_name: proton-EM-10.0-37-HDR.tar.xz
+  url: https://github.com/Etaash-mathamsetty/Proton/releases/download/EM-10.0-37-HDR/proton-EM-10.0-37-HDR.tar.xz
+  file_checksum: b7f2e102fda7e01476b7298caa5a6df2
+  file_size: 343702836
+  rename: proton-EM-10.0-37-HDR.tar.xz
