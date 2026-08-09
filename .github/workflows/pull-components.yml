@@ -94,7 +94,7 @@ jobs:
           path: "bottle-components-repository"
           ref: ${{ env.PR_BRANCH }}
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.x' 
           cache: 'pip'
