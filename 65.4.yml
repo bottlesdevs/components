@@ -3365,3 +3365,11 @@ d7vk-v2.0:
   Category: d7vk
   Channel: stable
   Date: '1784353994'
+
+# ./input_files/21-protosoda.yml
+# -----------------------
+protosoda-11.0-1:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1786317229'

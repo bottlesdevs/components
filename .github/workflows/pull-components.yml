@@ -85,6 +85,7 @@ jobs:
             {order: 16, repo : "CachyOS/proton-cachyos"          , project-id: 0       , workflow: ""                       , branch: "cachyos_main", name-prefix: "proton-cachyos-", name-suffix: "-x86_64"           , version-prefix: "cachyos-"  , Category: "runners"    , Sub-category: "proton", yaml-file: "19-proton-cachyos.yml"},
             {order: 17, repo : "CachyOS/proton-cachyos"          , project-id: 0       , workflow: ""                       , branch: "cachyos_main", name-prefix: "proton-cachyos-", name-suffix: "-x86_64_v3"        , version-prefix: "cachyos-"  , Category: "runners"    , Sub-category: "proton", yaml-file: "19-proton-cachyos.yml"},
             {order: 18, repo : "WinterSnowfall/d7vk"              , project-id: 0       , workflow: ""                       , branch: "devel"       , name-prefix: "d7vk-v"         , name-suffix: ""                  , version-prefix: "v"         , Category: "d7vk"       , Sub-category: ""      , yaml-file: "20-d7vk.yml"        , archive-format: "zip", stable-only: true},
+            {order: 19, repo : "bottlesdevs/wine"                 , project-id: 0       , workflow: ""                       , branch: "soda"        , name-prefix: "ProtoSoda-"     , name-suffix: ""                  , version-prefix: "protosoda-", Category: "runners"    , Sub-category: "proton", yaml-file: "21-protosoda.yml"      },
           ]
     runs-on: ubuntu-latest
     steps:
@@ -307,6 +308,13 @@ jobs:
             source="${source#wine-}"
             source="${source%.tar*}"
             source="${source%-x86_64}"
+            echo "Post:" >> "$name.yml"
+            echo -e "- action: rename" >> "$name.yml"
+            echo -e "  source: $source" >> "$name.yml"
+            echo -e "  dest: $name" >> "$name.yml"
+          elif [[ "$repo" == "bottlesdevs/wine" && "${{ env.NAMEPREFIX }}" == "protosoda-" ]]; then
+            source="${url##*/}"
+            source="${source%.tar*}"
             echo "Post:" >> "$name.yml"
             echo -e "- action: rename" >> "$name.yml"
             echo -e "  source: $source" >> "$name.yml"
