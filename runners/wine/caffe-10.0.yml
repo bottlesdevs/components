@@ -1,0 +1,10 @@
+Name: caffe-10.0
+Provider: bottlesdevs
+Maintainer: CI
+Channel: stable
+File:
+    - file_name: caffe-10.0-x86_64.tar.xz
+      url: https://github.com/bottlesdevs/wine/releases/download/caffe-10.0/caffe-10.0-x86_64.tar.xz
+      file_checksum: 07c2c5c23ff95776e337827cd066b929
+      file_size: 64194468
+      rename: caffe-10.0-x86_64.tar.xz
