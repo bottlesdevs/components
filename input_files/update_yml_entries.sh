@@ -42,7 +42,7 @@ update_entry () {
     yq -i -y "with_entries(if .key == \"$latest\" then .key = \"$component_name\" else . end) | .\"$component_name\".Channel = \"$channel\" | .\"$component_name\".Date = \"$created_at\"" $filename
 }
 
-latest=$(yq -r 'path(.[])[0]' $filename | grep -E -m1 "$nameprefix.*[[:digit:]]+$namesuffix")
+latest=$(yq -r 'path(.[])[0]' $filename | grep -E -m1 "$nameprefix.*[[:digit:]].*$namesuffix$")
 
 if [ -z "$latest" ]; then
     create_entry

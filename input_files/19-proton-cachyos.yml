@@ -1,0 +1,10 @@
+proton-cachyos-11.0-20260703-slr-x86_64_v3:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1784681897'
+proton-cachyos-11.0-20260703-slr-x86_64:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1784681889'
