@@ -3325,6 +3325,11 @@ latencyflex-v0.1.0:
 
 # ./input_files/18-proton-EM.yml
 # -----------------------
+proton-em-10.0-37-hdr:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1775933067'
 proton-em-10.0-34:
   Category: runners
   Sub-category: proton
@@ -3343,6 +3348,16 @@ proton-em-10.0-32:
 
 # ./input_files/19-proton-cachyos.yml
 # -----------------------
+proton-cachyos-11.0-20260703-slr-x86_64_v3:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1784681897'
+proton-cachyos-11.0-20260703-slr-x86_64:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1784681889'
 
 # ./input_files/20-d7vk.yml
 # -----------------------
