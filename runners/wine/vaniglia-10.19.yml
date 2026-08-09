@@ -1,0 +1,10 @@
+Name: vaniglia-10.19
+Provider: bottlesdevs
+Maintainer: CI
+Channel: stable
+File:
+    - file_name: vaniglia-10.19-x86_64.tar.gz
+      url: https://github.com/bottlesdevs/wine/releases/download/vaniglia-10.19/vaniglia-10.19-x86_64.tar.gz
+      file_checksum: 0ffbd74e47e2553da2fb3cfd52c188e3
+      file_size: 57593843
+      rename: vaniglia-10.19-x86_64.tar.gz

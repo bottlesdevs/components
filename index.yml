@@ -594,6 +594,11 @@ lutris-ge-6.12:
 
 # ./input_files/8-vaniglia.yml
 # -----------------------
+vaniglia-10.19:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1786281543'
 vaniglia-8.6:
   Category: runners
   Sub-category: wine
