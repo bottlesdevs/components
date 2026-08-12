@@ -1,0 +1,14 @@
+Name: ge-proton11-5
+Provider: GloriousEggroll
+Maintainer: CI
+Channel: stable
+File:
+- file_name: GE-Proton11-5-x86_64.tar.gz
+  url: https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton11-5/GE-Proton11-5-x86_64.tar.gz
+  file_checksum: e916b7117d5202df54ee53c93524c5ee
+  file_size: 533066604
+  rename: GE-Proton11-5-x86_64.tar.gz
+Post:
+- action: rename
+  source: GE-Proton11-5
+  dest: ge-proton11-5
