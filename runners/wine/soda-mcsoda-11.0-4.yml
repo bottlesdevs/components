@@ -1,0 +1,10 @@
+Name: soda-mcsoda-11.0-4
+Provider: bottlesdevs
+Maintainer: CI
+Channel: stable
+File:
+- file_name: mcsoda-11.0-4-x86_64.tar.xz
+  url: https://github.com/bottlesdevs/wine/releases/download/mcsoda-11.0-4/mcsoda-11.0-4-x86_64.tar.xz
+  file_checksum: 0989187bdb134d513a9014873ae07e5f
+  file_size: 513959988
+  rename: mcsoda-11.0-4-x86_64.tar.xz
