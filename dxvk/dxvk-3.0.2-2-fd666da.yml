@@ -1,0 +1,10 @@
+Name: dxvk-3.0.2-2-fd666da
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-3.0.2-2-fd666da.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-3.0.2-2-fd666da/dxvk-3.0.2-2-fd666da.tar.gz
+  file_checksum: 5693f131275319601de227b850ea67f6
+  file_size: 18012066
+  rename: dxvk-3.0.2-2-fd666da.tar.gz
