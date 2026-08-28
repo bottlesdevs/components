@@ -1,0 +1,10 @@
+Name: d7vk-v2.2
+Provider: WinterSnowfall
+Maintainer: CI
+Channel: stable
+File:
+- file_name: d7vk-v2.2.zip
+  url: https://github.com/WinterSnowfall/d7vk/releases/download/v2.2/d7vk-v2.2.zip
+  file_checksum: 708b24a4ce037703276763d51544dd7c
+  file_size: 3375635
+  rename: d7vk-v2.2.zip
