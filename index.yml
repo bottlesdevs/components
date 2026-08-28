@@ -3129,10 +3129,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
-dxvk-3.0.2-2-fd666da:
+dxvk-3.1:
   Category: dxvk
-  Channel: unstable
-  Date: '1787164876'
+  Channel: stable
+  Date: '1787934163'
 dxvk-3.0.2:
   Category: dxvk
   Channel: stable
@@ -3426,6 +3426,10 @@ proton-cachyos-11.0-20260703-slr-x86_64:
 
 # ./input_files/20-d7vk.yml
 # -----------------------
+d7vk-v2.2:
+  Category: d7vk
+  Channel: stable
+  Date: '1787937863'
 d7vk-v2.1:
   Category: d7vk
   Channel: stable
