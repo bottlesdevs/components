@@ -1,0 +1,10 @@
+Name: dxvk-3.1
+Provider: doitsujin
+Maintainer: CI
+Channel: stable
+File:
+- file_name: dxvk-3.1.tar.gz
+  url: https://github.com/doitsujin/dxvk/releases/download/v3.1/dxvk-3.1.tar.gz
+  file_checksum: 8f174d84e6b91d80baf8a10aeb85eb41
+  file_size: 18056721
+  rename: dxvk-3.1.tar.gz
