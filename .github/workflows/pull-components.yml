@@ -303,7 +303,34 @@ jobs:
           fi
           python "${{ github.workspace }}/tools/MaintainersHelpers/component-generator.py" "components" "CI" "$name" "${repo%/*}" "${{ env.CHANNEL }}" "$url" $path
           # Components specific tweaks
-          if [[ "$repo" == "GloriousEggroll"* ]]; then
+          if [[ "$repo" == "bottlesdevs/wine" && "${{ env.NAMEPREFIX }}" == "soda-" ]]; then
+            arm_asset=$(gh release view "$name" --json assets -q '.assets[] | select(.name | endswith("-aarch64.tar.xz"))' -R "$repo")
+            arm_name=$(jq -r '.name' <<< "$arm_asset")
+            arm_url=$(jq -r '.url' <<< "$arm_asset")
+            arm_size=$(jq -r '.size' <<< "$arm_asset")
+            curl -fsSL "$arm_url" -o "$arm_name"
+            arm_checksum=$(md5sum "$arm_name" | awk '{print $1}')
+            yq -i -y \
+              --arg file_name "$arm_name" \
+              --arg url "$arm_url" \
+              --arg checksum "$arm_checksum" \
+              --argjson size "$arm_size" \
+              '.File[0].architecture = "x86_64"
+              | .File[0].platform = "linux"
+              | .File += [{
+                  "file_name": $file_name,
+                  "url": $url,
+                  "file_checksum": $checksum,
+                  "file_size": $size,
+                  "rename": $file_name,
+                  "architecture": "aarch64",
+                  "platform": "linux"
+                }]' "$name.yml"
+            yq -i -y --arg name "$name" \
+              '.[$name].Platforms = ["linux"]
+              | .[$name].Architectures = ["x86_64", "aarch64"]' \
+              "input_files/${{ env.YAML_FILENAME }}"
+          elif [[ "$repo" == "GloriousEggroll"* ]]; then
             source="${url##*/}"
             source="${source#wine-}"
             source="${source%.tar*}"
@@ -326,6 +353,8 @@ jobs:
             echo -e "  dest: $name" >> "$name.yml"
           fi
           mv "$name.yml" "${{ env.CATEGORY }}/${{ env.SUBCATEGORY }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name : Commit changes
         if: env.UPDATED == 'true'
