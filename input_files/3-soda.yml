@@ -1,3 +1,13 @@
+soda-11.0-7:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1788172914'
+  Platforms:
+  - linux
+  Architectures:
+  - x86_64
+  - aarch64
 soda-11.0-6:
   Category: runners
   Sub-category: wine
