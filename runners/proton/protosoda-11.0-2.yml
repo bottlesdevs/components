@@ -1,0 +1,16 @@
+Name: protosoda-11.0-2
+Provider: bottlesdevs
+Maintainer: CI
+Channel: stable
+File:
+- platform: linux
+  architecture: x86_64
+  file_name: ProtoSoda-11.0-2.tar.gz
+  url: https://github.com/bottlesdevs/wine/releases/download/protosoda-11.0-2/ProtoSoda-11.0-2.tar.gz
+  file_checksum: 20c5564bf4e867c9c318ff3bcebc7120
+  file_size: 574751205
+  rename: ProtoSoda-11.0-2.tar.gz
+Post:
+- action: rename
+  source: ProtoSoda-11.0-2
+  dest: protosoda-11.0-2

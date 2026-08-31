@@ -1,3 +1,12 @@
+protosoda-11.0-2:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1788187760'
+  Platforms:
+  - linux
+  Architectures:
+  - x86_64
 protosoda-11.0-1:
   Category: runners
   Sub-category: proton
