@@ -1,0 +1,14 @@
+Name: protosoda-11.0-3
+Provider: bottlesdevs
+Maintainer: CI
+Channel: stable
+File:
+- file_name: ProtoSoda-11.0-3.tar.gz
+  url: https://github.com/bottlesdevs/wine/releases/download/protosoda-11.0-3/ProtoSoda-11.0-3.tar.gz
+  file_checksum: aaff137fe479fda1529ba78ce9207d3d
+  file_size: 601351813
+  rename: ProtoSoda-11.0-3.tar.gz
+Post:
+- action: rename
+  source: ProtoSoda-11.0-3
+  dest: protosoda-11.0-3
