@@ -346,6 +346,13 @@ jobs:
             echo -e "- action: rename" >> "$name.yml"
             echo -e "  source: $source" >> "$name.yml"
             echo -e "  dest: $name" >> "$name.yml"
+            yq -i -y \
+              '.File[0].architecture = "x86_64"
+              | .File[0].platform = "linux"' "$name.yml"
+            yq -i -y --arg name "$name" \
+              '.[$name].Platforms = ["linux"]
+              | .[$name].Architectures = ["x86_64"]' \
+              "input_files/${{ env.YAML_FILENAME }}"
           elif [[ "$repo" == "Kron4ek/Wine-Builds" ]]; then
             echo "Post:" >> "$name.yml"
             echo -e "- action: rename" >> "$name.yml"
