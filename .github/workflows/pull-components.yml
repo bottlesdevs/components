@@ -115,7 +115,7 @@ jobs:
             if [[ "${{ matrix.components.stable-only }}" == "true" ]]; then
               release_args+=(--exclude-drafts --exclude-pre-releases)
             fi
-            latest_release=$(gh release list "${release_args[@]}" -R ${{ matrix.components.repo }} | grep -m1 "${{ matrix.components.version-prefix }}" | awk '{print $(NF-1)}')
+            latest_release=$(gh release list "${release_args[@]}" -R ${{ matrix.components.repo }} --limit 100 --json tagName --jq '[.[] | select(.tagName | startswith("${{ matrix.components.version-prefix }}"))][0].tagName')
           fi
           if [ -z "$latest_release" ]; then
             echo "::error::Cannot find release tag begining by: ${{ matrix.components.version-prefix }}"
