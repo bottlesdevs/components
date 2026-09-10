@@ -1,0 +1,10 @@
+Name: vkd3d-proton-3.0.1-7-0bd1035
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: vkd3d-proton-3.0.1-7-0bd1035.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-3.0.1-7-0bd1035/vkd3d-proton-3.0.1-7-0bd1035.tar.gz
+  file_checksum: 9c085a7d79bafe4bbee7fec77a162625
+  file_size: 5681908
+  rename: vkd3d-proton-3.0.1-7-0bd1035.tar.gz
