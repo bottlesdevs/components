@@ -726,6 +726,11 @@ vaniglia-21.1.0-cx:
 
 # ./input_files/10-GE-Proton.yml
 # -----------------------
+ge-proton11-7:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1789525677'
 ge-proton11-6:
   Category: runners
   Sub-category: proton
@@ -3189,6 +3194,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
+dxvk-3.1.1:
+  Category: dxvk
+  Channel: stable
+  Date: '1789493166'
 dxvk-3.1:
   Category: dxvk
   Channel: stable
