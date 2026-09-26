@@ -3168,10 +3168,10 @@ kron4ek-wine-6.3-proton-experimental-1b31393-amd64:
 
 # ./input_files/13-vkd3d-proton.yml
 # -----------------------
-vkd3d-proton-3.0.1-7-0bd1035:
+vkd3d-proton-3.0.1-8-472989a:
   Category: vkd3d
   Channel: unstable
-  Date: '1789033330'
+  Date: '1790323997'
 vkd3d-proton-3.0.1:
   Category: vkd3d
   Channel: stable
