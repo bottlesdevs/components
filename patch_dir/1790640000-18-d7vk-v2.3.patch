@@ -1,0 +1,28 @@
+diff --git a/d7vk/d7vk-v2.3.yml b/d7vk/d7vk-v2.3.yml
+new file mode 100644
+index 0000000..0e52ec0
+--- /dev/null
++++ b/d7vk/d7vk-v2.3.yml
+@@ -0,0 +1,10 @@
++Name: d7vk-v2.3
++Provider: WinterSnowfall
++Maintainer: CI
++Channel: stable
++File:
++- file_name: d7vk-v2.3.zip
++  url: https://github.com/WinterSnowfall/d7vk/releases/download/v2.3/d7vk-v2.3.zip
++  file_checksum: 3393b49e82c57545b32f3ed4c53f1268
++  file_size: 3365997
++  rename: d7vk-v2.3.zip
+diff --git a/input_files/20-d7vk.yml b/input_files/20-d7vk.yml
+index 1e5b0e1..f4c8c0c 100644
+--- a/input_files/20-d7vk.yml
++++ b/input_files/20-d7vk.yml
+@@ -1,3 +1,7 @@
++d7vk-v2.3:
++  Category: d7vk
++  Channel: stable
++  Date: '1790677077'
+ d7vk-v2.2:
+   Category: d7vk
+   Channel: stable
