@@ -1,0 +1,28 @@
+diff --git a/dxvk/dxvk-3.1.1-1-d30be2b.yml b/dxvk/dxvk-3.1.1-1-d30be2b.yml
+new file mode 100644
+index 0000000..cb89545
+--- /dev/null
++++ b/dxvk/dxvk-3.1.1-1-d30be2b.yml
+@@ -0,0 +1,10 @@
++Name: dxvk-3.1.1-1-d30be2b
++Provider: doitsujin
++Maintainer: CI
++Channel: unstable
++File:
++- file_name: dxvk-3.1.1-1-d30be2b.tar.gz
++  url: https://github.com/bottlesdevs/components/releases/download/dxvk-3.1.1-1-d30be2b/dxvk-3.1.1-1-d30be2b.tar.gz
++  file_checksum: f54ca726b4f717d07c610ad3378af955
++  file_size: 18144262
++  rename: dxvk-3.1.1-1-d30be2b.tar.gz
+diff --git a/input_files/14-dxvk.yml b/input_files/14-dxvk.yml
+index 876fa66..23a6f36 100644
+--- a/input_files/14-dxvk.yml
++++ b/input_files/14-dxvk.yml
+@@ -1,3 +1,7 @@
++dxvk-3.1.1-1-d30be2b:
++  Category: dxvk
++  Channel: unstable
++  Date: '1790894103'
+ dxvk-3.1.1:
+   Category: dxvk
+   Channel: stable
