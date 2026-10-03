@@ -3278,10 +3278,10 @@ kron4ek-wine-6.3-proton-experimental-1b31393-amd64:
 
 # ./input_files/13-vkd3d-proton.yml
 # -----------------------
-vkd3d-proton-3.0.1-7-0bd1035:
+vkd3d-proton-3.0.1-8-472989a:
   Category: vkd3d
   Channel: unstable
-  Date: '1789033330'
+  Date: '1790323997'
 vkd3d-proton-3.0.1:
   Category: vkd3d
   Channel: stable
@@ -3339,6 +3339,10 @@ vkd3d-proton-2.5:
 
 # ./input_files/14-dxvk.yml
 # -----------------------
+dxvk-3.1.1-1-d30be2b:
+  Category: dxvk
+  Channel: unstable
+  Date: '1790894103'
 dxvk-3.1.1:
   Category: dxvk
   Channel: stable
@@ -3644,6 +3648,10 @@ proton-cachyos-11.0-20260703-slr-x86_64:
 
 # ./input_files/20-d7vk.yml
 # -----------------------
+d7vk-v2.3:
+  Category: d7vk
+  Channel: stable
+  Date: '1790677077'
 d7vk-v2.2:
   Category: d7vk
   Channel: stable
