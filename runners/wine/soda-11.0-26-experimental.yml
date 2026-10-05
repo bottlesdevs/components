@@ -10,3 +10,10 @@ File:
     rename: soda-11.0-26-experimental-x86_64.tar.xz
     architecture: x86_64
     platform: linux
+  - file_name: soda-11.0-26-experimental-aarch64.tar.xz
+    url: https://github.com/bottlesdevs/wine/releases/download/soda-11.0-26-experimental/soda-11.0-26-experimental-aarch64.tar.xz
+    file_checksum: b590a6f6e793209b17a056aba8f16ff9
+    file_size: 222627700
+    rename: soda-11.0-26-experimental-aarch64.tar.xz
+    architecture: aarch64
+    platform: linux

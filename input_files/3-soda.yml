@@ -7,6 +7,7 @@ soda-11.0-26-experimental:
     - linux
   Architectures:
     - x86_64
+    - aarch64
 soda-11.0-25-experimental:
   Category: runners
   Sub-category: wine
