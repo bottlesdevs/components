@@ -1,0 +1,14 @@
+Name: kron4ek-wine-11.19-staging-amd64
+Provider: Kron4ek
+Maintainer: CI
+Channel: stable
+File:
+- file_name: wine-11.19-staging-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/11.19/wine-11.19-staging-amd64.tar.xz
+  file_checksum: e5983478f941698fb5a62f8cde0f4ea9
+  file_size: 103988036
+  rename: wine-11.19-staging-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-11.19-staging-amd64
+  dest: kron4ek-wine-11.19-staging-amd64
