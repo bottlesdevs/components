@@ -5,6 +5,6 @@ Channel: stable
 File:
     - file_name: soda-8.0-2-x86_64.tar.xz
       url: https://github.com/bottlesdevs/wine/releases/download/soda-8.0-2/soda-8.0-2-x86_64.tar.xz
-      file_checksum: 0cf8d63189771c05e1d94ce4a2d03931
-      file_size: 66385724
+      file_checksum: bdba224432a6d9cd8acdbc5be227ab08
+      file_size: 68865444
       rename: soda-8.0-2-x86_64.tar.xz
