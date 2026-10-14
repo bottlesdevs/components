@@ -1,0 +1,10 @@
+Name: vkd3d-proton-3.0.1-9-fdbaf51
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: vkd3d-proton-3.0.1-9-fdbaf51.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-3.0.1-9-fdbaf51/vkd3d-proton-3.0.1-9-fdbaf51.tar.gz
+  file_checksum: 26129a8f6a40e12afd8c6e3cec413be6
+  file_size: 9624273
+  rename: vkd3d-proton-3.0.1-9-fdbaf51.tar.gz
