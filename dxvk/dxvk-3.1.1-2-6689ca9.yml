@@ -1,0 +1,10 @@
+Name: dxvk-3.1.1-2-6689ca9
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-3.1.1-2-6689ca9.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-3.1.1-2-6689ca9/dxvk-3.1.1-2-6689ca9.tar.gz
+  file_checksum: 2c70adbd872eff8798df268c09590833
+  file_size: 18337847
+  rename: dxvk-3.1.1-2-6689ca9.tar.gz
