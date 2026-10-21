@@ -1,0 +1,10 @@
+Name: proton-cachyos-11.0-20261015-slr-x86_64_v3
+Provider: CachyOS
+Maintainer: CI
+Channel: stable
+File:
+- file_name: proton-cachyos-11.0-20261015-slr-x86_64_v3.tar.xz
+  url: https://github.com/CachyOS/proton-cachyos/releases/download/cachyos-11.0-20261015-slr/proton-cachyos-11.0-20261015-slr-x86_64_v3.tar.xz
+  file_checksum: 26d97baf674d91437f89e9ec29c7c8a0
+  file_size: 341465288
+  rename: proton-cachyos-11.0-20261015-slr-x86_64_v3.tar.xz
