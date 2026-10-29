@@ -3839,6 +3839,10 @@ proton-cachyos-11.0-20260703-slr-x86_64:
 
 # ./input_files/20-d7vk.yml
 # -----------------------
+d7vk-v2.4:
+  Category: d7vk
+  Channel: stable
+  Date: '1793222524'
 d7vk-v2.3:
   Category: d7vk
   Channel: stable
