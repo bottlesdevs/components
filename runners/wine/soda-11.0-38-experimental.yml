@@ -1,0 +1,19 @@
+Name: soda-11.0-38-experimental
+Provider: bottlesdevs
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: soda-11.0-38-experimental-x86_64.tar.xz
+  url: https://github.com/bottlesdevs/wine/releases/download/soda-11.0-38-experimental/soda-11.0-38-experimental-x86_64.tar.xz
+  file_checksum: 52e25c4a2bae18fda60df2185492cf95
+  file_size: 222763224
+  rename: soda-11.0-38-experimental-x86_64.tar.xz
+  architecture: x86_64
+  platform: linux
+- file_name: soda-11.0-38-experimental-aarch64.tar.xz
+  url: https://github.com/bottlesdevs/wine/releases/download/soda-11.0-38-experimental/soda-11.0-38-experimental-aarch64.tar.xz
+  file_checksum: 5e845d624dbb2ba4b2b283c7cfc71d6d
+  file_size: 227573100
+  rename: soda-11.0-38-experimental-aarch64.tar.xz
+  architecture: aarch64
+  platform: linux
