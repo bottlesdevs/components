@@ -1,0 +1,10 @@
+Name: dxvk-3.1.1-4-3a841fa
+Provider: doitsujin
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: dxvk-3.1.1-4-3a841fa.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/dxvk-3.1.1-4-3a841fa/dxvk-3.1.1-4-3a841fa.tar.gz
+  file_checksum: d014a5583c24cef0338015d6756956e8
+  file_size: 18652185
+  rename: dxvk-3.1.1-4-3a841fa.tar.gz
