@@ -1,0 +1,30 @@
+diff --git a/dxvk/dxvk-3.1.1-4-3a841fa.yml b/dxvk/dxvk-3.1.1-4-3a841fa.yml
+new file mode 100644
+index 0000000..53e791b
+--- /dev/null
++++ b/dxvk/dxvk-3.1.1-4-3a841fa.yml
+@@ -0,0 +1,10 @@
++Name: dxvk-3.1.1-4-3a841fa
++Provider: doitsujin
++Maintainer: CI
++Channel: unstable
++File:
++- file_name: dxvk-3.1.1-4-3a841fa.tar.gz
++  url: https://github.com/bottlesdevs/components/releases/download/dxvk-3.1.1-4-3a841fa/dxvk-3.1.1-4-3a841fa.tar.gz
++  file_checksum: d014a5583c24cef0338015d6756956e8
++  file_size: 18652185
++  rename: dxvk-3.1.1-4-3a841fa.tar.gz
+diff --git a/input_files/14-dxvk.yml b/input_files/14-dxvk.yml
+index 4efffd9..61599a8 100644
+--- a/input_files/14-dxvk.yml
++++ b/input_files/14-dxvk.yml
+@@ -1,7 +1,7 @@
+-dxvk-3.1.1-3-23b07e9:
++dxvk-3.1.1-4-3a841fa:
+   Category: dxvk
+   Channel: unstable
+-  Date: '1793446480'
++  Date: '1794661440'
+ dxvk-3.1.1:
+   Category: dxvk
+   Channel: stable
