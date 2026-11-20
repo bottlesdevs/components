@@ -1,0 +1,10 @@
+Name: vkd3d-proton-3.1-1-e54da18
+Provider: HansKristian-Work
+Maintainer: CI
+Channel: unstable
+File:
+- file_name: vkd3d-proton-3.1-1-e54da18.tar.gz
+  url: https://github.com/bottlesdevs/components/releases/download/vkd3d-proton-3.1-1-e54da18/vkd3d-proton-3.1-1-e54da18.tar.gz
+  file_checksum: c076da551331e19fc88c980340487f80
+  file_size: 10030799
+  rename: vkd3d-proton-3.1-1-e54da18.tar.gz
