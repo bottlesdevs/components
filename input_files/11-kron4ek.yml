@@ -1,3 +1,18 @@
+kron4ek-wine-11.22-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1794669887'
+kron4ek-wine-11.22-staging-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1794669899'
+kron4ek-wine-11.22-staging-tkg-amd64:
+  Category: runners
+  Sub-category: wine
+  Channel: stable
+  Date: '1794669911'
 kron4ek-wine-11.21-amd64:
   Category: runners
   Sub-category: wine
