@@ -1,0 +1,14 @@
+Name: kron4ek-wine-proton-11.0-3-amd64
+Provider: Kron4ek
+Maintainer: CI
+Channel: stable
+File:
+- file_name: wine-proton-11.0-3-amd64.tar.xz
+  url: https://github.com/Kron4ek/Wine-Builds/releases/download/proton-11.0-3/wine-proton-11.0-3-amd64.tar.xz
+  file_checksum: 13cea31110fd14a35d934da5cf28c0fe
+  file_size: 81390572
+  rename: wine-proton-11.0-3-amd64.tar.xz
+Post:
+- action: rename
+  source: wine-proton-11.0-3-amd64
+  dest: kron4ek-wine-proton-11.0-3-amd64
