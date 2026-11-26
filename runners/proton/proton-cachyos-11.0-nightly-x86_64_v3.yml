@@ -1,0 +1,10 @@
+Name: proton-cachyos-11.0-nightly-x86_64_v3
+Provider: CachyOS
+Maintainer: CI
+Channel: stable
+File:
+- file_name: proton-cachyos-11.0-20261125-base-242-g284a5cc3-x86_64_v3.tar.xz
+  url: https://github.com/CachyOS/proton-cachyos/releases/download/cachyos-11.0-nightly/proton-cachyos-11.0-20261125-base-242-g284a5cc3-x86_64_v3.tar.xz
+  file_checksum: 59f409f185b4744d98e85cbcb534bca8
+  file_size: 361986824
+  rename: proton-cachyos-11.0-20261125-base-242-g284a5cc3-x86_64_v3.tar.xz
