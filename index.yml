@@ -3879,6 +3879,16 @@ proton-em-10.0-32:
 
 # ./input_files/19-proton-cachyos.yml
 # -----------------------
+proton-cachyos-11.0-20261125-nightly-x86_64_v3:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1795799111'
+proton-cachyos-11.0-20261125-nightly-x86_64:
+  Category: runners
+  Sub-category: proton
+  Channel: stable
+  Date: '1795799114'
 proton-cachyos-11.0-20261015-slr-x86_64_v3:
   Category: runners
   Sub-category: proton
